@@ -1,6 +1,6 @@
 ---
 title: "Workshop 1 — Organisieren mit KI"
-subtitle: "Mittwoch, 21.10.2026 · 12:30–13:00 Uhr · Hörsaal 0402"
+subtitle: "Mittwoch, 21.10.2026 · 12:30–13:00 Uhr · Hörsaal 0402 · Input: Prof. Dr. Roman Bartnik"
 ---
 
 ::: th-color-bar

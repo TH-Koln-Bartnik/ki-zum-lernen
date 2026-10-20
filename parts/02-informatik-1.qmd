@@ -1,0 +1,13 @@
+---
+title: "Workshop 2 — KI für Informatik-Studierende 1"
+subtitle: "Mittwoch, 28.10.2026 · 12:30–13:00 Uhr · Hörsaal 0402 · Input: Prof. Dr. Uwe van Heesch"
+---
+
+::: th-color-bar
+:::
+
+::: callout-note
+## Inhalte folgen
+
+Material zu diesem Workshop erscheint hier rechtzeitig vor dem Termin.
+:::

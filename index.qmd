@@ -14,12 +14,14 @@ Wie holt man im Studium das Beste aus ChatGPT, Claude, Gemini oder dem hochschul
 
 Alle Termine finden mittwochs von {{< var zeit >}} in {{< var raum >}} statt. Ohne Anmeldung, ohne Test, Mittagessen erlaubt. Bringen Sie gern Laptop oder Tablet mit, oder kommen Sie einfach so vorbei.
 
-| Datum | Workshop | Was Sie mitnehmen |
+| Datum | Workshop | Input |
 |---|---|---|
-| 21.10.2026 | [Organisieren mit KI](parts/01-organisieren.qmd) | Stundenplan als Kalenderdatei, 10-Tage-Klausurplan |
-| 28.10.2026 | [Kommunizieren mit KI](parts/02-kommunizieren.qmd) | Sokratischer Tutor-Prompt mit Halluzinationsschutz |
-| 04.11.2026 | [KI als Lernunterstützung](parts/03-lernen.qmd) | Folien-Entschlüsseler und Lernblatt-Prompt |
-| 11.11.2026 | [Präsentieren mit KI](parts/04-praesentieren.qmd) | Folien-Redakteur und Prüfungs-Simulator |
+| 21.10.2026 | [Organisieren mit KI](parts/01-organisieren.qmd) | Prof. Dr. Roman Bartnik |
+| 28.10.2026 | [KI für Informatik-Studierende 1](parts/02-informatik-1.qmd) | Prof. Dr. Uwe van Heesch |
+| 04.11.2026 | [Kommunizieren mit KI](parts/03-kommunizieren.qmd) | Prof. Dr. Roman Bartnik |
+| 11.11.2026 | [KI für Informatik-Studierende 2](parts/04-informatik-2.qmd) | Prof. Dr. Uwe van Heesch |
+
+Je nach Interesse bieten wir im Anschluss weitere Workshops an.
 
 Die Workshops bauen lose aufeinander auf, jeder funktioniert aber auch allein.
 
@@ -33,7 +35,7 @@ Ein Laptop oder Smartphone genügt. Für alle Übungen reicht ein kostenloser Zu
 
 - **[{{< var thki >}}]({{< var thki-url >}})** — der kostenlose Zugang der TH Köln zu verschiedenen Sprachmodellen, bereitgestellt über die NRW-Plattform KI:connect. Link öffnen, im Auswahlfenster die TH Köln wählen und mit Ihrer campusID anmelden; ein privater Account ist nicht nötig [@thkoeln2025thkichat]. Wie der Zugang funktioniert und welches Modell sich wofür eignet, zeigt die Seite [THKI Chat in fünf Minuten](parts/00-thki-chat.qmd).
 - **ChatGPT, Claude oder Gemini** in der kostenlosen Version, falls Sie bereits einen Account haben.
-- **NotebookLM** von Google für die Workshops 2 und 3, wenn Sie Fragen nur auf Basis eigener Skripte beantworten lassen wollen.
+- **NotebookLM** von Google, wenn Sie Fragen nur auf Basis eigener Skripte beantworten lassen wollen.
 
 ::: callout-warning
 ## Datenschutz in zwei Sätzen

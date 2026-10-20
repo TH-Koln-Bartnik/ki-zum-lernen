@@ -166,7 +166,7 @@ Ein **Large Language Model** ist ein **statistischer Textgenerator**, der das je
 
 ### Halluzination
 
-Weil ein Sprachmodell Wahrscheinlichkeiten berechnet und kein Konzept von „wahr“ hat, kann es überzeugend klingende, aber erfundene Angaben machen: eine Raumnummer, eine Prüfungsregel, eine Literaturquelle. Das nennt man **Halluzination** (von lateinisch *alucinari*, „gedankenlos daherreden, träumen“). Je spezieller und lokaler die Frage, desto größer die Gefahr. Workshop 2 zeigt, wie man Halluzinationen provoziert und mit Quellenbindung eindämmt.
+Weil ein Sprachmodell Wahrscheinlichkeiten berechnet und kein Konzept von „wahr“ hat, kann es überzeugend klingende, aber erfundene Angaben machen: eine Raumnummer, eine Prüfungsregel, eine Literaturquelle. Das nennt man **Halluzination** (von lateinisch *alucinari*, „gedankenlos daherreden, träumen“). Je spezieller und lokaler die Frage, desto größer die Gefahr. Ein späterer Workshop zeigt, wie man Halluzinationen provoziert und mit Quellenbindung eindämmt.
 
 ### Reasoning vs. Instant
 

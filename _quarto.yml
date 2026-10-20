@@ -31,15 +31,15 @@ book:
     - part: "Mi, 21.10. — Organisieren"
       chapters:
         - parts/01-organisieren.qmd
-    - part: "Mi, 28.10. — Kommunizieren"
+    - part: "Mi, 28.10. — Informatik 1"
       chapters:
-        - parts/02-kommunizieren.qmd
-    - part: "Mi, 04.11. — Lernen"
+        - parts/02-informatik-1.qmd
+    - part: "Mi, 04.11. — Kommunizieren"
       chapters:
-        - parts/03-lernen.qmd
-    - part: "Mi, 11.11. — Präsentieren"
+        - parts/03-kommunizieren.qmd
+    - part: "Mi, 11.11. — Informatik 2"
       chapters:
-        - parts/04-praesentieren.qmd
+        - parts/04-informatik-2.qmd
     - part: "Anhang"
       chapters:
         - appendix/prompt-bibliothek.qmd

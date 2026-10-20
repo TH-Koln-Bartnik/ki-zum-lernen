@@ -1,0 +1,13 @@
+---
+title: "Workshop 3 — Kommunizieren mit KI"
+subtitle: "Mittwoch, 04.11.2026 · 12:30–13:00 Uhr · Hörsaal 0402 · Input: Prof. Dr. Roman Bartnik"
+---
+
+::: th-color-bar
+:::
+
+::: callout-note
+## Inhalte folgen
+
+Material zu diesem Workshop erscheint hier rechtzeitig vor dem Termin.
+:::

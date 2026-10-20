@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "KI zum Lernen",
     "section": "",
-    "text": "Termine\nWie holt man im Studium das Beste aus ChatGPT, Claude, Gemini oder dem hochschuleigenen THKI Chat heraus, ohne in die Copy-Paste-Falle zu tappen? Jeder Workshop zeigt in 30 Minuten eine konkrete Aufgabe aus dem Studienalltag, ein Prompt wird live ausprobiert, und am Ende nehmen Sie ein fertiges Werkzeug mit. Auf dieser Seite finden Sie alle Prompts zum Kopieren, die Übungsmaterialien und eine Wissensbasis zum Nachschlagen.\nAlle Termine finden mittwochs von 12:30–13:00 Uhr in Hörsaal 0402 statt. Ohne Anmeldung, ohne Test, Mittagessen erlaubt. Bringen Sie gern Laptop oder Tablet mit, oder kommen Sie einfach so vorbei.\nDie Workshops bauen lose aufeinander auf, jeder funktioniert aber auch allein.",
+    "text": "Termine\nWie holt man im Studium das Beste aus ChatGPT, Claude, Gemini oder dem hochschuleigenen THKI Chat heraus, ohne in die Copy-Paste-Falle zu tappen? Jeder Workshop zeigt in 30 Minuten eine konkrete Aufgabe aus dem Studienalltag, ein Prompt wird live ausprobiert, und am Ende nehmen Sie ein fertiges Werkzeug mit. Auf dieser Seite finden Sie alle Prompts zum Kopieren, die Übungsmaterialien und eine Wissensbasis zum Nachschlagen.\nAlle Termine finden mittwochs von 12:30–13:00 Uhr in Hörsaal 0402 statt. Ohne Anmeldung, ohne Test, Mittagessen erlaubt. Bringen Sie gern Laptop oder Tablet mit, oder kommen Sie einfach so vorbei.\nJe nach Interesse bieten wir im Anschluss weitere Workshops an.\nDie Workshops bauen lose aufeinander auf, jeder funktioniert aber auch allein.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>KI zum Lernen — verstehen und sinnvoll nutzen</span>"
     ]
@@ -14,7 +14,7 @@
     "href": "index.html#termine",
     "title": "KI zum Lernen",
     "section": "",
-    "text": "Datum\nWorkshop\nWas Sie mitnehmen\n\n\n\n\n21.10.2026\nOrganisieren mit KI\nStundenplan als Kalenderdatei, 10-Tage-Klausurplan\n\n\n28.10.2026\nKommunizieren mit KI\nSokratischer Tutor-Prompt mit Halluzinationsschutz\n\n\n04.11.2026\nKI als Lernunterstützung\nFolien-Entschlüsseler und Lernblatt-Prompt\n\n\n11.11.2026\nPräsentieren mit KI\nFolien-Redakteur und Prüfungs-Simulator",
+    "text": "Datum\nWorkshop\nInput\n\n\n\n\n21.10.2026\nOrganisieren mit KI\nProf. Dr. Roman Bartnik\n\n\n28.10.2026\nKI für Informatik-Studierende 1\nProf. Dr. Uwe van Heesch\n\n\n04.11.2026\nKommunizieren mit KI\nProf. Dr. Roman Bartnik\n\n\n11.11.2026\nKI für Informatik-Studierende 2\nProf. Dr. Uwe van Heesch",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>KI zum Lernen — verstehen und sinnvoll nutzen</span>"
     ]
@@ -34,7 +34,7 @@
     "href": "index.html#was-sie-brauchen",
     "title": "KI zum Lernen",
     "section": "Was Sie brauchen",
-    "text": "Was Sie brauchen\nEin Laptop oder Smartphone genügt. Für alle Übungen reicht ein kostenloser Zugang zu einem der folgenden Werkzeuge:\n\nTHKI Chat — der kostenlose Zugang der TH Köln zu verschiedenen Sprachmodellen, bereitgestellt über die NRW-Plattform KI:connect. Link öffnen, im Auswahlfenster die TH Köln wählen und mit Ihrer campusID anmelden; ein privater Account ist nicht nötig (TH Köln, 2025). Wie der Zugang funktioniert und welches Modell sich wofür eignet, zeigt die Seite THKI Chat in fünf Minuten.\nChatGPT, Claude oder Gemini in der kostenlosen Version, falls Sie bereits einen Account haben.\nNotebookLM von Google für die Workshops 2 und 3, wenn Sie Fragen nur auf Basis eigener Skripte beantworten lassen wollen.\n\n\n\n\n\n\n\nDatenschutz in zwei Sätzen\n\n\n\nGeben Sie in keinen Chatbot personenbezogene Daten ein, also keine Namen, Matrikelnummern oder Noten von sich oder anderen. Laden Sie in den THKI Chat auch keine urheberrechtlich geschützten Texte hoch, etwa eingescannte Buchkapitel (TH Köln, 2025).",
+    "text": "Was Sie brauchen\nEin Laptop oder Smartphone genügt. Für alle Übungen reicht ein kostenloser Zugang zu einem der folgenden Werkzeuge:\n\nTHKI Chat — der kostenlose Zugang der TH Köln zu verschiedenen Sprachmodellen, bereitgestellt über die NRW-Plattform KI:connect. Link öffnen, im Auswahlfenster die TH Köln wählen und mit Ihrer campusID anmelden; ein privater Account ist nicht nötig (TH Köln, 2025). Wie der Zugang funktioniert und welches Modell sich wofür eignet, zeigt die Seite THKI Chat in fünf Minuten.\nChatGPT, Claude oder Gemini in der kostenlosen Version, falls Sie bereits einen Account haben.\nNotebookLM von Google, wenn Sie Fragen nur auf Basis eigener Skripte beantworten lassen wollen.\n\n\n\n\n\n\n\nDatenschutz in zwei Sätzen\n\n\n\nGeben Sie in keinen Chatbot personenbezogene Daten ein, also keine Namen, Matrikelnummern oder Noten von sich oder anderen. Laden Sie in den THKI Chat auch keine urheberrechtlich geschützten Texte hoch, etwa eingescannte Buchkapitel (TH Köln, 2025).",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>KI zum Lernen — verstehen und sinnvoll nutzen</span>"
     ]
@@ -134,36 +134,36 @@
     ]
   },
   {
-    "objectID": "parts/02-kommunizieren.html",
-    "href": "parts/02-kommunizieren.html",
-    "title": "Workshop 2 — Kommunizieren mit KI",
+    "objectID": "parts/02-informatik-1.html",
+    "href": "parts/02-informatik-1.html",
+    "title": "Workshop 2 — KI für Informatik-Studierende 1",
     "section": "",
-    "text": "Was Sie nach diesem Workshop können\n\nDie verschiedenen KI-Werkzeuge (ChatGPT, Claude, Gemini, NotebookLM, THKI Chat) gezielt nach Eignung auswählen (Delegate),\nfünf Steuerungsmechanismen (Denkverbote, Rollenkalibrierung, Chain-of-Thought, Formatvorgaben, Few-Shot) anwenden, um die KI als Tutor statt als Lösungsautomaten zu nutzen (Describe, Stufe 1),\nKI-Halluzinationen gezielt provozieren, erkennen und erklären, warum Sprachmodelle überzeugend „lügen“ (Discern),\nden Tutor-Prompt durch strikte Quellenbindung absichern und als fertiges Werkzeug mitnehmen (Describe, Stufe 2, und Diligence).\n\n\n\n\n\n\n\n\nMaterial folgt\n\n\n\nPrompts und Übungsmaterial zu diesem Workshop erscheinen hier spätestens am 27.10.2026.",
+    "text": "Inhalte folgen\n\n\n\nMaterial zu diesem Workshop erscheint hier rechtzeitig vor dem Termin.",
     "crumbs": [
-      "Mi, 28.10. — Kommunizieren",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Workshop 2 — Kommunizieren mit KI</span>"
+      "Mi, 28.10. — Informatik 1",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Workshop 2 — KI für Informatik-Studierende 1</span>"
     ]
   },
   {
-    "objectID": "parts/03-lernen.html",
-    "href": "parts/03-lernen.html",
-    "title": "Workshop 3 — KI als Lernunterstützung",
+    "objectID": "parts/03-kommunizieren.html",
+    "href": "parts/03-kommunizieren.html",
+    "title": "Workshop 3 — Kommunizieren mit KI",
     "section": "",
-    "text": "Was Sie nach diesem Workshop können\n\nMultimodale Sprachmodelle (mit Bilderkennung) und quellengebundene Systeme (NotebookLM) gezielt für Folien oder lange Fachtexte auswählen (Delegate),\nkomplexe Vorlesungsfolien (Diagramme, Schaltungen, Formeln) durch die Trennung von Syntax (formale Schreibweise) und Semantik (inhaltliche Bedeutung) entschlüsseln (Describe, Stufe 1),\naus demselben Material nachhaltige Lernstrukturen erzeugen: Vokabel-Lexikon, zehn gestufte Übungsbeispiele, Text-Mindmap und Selbsttest-Quiz (Describe, Stufe 2),\nÜbertragungsfehler der Bilderkennung, etwa falsch gelesene Indizes oder Schaltzeichen, systematisch überprüfen (Discern und Diligence).\n\n\n\n\n\n\n\n\nMaterial folgt\n\n\n\nPrompts und Übungsmaterial zu diesem Workshop erscheinen hier spätestens am 03.11.2026.",
+    "text": "Inhalte folgen\n\n\n\nMaterial zu diesem Workshop erscheint hier rechtzeitig vor dem Termin.",
     "crumbs": [
-      "Mi, 04.11. — Lernen",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Workshop 3 — KI als Lernunterstützung</span>"
+      "Mi, 04.11. — Kommunizieren",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Workshop 3 — Kommunizieren mit KI</span>"
     ]
   },
   {
-    "objectID": "parts/04-praesentieren.html",
-    "href": "parts/04-praesentieren.html",
-    "title": "Workshop 4 — Präsentieren mit KI",
+    "objectID": "parts/04-informatik-2.html",
+    "href": "parts/04-informatik-2.html",
+    "title": "Workshop 4 — KI für Informatik-Studierende 2",
     "section": "",
-    "text": "Was Sie nach diesem Workshop können\n\nTypische KI-Designfehler bei Präsentationen (Volume Trap, Split-Attention-Effekt) erkennen und erklären, warum ein einstufiger Befehl („Mach mir eine Folie“) scheitert (Discern),\nden Erstellungsprozess aufteilen: Text-KI als strengen Redakteur für die inhaltliche Reduktion nutzen und das Layout im Präsentationstool Ihrer Wahl umsetzen (Delegate und Describe, Stufe 1),\nSprechernotizen von sperriger Schriftsprache in flüssige, frei vortragbare Sprechsprache umwandeln (Describe, Stufe 2),\ndie Diktierfunktion oder den kostenlosen Sprachmodus unterwegs als Prüfungs-Simulator mit einer Prüfer-Persona nutzen (Diligence).\n\n\n\n\n\n\n\n\nMaterial folgt\n\n\n\nPrompts und Übungsmaterial zu diesem Workshop erscheinen hier spätestens am 10.11.2026.",
+    "text": "Inhalte folgen\n\n\n\nMaterial zu diesem Workshop erscheint hier rechtzeitig vor dem Termin.",
     "crumbs": [
-      "Mi, 11.11. — Präsentieren",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Workshop 4 — Präsentieren mit KI</span>"
+      "Mi, 11.11. — Informatik 2",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Workshop 4 — KI für Informatik-Studierende 2</span>"
     ]
   },
   {
@@ -215,7 +215,7 @@
     "href": "appendix/wissensbasis.html#sec-llm",
     "title": "Wissensbasis",
     "section": "Sprachmodelle — die Grundbegriffe",
-    "text": "Sprachmodelle — die Grundbegriffe\n\n\n\n\n\n\nWas ist ein LLM?\n\n\n\nEin Large Language Model ist ein statistischer Textgenerator, der das jeweils nächstwahrscheinliche Wort vorhersagt, nicht mehr und nicht weniger. Bild: ein sehr gut geübter Autovervollständiger, der zu einem Satzanfang den passenden Folgetext rät. Technisch: ein tiefes neuronales Netz mit Transformer-Architektur, trainiert auf großen Textmengen.\n\n\n\nHalluzination\nWeil ein Sprachmodell Wahrscheinlichkeiten berechnet und kein Konzept von „wahr“ hat, kann es überzeugend klingende, aber erfundene Angaben machen: eine Raumnummer, eine Prüfungsregel, eine Literaturquelle. Das nennt man Halluzination (von lateinisch alucinari, „gedankenlos daherreden, träumen“). Je spezieller und lokaler die Frage, desto größer die Gefahr. Workshop 2 zeigt, wie man Halluzinationen provoziert und mit Quellenbindung eindämmt.\n\n\nReasoning vs. Instant\nInstant-Modelle antworten sofort; Reasoning-Modelle „denken“ vor der Antwort Zwischenschritte durch (Chain-of-Thought). Reasoning lohnt sich bei mehrschrittigen Aufgaben wie dem Klausur-Lernplan, dauert aber länger.\n\n\nWerkzeuge und Harness\nHarness heißt wörtlich „Geschirr“ oder „Gurtzeug“ und meint den Werkzeugring um das Sprachmodell: Websuche, Datei-Upload, Bilderkennung, Code-Ausführung, Gedächtnis. Die Qualität einer Antwort hängt oft stärker vom Harness ab als vom Modell allein (Grootendorst, 2025).\n\n\n\nTool-Metapher: Ein Sprachmodell ohne Harness ist wie ein guter Handwerker ohne Werkzeugkasten.",
+    "text": "Sprachmodelle — die Grundbegriffe\n\n\n\n\n\n\nWas ist ein LLM?\n\n\n\nEin Large Language Model ist ein statistischer Textgenerator, der das jeweils nächstwahrscheinliche Wort vorhersagt, nicht mehr und nicht weniger. Bild: ein sehr gut geübter Autovervollständiger, der zu einem Satzanfang den passenden Folgetext rät. Technisch: ein tiefes neuronales Netz mit Transformer-Architektur, trainiert auf großen Textmengen.\n\n\n\nHalluzination\nWeil ein Sprachmodell Wahrscheinlichkeiten berechnet und kein Konzept von „wahr“ hat, kann es überzeugend klingende, aber erfundene Angaben machen: eine Raumnummer, eine Prüfungsregel, eine Literaturquelle. Das nennt man Halluzination (von lateinisch alucinari, „gedankenlos daherreden, träumen“). Je spezieller und lokaler die Frage, desto größer die Gefahr. Ein späterer Workshop zeigt, wie man Halluzinationen provoziert und mit Quellenbindung eindämmt.\n\n\nReasoning vs. Instant\nInstant-Modelle antworten sofort; Reasoning-Modelle „denken“ vor der Antwort Zwischenschritte durch (Chain-of-Thought). Reasoning lohnt sich bei mehrschrittigen Aufgaben wie dem Klausur-Lernplan, dauert aber länger.\n\n\nWerkzeuge und Harness\nHarness heißt wörtlich „Geschirr“ oder „Gurtzeug“ und meint den Werkzeugring um das Sprachmodell: Websuche, Datei-Upload, Bilderkennung, Code-Ausführung, Gedächtnis. Die Qualität einer Antwort hängt oft stärker vom Harness ab als vom Modell allein (Grootendorst, 2025).\n\n\n\nTool-Metapher: Ein Sprachmodell ohne Harness ist wie ein guter Handwerker ohne Werkzeugkasten.",
     "crumbs": [
       "Anhang",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Wissensbasis</span>"
