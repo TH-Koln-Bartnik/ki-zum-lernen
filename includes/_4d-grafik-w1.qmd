@@ -1,0 +1,30 @@
+<!-- 4D-Framework mit Kurzbeschreibungen für Workshop 1, Block 1 (Kalender). Stil: .d4-* in styles.scss -->
+
+```{=html}
+<figure class="d4 d4-detail" aria-label="Das 4D-Framework am Beispiel der Kalenderaufgabe: Delegate, Describe und Discern als Arbeitsschritte, Diligence begleitet alle drei.">
+  <div class="d4-flow">
+    <div class="d4-card d4-delegate">
+      <span class="d4-name">Delegate</span>
+      <span class="d4-q">Wer macht was?</span>
+      <p class="d4-desc">Die KI liest die Termine aus und schreibt den Kalender-Code. Sie geben den Semesterzeitraum vor und wählen das passende Werkzeug.</p>
+    </div>
+    <div class="d4-arrow" aria-hidden="true"><span>→</span></div>
+    <div class="d4-card d4-describe">
+      <span class="d4-name">Describe</span>
+      <span class="d4-q">Wie prompte ich?</span>
+      <p class="d4-desc">Rolle, Aufgabe und Format festlegen (RTF-Schema), dazu Zeitraum und Zeitzone nennen.</p>
+    </div>
+    <div class="d4-arrow" aria-hidden="true"><span>⇄</span><small>im Wechsel</small></div>
+    <div class="d4-card d4-discern">
+      <span class="d4-name">Discern</span>
+      <span class="d4-q">Wie prüfe ich die Qualität?</span>
+      <p class="d4-desc">Kontroll-Tabelle lesen, nach dem Import Uhrzeiten, Räume und Feiertage abgleichen. Fehler? Prompt nachschärfen.</p>
+    </div>
+  </div>
+  <div class="d4-diligence">
+    <span class="d4-name">Diligence</span>
+    <span class="d4-q">Verantwortliche Nutzung</span>
+    <span class="d4-desc">Keine personenbezogenen Daten eingeben. Verpassen Sie wegen eines falschen Termins eine Abgabe, trägt nicht die KI die Folgen, sondern Sie.</span>
+  </div>
+</figure>
+```

@@ -31,6 +31,11 @@ Eine **.ics-Datei** ist ein standardisiertes Austauschformat für Termine, vergl
 
 ## Block 1 — Termin- und Kalenderverwaltung
 
+Jeder Block folgt den vier Schritten des **4D-Frameworks** [@dakan2025framework]. So sehen sie für die Kalenderaufgabe aus:
+
+{{< include ../includes/_4d-grafik-w1.qmd >}}
+
+
 ::: callout-note
 ## Das Problem
 

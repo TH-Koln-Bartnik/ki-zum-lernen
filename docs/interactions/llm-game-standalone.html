@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welche Definition ist korrekt?</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@0.379.0/font/lucide.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        .lucide-icon {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const { useState, useEffect, useCallback } = React;
+
+        // Einfache Icon-Komponenten als SVG
+        const CheckCircle = ({ size = 20, className = "" }) => (
+            <svg className={`lucide-icon ${className}`} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+        );
+
+        const XCircle = ({ size = 20, className = "" }) => (
+            <svg className={`lucide-icon ${className}`} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="15" y1="9" x2="9" y2="15"></line>
+                <line x1="9" y1="9" x2="15" y2="15"></line>
+            </svg>
+        );
+
+        const Trophy = ({ size = 20, className = "" }) => (
+            <svg className={`lucide-icon ${className}`} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M8 21h8"></path>
+                <path d="M12 17V7"></path>
+                <path d="M6 3h12a1 1 0 0 1 1 1v4a5 5 0 0 1-5 5h-4a5 5 0 0 1-5-5V4a1 1 0 0 1 1-1z"></path>
+            </svg>
+        );
+
+        const Brain = ({ size = 20, className = "" }) => (
+            <svg className={`lucide-icon ${className}`} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.44-5A2.5 2.5 0 0 1 9.5 2Z"></path>
+                <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.44-5A2.5 2.5 0 0 0 14.5 2Z"></path>
+            </svg>
+        );
+
+        // Einfache Alert Dialog Komponenten
+        const AlertDialog = ({ open, children }) => {
+            if (!open) return null;
+            
+            return (
+                <div className="fixed inset-0 z-50 flex items-center justify-center">
+                    <div className="fixed inset-0 bg-black bg-opacity-50"></div>
+                    <div className="relative bg-white rounded-lg shadow-xl max-w-md w-full m-4 p-6">
+                        {children}
+                    </div>
+                </div>
+            );
+        };
+
+        const AlertDialogHeader = ({ children }) => (
+            <div className="mb-4">{children}</div>
+        );
+
+        const AlertDialogTitle = ({ children }) => (
+            <h2 className="text-xl font-bold">{children}</h2>
+        );
+
+        const AlertDialogDescription = ({ children }) => (
+            <div className="text-gray-600 mb-4">{children}</div>
+        );
+
+        const AlertDialogFooter = ({ children }) => (
+            <div className="flex justify-end gap-2">{children}</div>
+        );
+
+        const AlertDialogAction = ({ children, onClick, className = "" }) => (
+            <button 
+                onClick={onClick}
+                className={`px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors ${className}`}
+            >
+                {children}
+            </button>
+        );
+
+        const ALL_CONCEPTS = [
+            { concept: "Token", definition: "Die kleinsten Dateneinheiten, die ein KI-Modell verarbeitet. In der Verarbeitung natürlicher Sprache repräsentieren Token typischerweise Wörter, Wortteile oder einzelne Zeichen." },
+            { concept: "Chain-of-Thought", definition: "Eine Technik zur Verbesserung des Schlussfolgerns in LLMs durch schrittweise Erklärung des Denkprozesses." },
+            { concept: "Halluzination", definition: "Inkorrekte oder irreführende Ergebnisse, die KI-Modelle generieren, oft durch unzureichende Trainingsdaten oder Verzerrungen verursacht." },
+            { concept: "Prompt", definition: "Die Eingabe, die einem KI-Modell gegeben wird, um seinen Generierungsprozess zu initiieren oder zu lenken." },
+            { concept: "RAG", definition: "Retrieval Augmented Generation - kombiniert abrufbasierte und generative Modelle, indem erst Informationen abgerufen und dann zur Antwortgenerierung verwendet werden." },
+            { concept: "LLM", definition: "Large Language Model - KI-Systeme, die auf enormen Datensätzen trainiert wurden, um menschliche Sprache zu verstehen und zu generieren." },
+            { concept: "Temperature", definition: "Ein Parameter, der die Zufälligkeit in den Antworten steuert. Höhere Werte führen zu kreativeren, niedrigere zu konservativeren Ausgaben." },
+            { concept: "Embedding", definition: "Die Darstellung von Text als Vektoren in einem hochdimensionalen Raum, die semantische Bedeutung erfasst." },
+            { concept: "Fine-tuning", definition: "Der Prozess, ein vortrainiertes Modell auf einem spezifischen Datensatz weiterzutrainieren für bestimmte Aufgaben." },
+            { concept: "Zero-shot Learning", definition: "Die Fähigkeit eines Modells, Aufgaben auszuführen, für die es nicht explizit trainiert wurde." },
+            { concept: "Few-shot Learning", definition: "Lernen aus wenigen Beispielen - das Modell erhält einige Beispiele zur Aufgabenlösung." },
+            { concept: "Transformer", definition: "Die zugrundeliegende Architektur moderner LLMs, basierend auf Attention-Mechanismen." },
+            { concept: "Attention", definition: "Ein Mechanismus, der es Modellen ermöglicht, sich auf relevante Teile der Eingabe zu fokussieren." },
+            { concept: "Context Window", definition: "Die maximale Anzahl von Token, die ein Modell gleichzeitig verarbeiten kann." },
+            { concept: "Tokenisierung", definition: "Der Prozess, Text in kleinere Einheiten (Token) zu zerlegen für die Modellverarbeitung." }
+        ];
+
+        const BASIC_CONCEPTS = ["Token", "Prompt", "LLM", "Temperature", "Halluzination"];
+
+        const LLMMatchingGame = () => {
+            const [gameItems, setGameItems] = useState([]);
+            const [score, setScore] = useState(0);
+            const [totalScore, setTotalScore] = useState(0);
+            const [currentPair, setCurrentPair] = useState({ concept: null, definition: null });
+            const [gameState, setGameState] = useState('playing');
+            const [round, setRound] = useState(1);
+            const [usedConcepts, setUsedConcepts] = useState([]);
+            const [feedback, setFeedback] = useState({ show: false, correct: false });
+            const [matchedPairs, setMatchedPairs] = useState(0);
+            const [mistakes, setMistakes] = useState(0);
+            const [streak, setStreak] = useState(0);
+            const [bestStreak, setBestStreak] = useState(0);
+            const [timeLeft, setTimeLeft] = useState(120);
+            const [timerActive, setTimerActive] = useState(false);
+
+            useEffect(() => {
+                startGame();
+            }, []);
+
+            useEffect(() => {
+                let interval = null;
+                if (timerActive && timeLeft > 0) {
+                    interval = setInterval(() => {
+                        setTimeLeft(time => {
+                            if (time <= 1) {
+                                setTimerActive(false);
+                                handleTimeUp();
+                                return 0;
+                            }
+                            return time - 1;
+                        });
+                    }, 1000);
+                } else if (timeLeft === 0) {
+                    handleTimeUp();
+                }
+                return () => clearInterval(interval);
+            }, [timerActive, timeLeft]);
+
+            const handleTimeUp = () => {
+                setGameState('roundComplete');
+            };
+
+            const startGame = (newRound = 1) => {
+                let selectedConcepts;
+                if (newRound === 1) {
+                    selectedConcepts = ALL_CONCEPTS.filter(c => BASIC_CONCEPTS.includes(c.concept));
+                    setUsedConcepts([]);
+                    setTotalScore(0);
+                    setBestStreak(0);
+                } else {
+                    const availableConcepts = ALL_CONCEPTS.filter(c => !usedConcepts.includes(c.concept));
+                    if (availableConcepts.length < 5) {
+                        setGameState('gameOver');
+                        return;
+                    }
+                    selectedConcepts = shuffleArray(availableConcepts).slice(0, 5);
+                }
+
+                const newUsedConcepts = [...usedConcepts, ...selectedConcepts.map(c => c.concept)];
+                setUsedConcepts(newUsedConcepts);
+
+                const items = selectedConcepts.flatMap(item => [
+                    { type: 'concept', text: item.concept, matched: false, id: `c-${item.concept}` },
+                    { type: 'definition', text: item.definition, matched: false, id: `d-${item.concept}` }
+                ]);
+                
+                setGameItems(shuffleArray(items));
+                setScore(0);
+                setMatchedPairs(0);
+                setMistakes(0);
+                setStreak(0);
+                setCurrentPair({ concept: null, definition: null });
+                setGameState('playing');
+                setRound(newRound);
+                setTimeLeft(120);
+                setTimerActive(true);
+            };
+
+            const shuffleArray = (array) => {
+                const shuffled = [...array];
+                for (let i = shuffled.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+                }
+                return shuffled;
+            };
+
+            const handleItemClick = useCallback((item) => {
+                if (item.matched || gameState !== 'playing') return;
+
+                if (item.type === 'concept') {
+                    if (currentPair.concept) {
+                        if (currentPair.concept.id === item.id) {
+                            setCurrentPair({ ...currentPair, concept: null });
+                        } else {
+                            setCurrentPair({ ...currentPair, concept: item });
+                        }
+                    } else {
+                        setCurrentPair({ ...currentPair, concept: item });
+                    }
+                } else {
+                    if (!currentPair.concept) return;
+                    
+                    if (currentPair.definition) {
+                        if (currentPair.definition.id === item.id) {
+                            setCurrentPair({ ...currentPair, definition: null });
+                        } else {
+                            checkMatch(currentPair.concept, item);
+                        }
+                    } else {
+                        checkMatch(currentPair.concept, item);
+                    }
+                }
+            }, [currentPair, gameState]);
+
+            const checkMatch = (concept, definition) => {
+                const matchingConcept = ALL_CONCEPTS.find(c => c.concept === concept.text);
+                const isCorrect = matchingConcept && matchingConcept.definition === definition.text;
+                
+                if (isCorrect) {
+                    const newStreak = streak + 1;
+                    setStreak(newStreak);
+                    if (newStreak > bestStreak) setBestStreak(newStreak);
+                    
+                    const points = 10 + (newStreak > 2 ? 5 : 0);
+                    setScore(score + points);
+                    setTotalScore(totalScore + points);
+                    setMatchedPairs(matchedPairs + 1);
+                    
+                    setGameItems(gameItems.map(gi => 
+                        (gi.id === concept.id || gi.id === definition.id) ? { ...gi, matched: true } : gi
+                    ));
+                    
+                    setFeedback({ show: true, correct: true });
+                    
+                    if (matchedPairs + 1 === 5) {
+                        setTimeout(() => {
+                            setTimerActive(false);
+                            setGameState('roundComplete');
+                        }, 1000);
+                    }
+                } else {
+                    setStreak(0);
+                    setMistakes(mistakes + 1);
+                    setScore(Math.max(0, score - 5));
+                    setFeedback({ show: true, correct: false });
+                }
+                
+                setTimeout(() => {
+                    setCurrentPair({ concept: null, definition: null });
+                    setFeedback({ show: false, correct: false });
+                }, 1000);
+            };
+
+            const handleNextRound = () => {
+                const availableConcepts = ALL_CONCEPTS.filter(c => !usedConcepts.includes(c.concept));
+                if (availableConcepts.length >= 5) {
+                    startGame(round + 1);
+                } else {
+                    setGameState('gameOver');
+                }
+            };
+
+            const handleRestart = () => {
+                setUsedConcepts([]);
+                startGame(1);
+            };
+
+            const formatTime = (seconds) => {
+                const mins = Math.floor(seconds / 60);
+                const secs = seconds % 60;
+                return `${mins}:${secs.toString().padStart(2, '0')}`;
+            };
+
+            return (
+                <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 p-4">
+                    <div className="max-w-6xl mx-auto">
+                        <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
+                            <h1 className="text-4xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center gap-2">
+                                <Brain />
+                                LLM Konzept-Zuordnung
+                            </h1>
+
+                            <div className="mb-4">
+                                <div className="w-full bg-gray-200 rounded-full h-2">
+                                    <div 
+                                        className="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full transition-all duration-500"
+                                        style={{ width: `${(matchedPairs / 5) * 100}%` }}
+                                    />
+                                </div>
+                            </div>
+
+                            {feedback.show && (
+                                <div className={`text-center mb-4 animate-pulse ${feedback.correct ? 'text-green-600' : 'text-red-600'}`}>
+                                    {feedback.correct ? (
+                                        <div className="flex items-center justify-center gap-2">
+                                            <CheckCircle /> Richtig! {streak > 2 && <span>🔥 Serie!</span>}
+                                        </div>
+                                    ) : (
+                                        <div className="flex items-center justify-center gap-2">
+                                            <XCircle /> Leider falsch, versuche es nochmal!
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <h2 className="text-lg font-semibold mb-3 text-gray-700">
+                                        📌 Konzepte
+                                    </h2>
+                                    <div className="space-y-2">
+                                        {gameItems.filter(item => item.type === 'concept').map((item) => (
+                                            <button
+                                                key={item.id}
+                                                onClick={() => handleItemClick(item)}
+                                                disabled={item.matched || gameState !== 'playing'}
+                                                className={`w-full p-3 rounded-lg text-left transition-all duration-300 transform hover:scale-105
+                                                    ${item.matched ? 'bg-green-200 text-green-800 cursor-not-allowed' : 
+                                                    currentPair.concept?.id === item.id ? 'bg-blue-500 text-white shadow-lg ring-2 ring-blue-300' : 
+                                                    'bg-white border-2 border-gray-200 hover:border-blue-300 hover:shadow-md'}
+                                                `}
+                                            >
+                                                <span className="font-semibold flex items-center gap-2">
+                                                    {item.text}
+                                                    {item.matched && <CheckCircle size={16} />}
+                                                </span>
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-lg font-semibold mb-3 text-gray-700">
+                                        ⚡ Definitionen
+                                    </h2>
+                                    <div className="space-y-2">
+                                        {gameItems.filter(item => item.type === 'definition').map((item) => (
+                                            <button
+                                                key={item.id}
+                                                onClick={() => handleItemClick(item)}
+                                                disabled={item.matched || gameState !== 'playing' || !currentPair.concept}
+                                                className={`w-full p-3 rounded-lg text-left transition-all duration-300 transform hover:scale-105
+                                                    ${item.matched ? 'bg-green-200 text-green-800 cursor-not-allowed' : 
+                                                    currentPair.definition?.id === item.id ? 'bg-purple-500 text-white shadow-lg ring-2 ring-purple-300' : 
+                                                    !currentPair.concept ? 'bg-gray-100 text-gray-400 cursor-not-allowed' :
+                                                    'bg-white border-2 border-gray-200 hover:border-purple-300 hover:shadow-md'}
+                                                `}
+                                            >
+                                                <span className="text-sm flex items-center gap-2">
+                                                    {item.text}
+                                                    {item.matched && <CheckCircle size={16} />}
+                                                </span>
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="mt-6 border-t pt-3">
+                                <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
+                                    <span>Runde: <strong className="text-blue-600">{round}</strong></span>
+                                    <span>•</span>
+                                    <span>Punkte: <strong className="text-green-600">{score}</strong></span>
+                                    <span>•</span>
+                                    <span>Gesamt: <strong className="text-purple-600">{totalScore}</strong></span>
+                                    <span>•</span>
+                                    <span>Serie: <strong className="text-yellow-600">{streak}</strong></span>
+                                    <span>•</span>
+                                    <span>Zeit: <strong className="text-red-600">{formatTime(timeLeft)}</strong></span>
+                                    <span>•</span>
+                                    <span>Fortschritt: <strong>{matchedPairs}/5</strong></span>
+                                </div>
+                                <div className="text-xs text-gray-500 text-center mt-2">
+                                    Wähle erst ein Konzept, dann die passende Definition. 
+                                    <br />Definitionen basierend auf dem UBC Glossar der GenAI-Begriffe (08/2024)
+                                </div>
+                            </div>
+                        </div>
+
+                        <AlertDialog open={gameState === 'roundComplete'}>
+                            <AlertDialogHeader>
+                                <AlertDialogTitle>
+                                    <div className="flex items-center gap-2">
+                                        <Trophy className="text-yellow-500" />
+                                        Runde {round} abgeschlossen!
+                                    </div>
+                                </AlertDialogTitle>
+                            </AlertDialogHeader>
+                            <AlertDialogDescription>
+                                <div className="space-y-2">
+                                    <p>Großartig! Du hast die Runde beendet.</p>
+                                    <div className="bg-gray-100 rounded p-3 space-y-1">
+                                        <div>Punkte diese Runde: <span className="font-bold">{score}</span></div>
+                                        <div>Fehler: <span className="font-bold">{mistakes}</span></div>
+                                        <div>Beste Serie: <span className="font-bold">{bestStreak}</span></div>
+                                        <div>Zeit übrig: <span className="font-bold">{formatTime(timeLeft)}</span></div>
+                                    </div>
+                                    <p>Möchtest du die nächste Runde spielen?</p>
+                                </div>
+                            </AlertDialogDescription>
+                            <AlertDialogFooter>
+                                <AlertDialogAction onClick={() => setGameState('gameOver')} className="bg-gray-500 hover:bg-gray-600">
+                                    Beenden
+                                </AlertDialogAction>
+                                <AlertDialogAction onClick={handleNextRound}>
+                                    Nächste Runde
+                                </AlertDialogAction>
+                            </AlertDialogFooter>
+                        </AlertDialog>
+
+                        <AlertDialog open={gameState === 'gameOver'}>
+                            <AlertDialogHeader>
+                                <AlertDialogTitle>
+                                    <div className="flex items-center gap-2">
+                                        🏆 Spiel beendet!
+                                    </div>
+                                </AlertDialogTitle>
+                            </AlertDialogHeader>
+                            <AlertDialogDescription>
+                                <div className="space-y-2">
+                                    <p>Herzlichen Glückwunsch! Du hast das Spiel abgeschlossen.</p>
+                                    <div className="bg-gradient-to-r from-blue-100 to-purple-100 rounded p-4 space-y-1">
+                                        <div className="text-lg">Gesamtpunktzahl: <span className="font-bold text-2xl">{totalScore}</span></div>
+                                        <div>Runden gespielt: <span className="font-bold">{round}</span></div>
+                                        <div>Beste Serie: <span className="font-bold">{bestStreak}</span></div>
+                                    </div>
+                                    <p>Möchtest du ein neues Spiel starten?</p>
+                                </div>
+                            </AlertDialogDescription>
+                            <AlertDialogFooter>
+                                <AlertDialogAction onClick={handleRestart}>
+                                    Neues Spiel
+                                </AlertDialogAction>
+                            </AlertDialogFooter>
+                        </AlertDialog>
+                    </div>
+                </div>
+            );
+        };
+
+        // App rendern
+        ReactDOM.render(<LLMMatchingGame />, document.getElementById('root'));
+    </script>
+</body>
+</html>

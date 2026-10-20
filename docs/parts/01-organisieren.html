@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -54,14 +54,15 @@ div.csl-indent {
 <link href="../parts/00-thki-chat.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b82faa45e67e180b4ee2b0810d4ac8ba.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a43d718531462f1618eaea66269ec45c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -118,7 +119,8 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../images/th-koeln-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../images/th-koeln-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../images/th-koeln-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">KI zum Lernen</a> 
@@ -232,6 +234,12 @@ div.csl-indent {
   <a href="../appendix/troubleshooting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Troubleshooting</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../transparenz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transparenzhinweis</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -311,7 +319,7 @@ div.csl-indent {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Praxis-Hinweis vorab: So wird aus Code eine Kalenderdatei
+<span class="screen-reader-only">Tipp</span>Praxis-Hinweis vorab: So wird aus Code eine Kalenderdatei
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -320,13 +328,41 @@ Praxis-Hinweis vorab: So wird aus Code eine Kalenderdatei
 </div>
 <section id="block-1-termin--und-kalenderverwaltung" class="level2">
 <h2 class="anchored" data-anchor-id="block-1-termin--und-kalenderverwaltung">Block 1 — Termin- und Kalenderverwaltung</h2>
+<p>Jeder Block folgt den vier Schritten des <strong>4D-Frameworks</strong> <span class="citation" data-cites="dakan2025framework">(<a href="../references.html#ref-dakan2025framework" role="doc-biblioref">Dakan &amp; Feller, 2025</a>)</span>. So sehen sie für die Kalenderaufgabe aus:</p>
+<!-- 4D-Framework mit Kurzbeschreibungen für Workshop 1, Block 1 (Kalender). Stil: .d4-* in styles.scss -->
+<figure class="d4 d4-detail figure" aria-label="Das 4D-Framework am Beispiel der Kalenderaufgabe: Delegate, Describe und Discern als Arbeitsschritte, Diligence begleitet alle drei.">
+  <div class="d4-flow">
+    <div class="d4-card d4-delegate">
+      <span class="d4-name">Delegate</span>
+      <span class="d4-q">Wer macht was?</span>
+      <p class="d4-desc">Die KI liest die Termine aus und schreibt den Kalender-Code. Sie geben den Semesterzeitraum vor und wählen das passende Werkzeug.</p>
+    </div>
+    <div class="d4-arrow" aria-hidden="true"><span>→</span></div>
+    <div class="d4-card d4-describe">
+      <span class="d4-name">Describe</span>
+      <span class="d4-q">Wie prompte ich?</span>
+      <p class="d4-desc">Rolle, Aufgabe und Format festlegen (RTF-Schema), dazu Zeitraum und Zeitzone nennen.</p>
+    </div>
+    <div class="d4-arrow" aria-hidden="true"><span>⇄</span><small>im Wechsel</small></div>
+    <div class="d4-card d4-discern">
+      <span class="d4-name">Discern</span>
+      <span class="d4-q">Wie prüfe ich die Qualität?</span>
+      <p class="d4-desc">Kontroll-Tabelle lesen, nach dem Import Uhrzeiten, Räume und Feiertage abgleichen. Fehler? Prompt nachschärfen.</p>
+    </div>
+  </div>
+  <div class="d4-diligence">
+    <span class="d4-name">Diligence</span>
+    <span class="d4-q">Verantwortliche Nutzung</span>
+    <span class="d4-desc">Keine personenbezogenen Daten eingeben. Verpassen Sie wegen eines falschen Termins eine Abgabe, trägt nicht die KI die Folgen, sondern Sie.</span>
+  </div>
+</figure>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Das Problem
+<span class="screen-reader-only">Hinweis</span>Das Problem
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -406,7 +442,7 @@ Format:
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Das Problem
+<span class="screen-reader-only">Hinweis</span>Das Problem
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -493,7 +529,7 @@ Physik 6: Drehbewegung (Winkelgeschwindigkeit, Drehmoment, Trägheitsmoment)</co
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Für die Schnellen: Block 2 und Block 1 verbinden
+<span class="screen-reader-only">Tipp</span>Für die Schnellen: Block 2 und Block 1 verbinden
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -530,7 +566,7 @@ Für die Schnellen: Block 2 und Block 1 verbinden
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tipp: Erst in einen Testkalender importieren
+<span class="screen-reader-only">Warnung</span>Tipp: Erst in einen Testkalender importieren
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -540,6 +576,9 @@ Tipp: Erst in einen Testkalender importieren
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-dakan2025framework" class="csl-entry" role="listitem">
+Dakan, R., &amp; Feller, J. (2025). <em>Framework for <span>AI</span> Fluency: Practical Overview Document</em>. <a href="https://ringling.libguides.com/ai/framework">https://ringling.libguides.com/ai/framework</a>
+</div>
 <div id="ref-rfc5545" class="csl-entry" role="listitem">
 Desruisseaux, B. (2009). <em>Internet Calendaring and Scheduling Core Object Specification (<span>iCalendar</span>) (<span>RFC</span> 5545)</em>. Internet Engineering Task Force. <a href="https://doi.org/10.17487/RFC5545">https://doi.org/10.17487/RFC5545</a>
 </div>
@@ -601,13 +640,14 @@ Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., &amp; Willingham, D. T
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

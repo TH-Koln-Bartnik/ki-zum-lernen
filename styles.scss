@@ -204,3 +204,75 @@ pre, pre code, div.sourceCode pre, div.sourceCode code {
   margin: 1rem 0 1.5rem;
 }
 .weiterlesen p { margin: 0; }
+
+/* 4D-Framework-Grafik (includes/_4d-grafik*.qmd)
+   Delegate → Describe ⇄ Discern als Arbeitsschritte, Diligence als Band darunter */
+.d4 {
+  margin: 1.5rem 0 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.d4-flow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  gap: 0.4rem;
+  align-items: stretch;
+}
+.d4-card {
+  --d4c: var(--th-red);
+  border: 1px solid var(--gray-200);
+  border-top: 5px solid var(--d4c);
+  background: var(--paper);
+  padding: 0.8rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.d4-delegate { --d4c: var(--th-red); }
+.d4-describe { --d4c: var(--th-magenta); }
+.d4-discern  { --d4c: var(--th-orange); }
+.d4-card .d4-name {
+  color: var(--d4c);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.d4-de {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray-500);
+}
+.d4-q { font-weight: 600; color: var(--ink); }
+.d4-desc { font-size: 0.9rem; line-height: 1.4; margin: 0.25rem 0 0; color: var(--ink); }
+.d4-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-500);
+  font-size: 1.7rem;
+  line-height: 1;
+  min-width: 2.2rem;
+}
+.d4-arrow small { font-size: 0.65rem; margin-top: 0.2rem; text-align: center; }
+.d4-diligence {
+  margin-top: 0.5rem;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.7rem 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.9rem;
+}
+.d4-diligence .d4-name { font-weight: 700; font-size: 1.2rem; color: var(--paper); }
+.d4-diligence .d4-de,
+.d4-diligence .d4-q,
+.d4-diligence .d4-desc { color: var(--paper); margin: 0; }
+.d4-diligence .d4-de { color: var(--gray-200); }
+.d4-detail .d4-diligence .d4-desc { flex-basis: 100%; }
+
+@media (max-width: 640px) {
+  .d4-flow { grid-template-columns: 1fr; }
+  .d4-arrow { flex-direction: row; gap: 0.4rem; min-height: 1.8rem; }
+  .d4-arrow span { display: inline-block; transform: rotate(90deg); }
+}

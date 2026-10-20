@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -56,14 +56,15 @@ div.csl-indent {
 <link href="./parts/00-thki-chat.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b82faa45e67e180b4ee2b0810d4ac8ba.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a43d718531462f1618eaea66269ec45c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -120,7 +121,8 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/th-koeln-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="./images/th-koeln-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./images/th-koeln-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">KI zum Lernen</a> 
@@ -234,6 +236,12 @@ div.csl-indent {
   <a href="./appendix/troubleshooting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Troubleshooting</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./transparenz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transparenzhinweis</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -300,9 +308,44 @@ div.csl-indent {
 
 </div>
 <p>Wie holt man im Studium das Beste aus ChatGPT, Claude, Gemini oder dem hochschuleigenen THKI Chat heraus, ohne in die Copy-Paste-Falle zu tappen? Jeder Workshop zeigt in 30 Minuten eine konkrete Aufgabe aus dem Studienalltag, ein Prompt wird live ausprobiert, und am Ende nehmen Sie ein fertiges Werkzeug mit. Auf dieser Seite finden Sie alle Prompts zum Kopieren, die Übungsmaterialien und eine Wissensbasis zum Nachschlagen.</p>
+<p>Alle Workshops folgen demselben Raster, dem <strong>4D-Framework</strong> <span class="citation" data-cites="dakan2025framework">(<a href="references.html#ref-dakan2025framework" role="doc-biblioref">Dakan &amp; Feller, 2025</a>)</span>: Erst verteilen Sie die Aufgabe, dann beschreiben und prüfen Sie im Wechsel, und die Verantwortung begleitet jeden Schritt.</p>
+<!-- Einfache Übersicht des 4D-Frameworks (Startseite). Stil: .d4-* in styles.scss -->
+<figure class="d4 figure" aria-label="Das 4D-Framework: Delegate, Describe und Discern als Arbeitsschritte, Diligence begleitet alle drei.">
+  <div class="d4-flow">
+    <div class="d4-card d4-delegate">
+      <span class="d4-name">Delegate</span>
+      <span class="d4-de">Aufgaben verteilen</span>
+      <span class="d4-q">Wer macht was?</span>
+    </div>
+    <div class="d4-arrow" aria-hidden="true"><span>→</span></div>
+    <div class="d4-card d4-describe">
+      <span class="d4-name">Describe</span>
+      <span class="d4-de">Beschreiben</span>
+      <span class="d4-q">Wie prompte ich?</span>
+    </div>
+    <div class="d4-arrow" aria-hidden="true"><span>⇄</span><small>im Wechsel</small></div>
+    <div class="d4-card d4-discern">
+      <span class="d4-name">Discern</span>
+      <span class="d4-de">Prüfen</span>
+      <span class="d4-q">Wie prüfe ich die Qualität?</span>
+    </div>
+  </div>
+  <div class="d4-diligence">
+    <span class="d4-name">Diligence</span>
+    <span class="d4-de">Sorgfalt</span>
+    <span class="d4-q">Nutze ich KI verantwortlich? Begleitet jeden Schritt.</span>
+  </div>
+</figure>
+<p>Ausführlich erklärt die <a href="./appendix/wissensbasis.html#sec-4d">Wissensbasis</a> die vier Kompetenzen.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/flyer-ki-zum-lernen.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Flyer: KI zum Lernen – Wie geht das eigentlich sinnvoll? 4 kurze Workshops für alle, ohne Anmeldung, ohne Test, Mittagessen erlaubt. Mittwochs 21.10., 28.10., 04.11., 11.11., jeweils 12:30 bis 13:00 Uhr, Hörsaal 0402." width="360"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/qr-ki-zum-lernen.png" class="img-fluid figure-img" alt="QR-Code, der auf die Workshop-Webseite th-koln-bartnik.github.io/ki-zum-lernen verweist" width="170"></p>
+<figcaption>Diese Seite auf dem Handy öffnen: QR-Code scannen oder <a href="https://th-koln-bartnik.github.io/ki-zum-lernen/">th-koln-bartnik.github.io/ki-zum-lernen</a> aufrufen.</figcaption>
 </figure>
 </div>
 <section id="termine" class="level2">
@@ -360,7 +403,7 @@ div.csl-indent {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Datenschutz in zwei Sätzen
+<span class="screen-reader-only">Warnung</span>Datenschutz in zwei Sätzen
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -370,10 +413,13 @@ Datenschutz in zwei Sätzen
 </section>
 <section id="so-nutzen-sie-diese-seite" class="level2">
 <h2 class="anchored" data-anchor-id="so-nutzen-sie-diese-seite">So nutzen Sie diese Seite</h2>
-<p>Jede Workshop-Seite folgt demselben Aufbau: ein Problem aus dem Studienalltag, die Einordnung in das <strong>4D-Framework</strong> (Delegate, Describe, Discern, Diligence), der Prompt zum Kopieren, die Übung und ein kurzer Qualitätscheck. Das Kopiersymbol oben rechts an jedem grauen Prompt-Kasten legt den Text in Ihre Zwischenablage. Begriffe wie <em>Prompt</em>, <em>Halluzination</em> oder <em>RAG</em> erklärt die <a href="./appendix/wissensbasis.html">Wissensbasis</a>; alle Prompts gesammelt stehen in der <a href="./appendix/prompt-bibliothek.html">Prompt-Bibliothek</a>.</p>
+<p>Jede Workshop-Seite folgt demselben Aufbau: ein Problem aus dem Studienalltag, die Einordnung in das <strong>4D-Framework</strong> (Delegate, Describe, Discern, Diligence), der Prompt zum Kopieren, die Übung und ein kurzer Qualitätscheck. Das Kopiersymbol oben rechts an jedem grauen Prompt-Kasten legt den Text in Ihre Zwischenablage. Begriffe wie <em>Prompt</em>, <em>Halluzination</em> oder <em>RAG</em> erklärt die <a href="./appendix/wissensbasis.html">Wissensbasis</a>; alle Prompts gesammelt stehen in der <a href="./appendix/prompt-bibliothek.html">Prompt-Bibliothek</a>. Wie gut Sie die Grundbegriffe schon kennen, testen Sie mit dem <a href="./appendix/wissensbasis.html#sec-lernspiel">Lernspiel in der Wissensbasis</a>.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-dakan2025framework" class="csl-entry" role="listitem">
+Dakan, R., &amp; Feller, J. (2025). <em>Framework for <span>AI</span> Fluency: Practical Overview Document</em>. <a href="https://ringling.libguides.com/ai/framework">https://ringling.libguides.com/ai/framework</a>
+</div>
 <div id="ref-thkoeln2025thkichat" class="csl-entry" role="listitem">
 TH Köln. (2025). <em><span>THKI</span> Chat – Handreichung für Studierende (v07)</em>. <a href="https://lehrpfade.th-koeln.de/wp-content/uploads/2025/09/THKI_Chat_Handreichung_Studierende_v07.pdf">https://lehrpfade.th-koeln.de/wp-content/uploads/2025/09/THKI_Chat_Handreichung_Studierende_v07.pdf</a>
 </div>
@@ -432,13 +478,14 @@ TH Köln. (2025). <em><span>THKI</span> Chat – Handreichung für Studierende (
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -54,14 +54,15 @@ div.csl-indent {
 <link href="../appendix/prompt-bibliothek.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b82faa45e67e180b4ee2b0810d4ac8ba.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a43d718531462f1618eaea66269ec45c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -118,7 +119,8 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../images/th-koeln-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../images/th-koeln-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../images/th-koeln-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">KI zum Lernen</a> 
@@ -232,6 +234,12 @@ div.csl-indent {
   <a href="../appendix/troubleshooting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Troubleshooting</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../transparenz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transparenzhinweis</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -250,7 +258,8 @@ div.csl-indent {
     <h2 id="toc-title">Inhalt</h2>
    
   <ul>
-  <li><a href="#sec-4d" id="toc-sec-4d" class="nav-link active" data-scroll-target="#sec-4d">Das 4D-Framework</a></li>
+  <li><a href="#sec-lernspiel" id="toc-sec-lernspiel" class="nav-link active" data-scroll-target="#sec-lernspiel">Lernspiel: Welche Grundbegriffe kennen Sie schon?</a></li>
+  <li><a href="#sec-4d" id="toc-sec-4d" class="nav-link" data-scroll-target="#sec-4d">Das 4D-Framework</a></li>
   <li><a href="#sec-llm" id="toc-sec-llm" class="nav-link" data-scroll-target="#sec-llm">Sprachmodelle — die Grundbegriffe</a>
   <ul class="collapse">
   <li><a href="#halluzination" id="toc-halluzination" class="nav-link" data-scroll-target="#halluzination">Halluzination</a></li>
@@ -303,13 +312,20 @@ div.csl-indent {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Vertiefung
+<span class="screen-reader-only">Tipp</span>Vertiefung
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>Eine ausführliche Einführung in die Funktionsweise von Sprachmodellen und eine kommentierte Prompt-Sammlung finden Sie im Skript <a href="https://th-koln-bartnik.github.io/genai4teaching/" target="_blank"><em>GenAI in der Lehre</em></a>, insbesondere in <a href="https://th-koln-bartnik.github.io/genai4teaching/kapitel02.html" target="_blank">Kapitel 2</a> und der <a href="https://th-koln-bartnik.github.io/genai4teaching/kapitel07-appendix02-prompt-sammlung.html" target="_blank">Prompt-Beispiele-Sammlung</a>.</p>
 </div>
 </div>
+<section id="sec-lernspiel" class="level2">
+<h2 class="anchored" data-anchor-id="sec-lernspiel">Lernspiel: Welche Grundbegriffe kennen Sie schon?</h2>
+<p>Von <em>Prompt</em> über <em>Token</em> bis <em>Halluzination</em>: Ordnen Sie die Begriffe den passenden Definitionen zu. Das Spiel stammt aus Kapitel 2 des Skripts <a href="https://th-koln-bartnik.github.io/genai4teaching/kapitel02.html" target="_blank"><em>GenAI in der Lehre</em></a> und läuft am besten auf dem Computer.</p>
+<iframe src="../interactions/llm-game-standalone.html" title="Lernspiel: Grundbegriffe zu Sprachmodellen zuordnen" width="100%" height="700px" style="border:1px solid #e6e6ea;" loading="lazy">
+</iframe>
+<p>Auf dem Smartphone zu eng? <a href="../interactions/llm-game-standalone.html" target="_blank">Spiel im eigenen Fenster öffnen</a>.</p>
+</section>
 <section id="sec-4d" class="level2">
 <h2 class="anchored" data-anchor-id="sec-4d">Das 4D-Framework</h2>
 <div class="callout callout-style-simple callout-note callout-titled">
@@ -318,7 +334,7 @@ Vertiefung
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Was ist AI Fluency?
+<span class="screen-reader-only">Hinweis</span>Was ist AI Fluency?
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -366,12 +382,12 @@ Was ist AI Fluency?
 <p><strong>Zum Weiterlesen:</strong> Das englische Original des Frameworks mit Kursmaterial <span class="citation" data-cites="dakan2025framework">(<a href="../references.html#ref-dakan2025framework" role="doc-biblioref">Dakan &amp; Feller, 2025</a>)</span>.</p>
 </div>
 <div class="callout callout-style-simple callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Ausführlich: die vier Kompetenzen nach Dakan &amp; Feller (2025)
+<span class="screen-reader-only">Hinweis</span>Ausführlich: die vier Kompetenzen nach Dakan &amp; Feller (2025)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -497,7 +513,7 @@ Ausführlich: die vier Kompetenzen nach Dakan &amp; Feller (2025)
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Was ist ein LLM?
+<span class="screen-reader-only">Hinweis</span>Was ist ein LLM?
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -690,13 +706,14 @@ White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar, A., 
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

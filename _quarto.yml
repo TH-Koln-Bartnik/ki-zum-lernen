@@ -4,6 +4,7 @@ project:
   resources:
     - "material/**"
     - "images/**"
+    - "interactions/**"
     - ".nojekyll"
 
 book:
@@ -45,6 +46,7 @@ book:
         - appendix/prompt-bibliothek.qmd
         - appendix/wissensbasis.qmd
         - appendix/troubleshooting.qmd
+        - transparenz.qmd
     - references.qmd
   page-footer:
     left: "© 2026 R. Bartnik, U. van Heesch, B. Moser · TH Köln · CC BY-NC-SA 4.0"

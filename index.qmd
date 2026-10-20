@@ -8,7 +8,15 @@ subtitle: "Vier Kurz-Workshops à 30 Minuten für alle Studierenden am Campus Gu
 
 Wie holt man im Studium das Beste aus ChatGPT, Claude, Gemini oder dem hochschuleigenen {{< var thki >}} heraus, ohne in die Copy-Paste-Falle zu tappen? Jeder Workshop zeigt in 30 Minuten eine konkrete Aufgabe aus dem Studienalltag, ein Prompt wird live ausprobiert, und am Ende nehmen Sie ein fertiges Werkzeug mit. Auf dieser Seite finden Sie alle Prompts zum Kopieren, die Übungsmaterialien und eine Wissensbasis zum Nachschlagen.
 
+Alle Workshops folgen demselben Raster, dem **4D-Framework** [@dakan2025framework]: Erst verteilen Sie die Aufgabe, dann beschreiben und prüfen Sie im Wechsel, und die Verantwortung begleitet jeden Schritt.
+
+{{< include includes/_4d-grafik.qmd >}}
+
+Ausführlich erklärt die [Wissensbasis](appendix/wissensbasis.qmd#sec-4d) die vier Kompetenzen.
+
 ![](images/flyer-ki-zum-lernen.jpg){fig-alt="Flyer: KI zum Lernen – Wie geht das eigentlich sinnvoll? 4 kurze Workshops für alle, ohne Anmeldung, ohne Test, Mittagessen erlaubt. Mittwochs 21.10., 28.10., 04.11., 11.11., jeweils 12:30 bis 13:00 Uhr, Hörsaal 0402." width="360px" fig-align="center"}
+
+![Diese Seite auf dem Handy öffnen: QR-Code scannen oder [th-koln-bartnik.github.io/ki-zum-lernen](https://th-koln-bartnik.github.io/ki-zum-lernen/) aufrufen.](images/qr-ki-zum-lernen.png){fig-alt="QR-Code, der auf die Workshop-Webseite th-koln-bartnik.github.io/ki-zum-lernen verweist" width="170px" fig-align="center"}
 
 ## Termine
 
@@ -45,4 +53,4 @@ Geben Sie in keinen Chatbot personenbezogene Daten ein, also keine Namen, Matrik
 
 ## So nutzen Sie diese Seite
 
-Jede Workshop-Seite folgt demselben Aufbau: ein Problem aus dem Studienalltag, die Einordnung in das **4D-Framework** (Delegate, Describe, Discern, Diligence), der Prompt zum Kopieren, die Übung und ein kurzer Qualitätscheck. Das Kopiersymbol oben rechts an jedem grauen Prompt-Kasten legt den Text in Ihre Zwischenablage. Begriffe wie *Prompt*, *Halluzination* oder *RAG* erklärt die [Wissensbasis](appendix/wissensbasis.qmd); alle Prompts gesammelt stehen in der [Prompt-Bibliothek](appendix/prompt-bibliothek.qmd).
+Jede Workshop-Seite folgt demselben Aufbau: ein Problem aus dem Studienalltag, die Einordnung in das **4D-Framework** (Delegate, Describe, Discern, Diligence), der Prompt zum Kopieren, die Übung und ein kurzer Qualitätscheck. Das Kopiersymbol oben rechts an jedem grauen Prompt-Kasten legt den Text in Ihre Zwischenablage. Begriffe wie *Prompt*, *Halluzination* oder *RAG* erklärt die [Wissensbasis](appendix/wissensbasis.qmd); alle Prompts gesammelt stehen in der [Prompt-Bibliothek](appendix/prompt-bibliothek.qmd). Wie gut Sie die Grundbegriffe schon kennen, testen Sie mit dem [Lernspiel in der Wissensbasis](appendix/wissensbasis.qmd#sec-lernspiel).
