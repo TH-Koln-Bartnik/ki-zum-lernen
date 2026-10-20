@@ -14,7 +14,7 @@ subtitle: "Nachschlagewerk zu KI-Kompetenzen, Sprachmodellen, Prompts und Werkze
 - Verweise auf die Originalliteratur und auf die passenden Workshop-Stellen.
 :::
 
-Diese Seite ist absichtlich ein einziges, durchsuchbares Dokument. Sie wächst mit jedem Workshop. Stand: 20.10.2026.
+Diese Seite ist absichtlich ein einziges, durchsuchbares Dokument. Sie wächst mit jedem Workshop. Stand: 20.10.2026. Jeder Abschnitt endet mit Quellen zum Weiterlesen.
 
 ::: callout-tip
 ## Vertiefung
@@ -38,6 +38,10 @@ Eine ausführliche Einführung in die Funktionsweise von Sprachmodellen und eine
 | **Diligence** | Übernehme ich Verantwortung für das, was ich mit dem Ergebnis tue? | Ich rechne die Aufgaben selbst und verlasse mich nicht auf eine schöne Tabelle. |
 
 *Delegate* leitet sich vom lateinischen *delegare* ab, „abordnen, übertragen“; *Diligence* von *diligentia*, „Sorgfalt, Achtsamkeit“.
+
+::: weiterlesen
+**Zum Weiterlesen:** Das englische Original des Frameworks mit Kursmaterial [@dakan2025framework].
+:::
 
 ::: {.callout-note collapse="true"}
 ## Ausführlich: die vier Kompetenzen nach Dakan & Feller (2025)
@@ -164,19 +168,38 @@ Diligence bezeichnet den verantwortlichen Umgang mit KI, einschließlich ethisch
 Ein **Large Language Model** ist ein **statistischer Textgenerator**, der das jeweils nächstwahrscheinliche Wort vorhersagt, nicht mehr und nicht weniger. *Bild:* ein sehr gut geübter Autovervollständiger, der zu einem Satzanfang den passenden Folgetext rät. *Technisch:* ein tiefes neuronales Netz mit Transformer-Architektur, trainiert auf großen Textmengen.
 :::
 
+::: weiterlesen
+**Zum Weiterlesen:** Abschnitt [„Was heißt hier GPT?“](https://th-koln-bartnik.github.io/genai4teaching/kapitel02.html#sec-gpt-bedeutung){target="_blank"} im Grundlagenskript [@bartnik2026genai]; das frei verfügbare Standardlehrbuch zur Sprachverarbeitung [@jurafsky2025speech]; der Originalaufsatz zur Transformer-Architektur [@vaswani2017attention].
+:::
+
 ### Halluzination
 
 Weil ein Sprachmodell Wahrscheinlichkeiten berechnet und kein Konzept von „wahr“ hat, kann es überzeugend klingende, aber erfundene Angaben machen: eine Raumnummer, eine Prüfungsregel, eine Literaturquelle. Das nennt man **Halluzination** (von lateinisch *alucinari*, „gedankenlos daherreden, träumen“). Je spezieller und lokaler die Frage, desto größer die Gefahr. Ein späterer Workshop zeigt, wie man Halluzinationen provoziert und mit Quellenbindung eindämmt.
 
+
+::: weiterlesen
+**Zum Weiterlesen:** Abschnitt [„Wie denken Sprachmodelle und warum halluzinieren sie?“](https://th-koln-bartnik.github.io/genai4teaching/kapitel02.html#sec-hallucinations){target="_blank"} im Grundlagenskript [@bartnik2026genai]; ein bebilderter Blick ins Innere eines Sprachmodells [@lindsey2025biology].
+:::
+
 ### Reasoning vs. Instant
 
 **Instant-Modelle** antworten sofort; **Reasoning-Modelle** „denken“ vor der Antwort Zwischenschritte durch (*Chain-of-Thought*). Reasoning lohnt sich bei mehrschrittigen Aufgaben wie dem Klausur-Lernplan, dauert aber länger.
+
+
+::: weiterlesen
+**Zum Weiterlesen:** Abschnitt [„Was können die Modelle – und was nicht?“](https://th-koln-bartnik.github.io/genai4teaching/kapitel02.html#sec-capabilities){target="_blank"} im Grundlagenskript [@bartnik2026genai]; eine anschauliche Einführung in Reasoning-Modelle [@grootendorst2025reasoning]; die Vorstellung des ersten Reasoning-Modells durch OpenAI [@openai2024learning].
+:::
 
 ### Werkzeuge und Harness
 
 **Harness** heißt wörtlich „Geschirr“ oder „Gurtzeug“ und meint den **Werkzeugring** um das Sprachmodell: Websuche, Datei-Upload, Bilderkennung, Code-Ausführung, Gedächtnis. Die Qualität einer Antwort hängt oft stärker vom Harness ab als vom Modell allein [@grootendorst2025visual].
 
 ![Tool-Metapher: Ein Sprachmodell ohne Harness ist wie ein guter Handwerker ohne Werkzeugkasten.](../images/tool-metaphor-genai.jpg){fig-alt="Symbolbild mit einem Modell-Kern und einem Werkzeugkasten mit verschiedenen Funktionen" width="70%"}
+
+
+::: weiterlesen
+**Zum Weiterlesen:** Abschnitt [„Was nutzen – LLM, RAG oder Agent?“](https://th-koln-bartnik.github.io/genai4teaching/kapitel02.html#sec-patterns-usage){target="_blank"} im Grundlagenskript [@bartnik2026genai]; eine bebilderte Einführung in Agenten [@grootendorst2025visual]; ausführlich für Technikinteressierte [@huyen2025ai].
+:::
 
 ## Prompts bauen: das RTF-Schema {#sec-rtf}
 
@@ -192,6 +215,11 @@ Ein Prompt ist nie beim ersten Versuch fertig. Rechnen Sie mit zwei bis drei Run
 
 Wer weiterbauen will, findet im Prompt-Pattern-Katalog von @white2023prompt sechzehn erprobte Bauformen, etwa *Persona*, *Template* oder *Flipped Interaction* (die KI stellt Ihnen Fragen statt umgekehrt).
 
+
+::: weiterlesen
+**Zum Weiterlesen:** Abschnitte [„Zentrale Bausteine: Rolle, Aufgabe, Format und Beispiele“](https://th-koln-bartnik.github.io/genai4teaching/kapitel02.html#sec-prompt-components){target="_blank"} und [„Was die großen KI-Labore empfehlen“](https://th-koln-bartnik.github.io/genai4teaching/kapitel02.html#sec-lab-recommendations){target="_blank"} im Grundlagenskript [@bartnik2026genai]; die deutschsprachige Prompt-Anleitung von Google [@google2025strategien] und die von Anthropic [@anthropic2025prompting]; eine Studie, warum es keine Zauberformel für Prompts gibt [@meincke2025prompting].
+:::
+
 ## Werkzeuge im Studium {#sec-tools}
 
 | Werkzeug | Stärke | Vorsicht |
@@ -201,3 +229,7 @@ Wer weiterbauen will, findet im Prompt-Pattern-Katalog von @white2023prompt sech
 | **NotebookLM** | antwortet nur auf Basis Ihrer hochgeladenen Dokumente, mit Quellenverweisen | nur so gut wie die Dokumente, die Sie hochladen |
 
 Faustregel: Vertrauliche oder personenbezogene Daten gehören in kein kostenloses KI-Werkzeug.
+
+::: weiterlesen
+**Zum Weiterlesen:** Abschnitte [„Wo sprechen? Verschiedene Zugänge zu Sprachmodellen“](https://th-koln-bartnik.github.io/genai4teaching/kapitel02.html#sec-access-modes){target="_blank"} und [„Welches Modell wählen?“](https://th-koln-bartnik.github.io/genai4teaching/kapitel02.html#sec-model-choice){target="_blank"} im Grundlagenskript [@bartnik2026genai]; ein regelmäßig aktualisierter Wegweiser durch die großen KI-Werkzeuge [@mollick2026guide]; zum THKI Chat die Seite [THKI Chat in fünf Minuten](../parts/00-thki-chat.qmd) und die Handreichung der TH Köln [@thkoeln2025thkichat].
+:::
