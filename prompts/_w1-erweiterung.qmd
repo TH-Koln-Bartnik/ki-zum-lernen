@@ -1,0 +1,3 @@
+```text
+Der Plan passt! Wandle mir diese 10 Lerntage nun bitte ab dem [Startdatum] jeweils von 09:00 bis 12:00 Uhr in einen importierbaren .ics-Codeblock für meinen Kalender um (Zeitzone Europe/Berlin).
+```

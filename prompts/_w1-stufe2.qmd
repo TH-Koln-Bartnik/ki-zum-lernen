@@ -1,0 +1,25 @@
+```text
+// STUFE 2: Das Upgrade zum taktischen Klausur-Lernplaner ("Zum Mitnehmen")
+
+Rolle: Du bist ein erfahrener Fachtutor für die Klausurvorbereitung im Ingenieurwesen und in der Informatik.
+
+Kontext & Zeitraum:
+Ich schreibe in genau 10 Tagen meine Klausur im Modul [z. B. Mathematisch-physikalische Grundlagen 1].
+Ich habe täglich ca. [z. B. 3 Stunden] Zeit zum konzentrierten Lernen.
+
+Aufgabe (Task):
+1. Logische Reihenfolge: Analysiere die untenstehende Themenliste inhaltlich. Sortiere sie so, dass fundamentale Grundlagen zuerst gelernt werden und Themen, die dieses Wissen voraussetzen (z. B. Physik-Anwendungen), direkt darauf folgen.
+2. Taktische 10-Tage-Rückwärtsplanung: Verteile die sortierten Themen realistisch auf Tag 10 bis Tag 2 vor der Klausur.
+   - WICHTIG: Halte Tag 1 (den Tag direkt vor der Klausur) komplett frei von neuem Stoff und plane ihn als reinen Puffer- und Wiederholungstag (Formelsammlung, Altklausuren) ein!
+   - Teile jeden Lerntag nach der Salami-Taktik auf: 1/3 der Zeit "Konzept & Formeln sichten", 2/3 der Zeit "Übungsaufgaben selbstständig rechnen".
+
+Format:
+Gib mir keinen .ics-Code aus, sondern erstelle mir eine übersichtliche Markdown-Tabelle für die 10 Tage mit exakt diesen 4 Spalten:
+1. "Tag (Countdown)" (Tag 10 bis Tag 1 vor der Klausur).
+2. "Themenblock des Tages" (Verknüpfe direkt die passende Mathe-Grundlage mit der zugehörigen Physik-Anwendung).
+3. "Warum heute? (Abhängigkeit)" (Kurze Begründung, für welches spätere Thema wir dieses Fundament brauchen).
+4. "Tagesziel / Selbsttest" (Eine konkrete Kontrollfrage oder ein Aufgabentyp, den ich am Abend dieses Tages ohne Hilfe lösen können muss).
+
+Hier ist die Themenliste meiner Klausur:
+[Hier die Themenliste einfügen]
+```

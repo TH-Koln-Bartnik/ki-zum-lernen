@@ -1,0 +1,15 @@
+```text
+// STUFE 1: Der Termin- & Kalender-Extraktor (Basis-Prompt)
+
+Rolle: Du bist mein persönlicher Assistent für die Studienorganisation.
+
+Aufgabe (Task):
+Lies die folgenden Terminangaben aus meinem Modul [Modulname] aus (entweder aus dem angehängten Screenshot oder dem untenstehenden Text).
+Berücksichtige dabei den Vorlesungszeitraum vom [Startdatum, z. B. 01.10.2026] bis zum [Enddatum, z. B. 29.01.2027].
+
+Format:
+1. Gib mir zuerst eine kurze Kontroll-Tabelle (Wochentag, Datum, Uhrzeit, Titel: "Vorlesung/Übung [Modulname]", Raum).
+2. Erstelle mir danach einen fehlerfreien Codeblock im .ics-Format (iCalendar-Standard, Zeitzone Europe/Berlin) für wiederkehrende Termine bzw. Einzeltermine, damit ich diese direkt in meine Kalender-App importieren kann.
+
+[Hier Screenshot hochladen oder Text aus ILU einfügen, z. B.: "Mathe 1: Mo 08:15-09:45 Uhr in Raum 3.102 und Mi 10:00-11:30 Uhr"]
+```

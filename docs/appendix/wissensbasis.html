@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Wissensbasis – KI zum Lernen</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../appendix/troubleshooting.html" rel="next">
+<link href="../appendix/prompt-bibliothek.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-eab5120e28f243740b049f43f5ae21c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendix/prompt-bibliothek.html">Anhang</a></li><li class="breadcrumb-item"><a href="../appendix/wissensbasis.html"><span class="chapter-title">Wissensbasis</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/th-koeln-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">KI zum Lernen</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/r0m0n/ai-4-learning" title="Quellcode" class="quarto-navigation-tool px-1" aria-label="Quellcode"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Suchen"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">KI zum Lernen — verstehen und sinnvoll nutzen</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Mi, 21.10. — Organisieren</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../parts/01-organisieren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Workshop 1 — Organisieren mit KI</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Mi, 28.10. — Kommunizieren</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../parts/02-kommunizieren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Workshop 2 — Kommunizieren mit KI</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Mi, 04.11. — Lernen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../parts/03-lernen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Workshop 3 — KI als Lernunterstützung</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Mi, 11.11. — Präsentieren</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../parts/04-praesentieren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Workshop 4 — Präsentieren mit KI</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Anhang</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendix/prompt-bibliothek.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Prompt-Bibliothek</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendix/wissensbasis.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Wissensbasis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendix/troubleshooting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Troubleshooting</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literatur</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhalt</h2>
+   
+  <ul>
+  <li><a href="#sec-4d" id="toc-sec-4d" class="nav-link active" data-scroll-target="#sec-4d">Das 4D-Framework</a></li>
+  <li><a href="#sec-llm" id="toc-sec-llm" class="nav-link" data-scroll-target="#sec-llm">Sprachmodelle — die Grundbegriffe</a>
+  <ul class="collapse">
+  <li><a href="#halluzination" id="toc-halluzination" class="nav-link" data-scroll-target="#halluzination">Halluzination</a></li>
+  <li><a href="#reasoning-vs.-instant" id="toc-reasoning-vs.-instant" class="nav-link" data-scroll-target="#reasoning-vs.-instant">Reasoning vs.&nbsp;Instant</a></li>
+  <li><a href="#werkzeuge-und-harness" id="toc-werkzeuge-und-harness" class="nav-link" data-scroll-target="#werkzeuge-und-harness">Werkzeuge und Harness</a></li>
+  </ul></li>
+  <li><a href="#sec-rtf" id="toc-sec-rtf" class="nav-link" data-scroll-target="#sec-rtf">Prompts bauen: das RTF-Schema</a></li>
+  <li><a href="#sec-tools" id="toc-sec-tools" class="nav-link" data-scroll-target="#sec-tools">Werkzeuge im Studium</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/r0m0n/ai-4-learning/edit/main/appendix/wissensbasis.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/r0m0n/ai-4-learning/issues/new" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendix/prompt-bibliothek.html">Anhang</a></li><li class="breadcrumb-item"><a href="../appendix/wissensbasis.html"><span class="chapter-title">Wissensbasis</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Wissensbasis</span></h1>
+<p class="subtitle lead">Nachschlagewerk zu KI-Kompetenzen, Sprachmodellen, Prompts und Werkzeugen</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="th-color-bar">
+
+</div>
+<section id="was-sie-in-dieser-wissensbasis-finden" class="level4 lernziel-box">
+<h4 class="anchored" data-anchor-id="was-sie-in-dieser-wissensbasis-finden">Was Sie in dieser Wissensbasis finden</h4>
+<ul>
+<li>Kompakte Nachschlage-Abschnitte zu allen Grundbegriffen der vier Workshops,</li>
+<li>eine Alltagserklärung jedes Fachbegriffs <strong>vor</strong> dem technischen Detail,</li>
+<li>Verweise auf die Originalliteratur und auf die passenden Workshop-Stellen.</li>
+</ul>
+</section>
+<p>Diese Seite ist absichtlich ein einziges, durchsuchbares Dokument. Sie wächst mit jedem Workshop. Stand: 20.10.2026.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vertiefung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Eine ausführliche Einführung in die Funktionsweise von Sprachmodellen und eine kommentierte Prompt-Sammlung finden Sie im Skript <a href="https://th-koln-bartnik.github.io/genai4teaching/" target="_blank"><em>GenAI in der Lehre</em></a>, insbesondere in <a href="https://th-koln-bartnik.github.io/genai4teaching/kapitel02.html" target="_blank">Kapitel 2</a> und der <a href="https://th-koln-bartnik.github.io/genai4teaching/kapitel07-appendix02-prompt-sammlung.html" target="_blank">Prompt-Beispiele-Sammlung</a>.</p>
+</div>
+</div>
+<section id="sec-4d" class="level2">
+<h2 class="anchored" data-anchor-id="sec-4d">Das 4D-Framework</h2>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Was ist AI Fluency?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>AI Fluency</strong> ist die Fähigkeit, <strong>effektiv</strong>, <strong>effizient</strong>, <strong>ethisch</strong> und <strong>sicher</strong> mit KI zu arbeiten <span class="citation" data-cites="dakan2025framework">(<a href="../references.html#ref-dakan2025framework" role="doc-biblioref">Dakan &amp; Feller, 2025</a>)</span>. <em>Bild:</em> So wie man beim Autofahren nicht nur lenken, sondern auch Verkehrsregeln kennen, Gefahren einschätzen und für Schäden haften muss, braucht der Umgang mit KI mehr als gutes Prompten. Das Framework fasst das in vier Kompetenzen, den <em>4 Ds</em>.</p>
+</div>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kompetenz</th>
+<th>Leitfrage</th>
+<th>Beispiel aus Workshop 1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Delegate</strong></td>
+<td>Was soll die KI tun, was mache ich selbst, und mit welchem Werkzeug?</td>
+<td>Die KI übersetzt Termine in Kalender-Code; ich gebe den Semesterzeitraum vor.</td>
+</tr>
+<tr class="even">
+<td><strong>Describe</strong></td>
+<td>Wie beschreibe ich die Aufgabe so, dass ein brauchbares Ergebnis entsteht?</td>
+<td>Prompt nach Rolle, Aufgabe und Format (RTF-Schema).</td>
+</tr>
+<tr class="odd">
+<td><strong>Discern</strong></td>
+<td>Ist das Ergebnis richtig, vollständig und brauchbar?</td>
+<td>Stimmen Uhrzeiten und Räume nach dem Import?</td>
+</tr>
+<tr class="even">
+<td><strong>Diligence</strong></td>
+<td>Übernehme ich Verantwortung für das, was ich mit dem Ergebnis tue?</td>
+<td>Ich rechne die Aufgaben selbst und verlasse mich nicht auf eine schöne Tabelle.</td>
+</tr>
+</tbody>
+</table>
+<p><em>Delegate</em> leitet sich vom lateinischen <em>delegare</em> ab, „abordnen, übertragen“; <em>Diligence</em> von <em>diligentia</em>, „Sorgfalt, Achtsamkeit“.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ausführlich: die vier Kompetenzen nach Dakan &amp; Feller (2025)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Die folgenden Definitionen sind aus dem englischen Original übersetzt <span class="citation" data-cites="dakan2025framework">(<a href="../references.html#ref-dakan2025framework" role="doc-biblioref">Dakan &amp; Feller, 2025</a>)</span>. Lizenz des Originals: CC BY-NC-ND 4.0.</p>
+<section id="drei-modalitäten-der-mensch-ki-interaktion" class="level4">
+<h4 class="anchored" data-anchor-id="drei-modalitäten-der-mensch-ki-interaktion">Drei Modalitäten der Mensch-KI-Interaktion</h4>
+<p><strong>Modalität 1 — Automation (KI führt eine vom Menschen definierte Aufgabe aus).</strong> KI erledigt Aufgaben eigenständig, aber auf der Grundlage direkter menschlicher Anweisungen (etwa als Antwort auf einen Prompt). Besonders geeignet für repetitive, zeitintensive oder datenintensive Aufgaben. Erfordert klare Aufgabendefinition und Qualitätskontrolle. Beispiele: E-Mails, Zusammenfassungen, Social-Media-Posts, einfaches Coding.</p>
+<p><strong>Modalität 2 — Augmentation (KI und Mensch erledigen die Aufgabe gemeinsam).</strong> KI und Mensch definieren und führen Aufgaben iterativ gemeinsam aus und arbeiten kollaborativ auf ein Endziel hin. Schwerpunkt liegt auf der Stärkung menschlicher Kreativität durch einen KI-Denkpartner, nicht auf Ersetzung. Beispiele: Geschichten und Essays schreiben, Forschungsarbeiten, komplexes Coding.</p>
+<p><strong>Modalität 3 — Agency (Mensch konfiguriert KI für eigenständige zukünftige Tätigkeiten).</strong> Der Mensch konfiguriert die KI, damit sie zukünftige Aufgaben — auch für andere Nutzer:innen — selbstständig erledigt. Diese Modalität definiert nicht eine konkrete Aufgabe, sondern Eigenschaften und Verhalten einer KI. Erfordert ein tiefes Verständnis von Fähigkeiten und Grenzen. Beispiele: interaktive Spielcharaktere, Tutoren, Chatbots.</p>
+<p>Mensch-KI-Interaktionen überbrücken häufig mehrere Modalitäten gleichzeitig; in der Praxis wechseln Anwendende selbst innerhalb eines Projekts zwischen ihnen.</p>
+</section>
+<section id="delegation-schaffende-vision-und-auswahl-der-richtigen-ki-werkzeuge" class="level4">
+<h4 class="anchored" data-anchor-id="delegation-schaffende-vision-und-auswahl-der-richtigen-ki-werkzeuge">Delegation — Schaffende Vision und Auswahl der richtigen KI-Werkzeuge</h4>
+<p>Delegation bezeichnet die Fähigkeit zu erkennen, <em>wann</em> und <em>wie</em> KI-Werkzeuge und -Modalitäten in kreativen und problemlösenden Prozessen wirksam eingesetzt werden. Sie umfasst das Verständnis der Möglichkeiten und Grenzen verschiedener KI-Technologien und das informierte Entscheiden, wann KI für Automation, Augmentation oder Agency genutzt wird.</p>
+<p><strong>Ziel- und Aufgabenbewusstsein (Goal and Task Awareness).</strong></p>
+<ul>
+<li>Eine wirksame Zielvorstellung für ein Projekt entwerfen.</li>
+<li>Die Natur und die Anforderungen der Aufgabe(n) auf dem Weg zum definierten Ziel verstehen.</li>
+<li>Eine Aufgabe in KI-, Mensch- und kollaborative Anteile analysieren und zerlegen können.</li>
+<li>Voraussetzung für die effektive Integration von KI in kreative Arbeitsabläufe.</li>
+</ul>
+<p><strong>Plattformbewusstsein (Platform Awareness).</strong></p>
+<ul>
+<li>Möglichkeiten und Grenzen aktueller KI-Werkzeuge kennen.</li>
+<li>Verschiedene KI-Plattformen und ihre spezifischen Stärken und Grenzen mit Blick auf das Projektziel kennen.</li>
+<li>KI-Werkzeuge nach Projektanforderungen, Budget, operativen und regulatorischen Bedürfnissen bewerten können.</li>
+<li>Voraussetzung für die Auswahl der optimalen KI-Werkzeuge für spezifische Aufgaben.</li>
+</ul>
+<p><strong>Aufgabendelegation (Task Delegation).</strong></p>
+<ul>
+<li>KI- und menschliche Fähigkeiten so ausbalancieren, dass die kreative Vision optimal umgesetzt wird.</li>
+<li>Die Eigenschaften der drei Modalitäten (Automation, Augmentation, Agency) verstehen.</li>
+<li>Projektaufgaben optimal an Mensch und KI-Werkzeuge vergeben können.</li>
+<li>Voraussetzung für die erfolgreiche Zusammenarbeit zwischen Mensch und KI in kreativen Prozessen.</li>
+</ul>
+</section>
+<section id="description-vision-und-aufgaben-so-beschreiben-dass-nützliche-ki-verhaltensweisen-entstehen" class="level4">
+<h4 class="anchored" data-anchor-id="description-vision-und-aufgaben-so-beschreiben-dass-nützliche-ki-verhaltensweisen-entstehen">Description — Vision und Aufgaben so beschreiben, dass nützliche KI-Verhaltensweisen entstehen</h4>
+<p>Description umfasst die Fähigkeiten, Ideen, Anforderungen, Constraints und andere Aspekte kreativer Vorstellungen wirksam an KI-Systeme zu kommunizieren. Sie beinhaltet das Verfassen klarer, präziser und gut strukturierter Prompts (mit einem breiten Repertoire an Prompting-Techniken) und weiterer Elemente, die KI-Werkzeuge zu gewünschten Verhaltensweisen und Ergebnissen führen.</p>
+<p><strong>Produktbeschreibung (Product Description).</strong></p>
+<ul>
+<li>Prompten, um das gewünschte Ergebnis zu definieren.</li>
+<li>Gewünschte Eigenschaften, Merkmale und Qualitäten des finalen KI-generierten Outputs klar artikulieren können.</li>
+<li>Eine kreative Vision in explizite, KI-verständliche Begriffe übersetzen können.</li>
+<li>Zentral, um KI-Werkzeuge zu Ergebnissen zu führen, die mit den Absichten der Schaffenden übereinstimmen.</li>
+</ul>
+<p><strong>Prozessbeschreibung (Process Description).</strong></p>
+<ul>
+<li>Dialogisches Prompten für effektive iterative Zusammenarbeit.</li>
+<li>In einen dynamischen Hin-und-Her-Austausch mit KI-Werkzeugen treten können.</li>
+<li>Komplexe Aufgaben in eine Reihe kleinerer, handhabbarer Prompts zerlegen können.</li>
+<li>Wesentlich, um KI durch mehrstufige kreative Prozesse zu führen, im Einklang mit den menschlichen Mitwirkenden.</li>
+</ul>
+<p><strong>Verhaltensbeschreibung (Performance Description).</strong></p>
+<ul>
+<li>Anweisendes Prompten, das zukünftige KI-Verhaltensweisen festlegt und ein positives Nutzungserlebnis ermöglicht.</li>
+<li>Definieren können, wie KI-erzeugte Inhalte oder Systeme sich verhalten oder mit der Welt interagieren sollen.</li>
+<li>Nutzungsbedürfnisse antizipieren und in Leitlinien für KI-Verhalten übersetzen können.</li>
+<li>Entscheidend, um zukünftige agentische KI-Verhaltensweisen zu ermöglichen, die mit Werten und Vorstellungen des Menschen übereinstimmen.</li>
+</ul>
+</section>
+<section id="discernment-treffende-beurteilung-des-nutzens-von-ki-ergebnissen" class="level4">
+<h4 class="anchored" data-anchor-id="discernment-treffende-beurteilung-des-nutzens-von-ki-ergebnissen">Discernment — Treffende Beurteilung des Nutzens von KI-Ergebnissen</h4>
+<p>Discernment umfasst die kritische Beurteilung KI-generierter Outputs hinsichtlich Qualität, Relevanz, möglicher Verzerrungen und weiterer wesentlicher Merkmale. Dazu gehört auch die Fähigkeit, den Kollaborationsprozess mit KI-Werkzeugen zu iterieren und zu verfeinern.</p>
+<p><strong>Produkt-Beurteilung (Product Discernment).</strong></p>
+<ul>
+<li>Output-Qualität bewerten und Verbesserungsmöglichkeiten identifizieren.</li>
+<li>Qualität, Relevanz und Wirksamkeit KI-generierter Inhalte kritisch beurteilen können.</li>
+<li>Stärken und Schwächen in KI-Outputs erkennen können.</li>
+<li>Zentral für das Aufrechterhalten hoher Standards in KI-gestützter kreativer Arbeit.</li>
+</ul>
+<p><strong>Prozess-Beurteilung (Process Discernment).</strong></p>
+<ul>
+<li>Beurteilen, ob die Mensch-KI-Zusammenarbeit produktiv ist und wie sie verbessert werden kann.</li>
+<li>Die Wirksamkeit des Mensch-KI-Kooperationsprozesses evaluieren können.</li>
+<li>Erkennen, welche Aspekte der Mensch-KI-Interaktion am hilfreichsten sind und wo Verbesserungen möglich sind.</li>
+<li>Wesentlich für die Optimierung des KI-Einsatzes in kollaborativer kreativer Arbeit.</li>
+</ul>
+<p><strong>Verhaltens-Beurteilung (Performance Discernment).</strong></p>
+<ul>
+<li>Beurteilen, ob eigenständige KI-Verhaltensweisen ein positives Nutzungserlebnis ermöglichen, und wie die KI besser angeleitet werden kann.</li>
+<li>Die Wirksamkeit von KI-Systemen in unabhängigen, nutzerorientierten Szenarien beurteilen können.</li>
+<li>Nutzerfeedback erheben und interpretieren, um beabsichtigte KI-Verhaltensweisen und Erlebnisse zu verfeinern und sicherzustellen.</li>
+<li>Wesentlich für die Gestaltung von Nutzungserlebnissen, die mit den Werten und der Vision des Projekts übereinstimmen.</li>
+</ul>
+</section>
+<section id="diligence-verantwortung-übernehmen-und-für-ki-gestützte-endprodukte-einstehen" class="level4">
+<h4 class="anchored" data-anchor-id="diligence-verantwortung-übernehmen-und-für-ki-gestützte-endprodukte-einstehen">Diligence — Verantwortung übernehmen und für KI-gestützte Endprodukte einstehen</h4>
+<p>Diligence bezeichnet den verantwortlichen Umgang mit KI, einschließlich ethischer Überlegungen, Transparenz über den KI-Einsatz und die Übernahme von Verantwortung für die mit KI-Unterstützung erstellten Endprodukte.</p>
+<p><strong>Creation Diligence — verantwortlicher Umgang während der Erzeugung.</strong></p>
+<ul>
+<li>Verantwortungsvoller Umgang mit KI-Tools unter Einhaltung ethischer und rechtlicher Best Practices sowie Bewusstsein für Verzerrungen, Mängel, Auswirkungen auf Interessengruppen und andere externe Effekte.</li>
+<li>Verständnis und Anwendung ethischer Grundsätze während des gesamten KI-gestützten kreativen Prozesses.</li>
+<li>Fähigkeit, potenzielle Verzerrungen und ethische Risiken in KI-generierten Inhalten zu erkennen und zu mindern.</li>
+<li>Ziel: Gewährleistung eines verantwortungsvollen und sozialbewussten Einsatzes von KI.</li>
+</ul>
+<p><strong>Transparency Diligence — Offenlegung gegenüber Stakeholdern.</strong></p>
+<ul>
+<li>Transparenz und Verantwortlichkeit bei der Verbreitung des Endprodukts.</li>
+<li>Verständnis für die Erwartungen und Normen des Publikums, der Branche und der Rechtsordnung in Bezug auf KI-generierte Inhalte.</li>
+<li>Fähigkeit, die Art der KI-Beteiligung am Prozess klar zu kommunizieren.</li>
+<li>Ziel: Wahrung von Vertrauen und Integrität bei der Verbreitung KI-gestützter Arbeiten.</li>
+</ul>
+<p><strong>Deployment Diligence — Verantwortung für Verifikation und Veröffentlichung.</strong></p>
+<ul>
+<li>Verantwortung für die Verifikation von und das Einstehen für KI-gestützte Outputs übernehmen, einschließlich gründlicher Faktenprüfung, Test auf Korrektheit und Validierung von Aussagen.</li>
+<li>Angemessene Sicherheitsprüfungen und Testverfahren vor der Freigabe KI-gestützter Arbeit umsetzen.</li>
+<li>Verstehen, managen und Verantwortung übernehmen für potenzielle Risiken und Auswirkungen veröffentlichter KI-gestützter Inhalte oder Agenten.</li>
+<li>Ziel: Sicherstellung von Qualität, Sicherheit und Verlässlichkeit von Inhalten und Agenten, die durch Mensch-KI-Interaktion entstanden sind.</li>
+</ul>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-llm" class="level2">
+<h2 class="anchored" data-anchor-id="sec-llm">Sprachmodelle — die Grundbegriffe</h2>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Was ist ein LLM?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ein <strong>Large Language Model</strong> ist ein <strong>statistischer Textgenerator</strong>, der das jeweils nächstwahrscheinliche Wort vorhersagt, nicht mehr und nicht weniger. <em>Bild:</em> ein sehr gut geübter Autovervollständiger, der zu einem Satzanfang den passenden Folgetext rät. <em>Technisch:</em> ein tiefes neuronales Netz mit Transformer-Architektur, trainiert auf großen Textmengen.</p>
+</div>
+</div>
+<section id="halluzination" class="level3">
+<h3 class="anchored" data-anchor-id="halluzination">Halluzination</h3>
+<p>Weil ein Sprachmodell Wahrscheinlichkeiten berechnet und kein Konzept von „wahr“ hat, kann es überzeugend klingende, aber erfundene Angaben machen: eine Raumnummer, eine Prüfungsregel, eine Literaturquelle. Das nennt man <strong>Halluzination</strong> (von lateinisch <em>alucinari</em>, „gedankenlos daherreden, träumen“). Je spezieller und lokaler die Frage, desto größer die Gefahr. Workshop 2 zeigt, wie man Halluzinationen provoziert und mit Quellenbindung eindämmt.</p>
+</section>
+<section id="reasoning-vs.-instant" class="level3">
+<h3 class="anchored" data-anchor-id="reasoning-vs.-instant">Reasoning vs.&nbsp;Instant</h3>
+<p><strong>Instant-Modelle</strong> antworten sofort; <strong>Reasoning-Modelle</strong> „denken“ vor der Antwort Zwischenschritte durch (<em>Chain-of-Thought</em>). Reasoning lohnt sich bei mehrschrittigen Aufgaben wie dem Klausur-Lernplan, dauert aber länger.</p>
+</section>
+<section id="werkzeuge-und-harness" class="level3">
+<h3 class="anchored" data-anchor-id="werkzeuge-und-harness">Werkzeuge und Harness</h3>
+<p><strong>Harness</strong> heißt wörtlich „Geschirr“ oder „Gurtzeug“ und meint den <strong>Werkzeugring</strong> um das Sprachmodell: Websuche, Datei-Upload, Bilderkennung, Code-Ausführung, Gedächtnis. Die Qualität einer Antwort hängt oft stärker vom Harness ab als vom Modell allein <span class="citation" data-cites="grootendorst2025visual">(<a href="../references.html#ref-grootendorst2025visual" role="doc-biblioref">Grootendorst, 2025</a>)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/tool-metaphor-genai.jpg" class="img-fluid figure-img" style="width:70.0%" alt="Symbolbild mit einem Modell-Kern und einem Werkzeugkasten mit verschiedenen Funktionen"></p>
+<figcaption>Tool-Metapher: Ein Sprachmodell ohne Harness ist wie ein guter Handwerker ohne Werkzeugkasten.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-rtf" class="level2">
+<h2 class="anchored" data-anchor-id="sec-rtf">Prompts bauen: das RTF-Schema</h2>
+<p>Ein <strong>Prompt</strong> (englisch für „Aufforderung, Stichwort“, vom lateinischen <em>promptus</em>, „bereit, zur Hand“) ist die Anweisung, die Sie der KI geben. Das einfachste tragfähige Gerüst hat drei Teile:</p>
+<ul>
+<li><strong>Role</strong> — Wer soll die KI sein? <em>„Du bist ein erfahrener Fachtutor für Ingenieurwesen.“</em></li>
+<li><strong>Task</strong> — Was genau soll sie tun? <em>„Sortiere die Themen nach fachlichen Abhängigkeiten.“</em></li>
+<li><strong>Format</strong> — Wie soll das Ergebnis aussehen? <em>„Als Tabelle mit vier Spalten.“</em></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/describe-RTF-schema.jpg" class="img-fluid figure-img" style="width:85.0%" alt="Infografik mit den Bausteinen Rolle, Aufgabe und Format"></p>
+<figcaption>RTF-Schema mit zwei Beispielen.</figcaption>
+</figure>
+</div>
+<p>Ein Prompt ist nie beim ersten Versuch fertig. Rechnen Sie mit zwei bis drei Runden, in denen Sie nachschärfen: Was hat gefehlt, was war zu viel?</p>
+<p>Wer weiterbauen will, findet im Prompt-Pattern-Katalog von <span class="citation" data-cites="white2023prompt">White et al. (<a href="../references.html#ref-white2023prompt" role="doc-biblioref">2023</a>)</span> sechzehn erprobte Bauformen, etwa <em>Persona</em>, <em>Template</em> oder <em>Flipped Interaction</em> (die KI stellt Ihnen Fragen statt umgekehrt).</p>
+</section>
+<section id="sec-tools" class="level2">
+<h2 class="anchored" data-anchor-id="sec-tools">Werkzeuge im Studium</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Werkzeug</th>
+<th>Stärke</th>
+<th>Vorsicht</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>THKI Lab</strong></td>
+<td>kostenlos, Anmeldung mit campusID, datenschutzfreundlich <span class="citation" data-cites="thkoeln2025thkichat">(<a href="../references.html#ref-thkoeln2025thkichat" role="doc-biblioref">TH Köln, 2025</a>)</span></td>
+<td>keine personenbezogenen Daten und keine urheberrechtlich geschützten Texte hochladen</td>
+</tr>
+<tr class="even">
+<td><strong>ChatGPT, Claude, Gemini</strong> (Free)</td>
+<td>Allrounder für Text, Code, Logik; meist mit Bild-Upload</td>
+<td>Wissen stammt aus dem Training; bei Spezialwissen Halluzinationsgefahr</td>
+</tr>
+<tr class="odd">
+<td><strong>NotebookLM</strong></td>
+<td>antwortet nur auf Basis Ihrer hochgeladenen Dokumente, mit Quellenverweisen</td>
+<td>nur so gut wie die Dokumente, die Sie hochladen</td>
+</tr>
+</tbody>
+</table>
+<p>Faustregel: Vertrauliche oder personenbezogene Daten gehören in kein kostenloses KI-Werkzeug.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-dakan2025framework" class="csl-entry" role="listitem">
+Dakan, R., &amp; Feller, J. (2025). <em>Framework for <span>AI</span> Fluency: Practical Overview Document</em>. <a href="https://ringling.libguides.com/ai/framework">https://ringling.libguides.com/ai/framework</a>
+</div>
+<div id="ref-grootendorst2025visual" class="csl-entry" role="listitem">
+Grootendorst, M. (2025). <em>A Visual Guide to <span>LLM</span> Agents</em>. <a href="https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents">https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents</a>
+</div>
+<div id="ref-thkoeln2025thkichat" class="csl-entry" role="listitem">
+TH Köln. (2025). <em><span>THKI</span> Chat – Handreichung für Studierende (v07)</em>. <a href="https://lehrpfade.th-koeln.de/wp-content/uploads/2025/09/THKI_Chat_Handreichung_Studierende_v07.pdf">https://lehrpfade.th-koeln.de/wp-content/uploads/2025/09/THKI_Chat_Handreichung_Studierende_v07.pdf</a>
+</div>
+<div id="ref-white2023prompt" class="csl-entry" role="listitem">
+White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar, A., Spencer-Smith, J., &amp; Schmidt, D. C. (2023). <em>A Prompt Pattern Catalog to Enhance Prompt Engineering with <span>ChatGPT</span></em>. <a href="https://arxiv.org/abs/2302.11382">https://arxiv.org/abs/2302.11382</a>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../appendix/prompt-bibliothek.html" class="pagination-link" aria-label="Prompt-Bibliothek">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Prompt-Bibliothek</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../appendix/troubleshooting.html" class="pagination-link" aria-label="Troubleshooting">
+        <span class="nav-page-text"><span class="chapter-title">Troubleshooting</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Prof.&nbsp;Dr.&nbsp;Roman Bartnik · TH Köln · CC BY-NC-SA 4.0</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/r0m0n/ai-4-learning/edit/main/appendix/wissensbasis.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/r0m0n/ai-4-learning/issues/new" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Erstellt mit <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

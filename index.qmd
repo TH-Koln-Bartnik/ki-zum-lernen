@@ -1,0 +1,40 @@
+---
+title: "KI zum Lernen — verstehen und sinnvoll nutzen"
+subtitle: "Vier Kurz-Workshops à 30 Minuten für alle Studierenden am Campus Gummersbach"
+---
+
+::: th-color-bar
+:::
+
+Wie holt man im Studium das Beste aus ChatGPT, Claude, Gemini oder dem hochschuleigenen {{< var thki >}} heraus, ohne in die Copy-Paste-Falle zu tappen? Jeder Workshop zeigt in 30 Minuten eine konkrete Aufgabe aus dem Studienalltag, ein Prompt wird live ausprobiert, und am Ende nehmen Sie ein fertiges Werkzeug mit. Auf dieser Seite finden Sie alle Prompts zum Kopieren, die Übungsmaterialien und eine Wissensbasis zum Nachschlagen.
+
+## Termine
+
+Alle Termine finden mittwochs von {{< var zeit >}} in {{< var raum >}} statt.
+
+| Datum | Workshop | Was Sie mitnehmen |
+|---|---|---|
+| 21.10.2026 | [Organisieren mit KI](parts/01-organisieren.qmd) | Stundenplan als Kalenderdatei, 10-Tage-Klausurplan |
+| 28.10.2026 | [Kommunizieren mit KI](parts/02-kommunizieren.qmd) | Sokratischer Tutor-Prompt mit Halluzinationsschutz |
+| 04.11.2026 | [KI als Lernunterstützung](parts/03-lernen.qmd) | Folien-Entschlüsseler und Lernblatt-Prompt |
+| 11.11.2026 | [Präsentieren mit KI](parts/04-praesentieren.qmd) | Folien-Redakteur und Prüfungs-Simulator |
+
+Die Workshops bauen lose aufeinander auf, jeder funktioniert aber auch allein.
+
+## Was Sie brauchen
+
+Ein Laptop oder Smartphone genügt. Für alle Übungen reicht ein kostenloser Zugang zu einem der folgenden Werkzeuge:
+
+- **{{< var thki >}}** — der kostenlose Zugang der TH Köln zu verschiedenen Sprachmodellen. Sie melden sich mit Ihrer campusID an und brauchen keinen privaten Account [@thkoeln2025thkichat].
+- **ChatGPT, Claude oder Gemini** in der kostenlosen Version, falls Sie bereits einen Account haben.
+- **NotebookLM** von Google für die Workshops 2 und 3, wenn Sie Fragen nur auf Basis eigener Skripte beantworten lassen wollen.
+
+::: callout-warning
+## Datenschutz in zwei Sätzen
+
+Geben Sie in keinen Chatbot personenbezogene Daten ein, also keine Namen, Matrikelnummern oder Noten von sich oder anderen. Laden Sie in den {{< var thki >}} auch keine urheberrechtlich geschützten Texte hoch, etwa eingescannte Buchkapitel [@thkoeln2025thkichat].
+:::
+
+## So nutzen Sie diese Seite
+
+Jede Workshop-Seite folgt demselben Aufbau: ein Problem aus dem Studienalltag, die Einordnung in das **4D-Framework** (Delegate, Describe, Discern, Diligence), der Prompt zum Kopieren, die Übung und ein kurzer Qualitätscheck. Das Kopiersymbol oben rechts an jedem grauen Prompt-Kasten legt den Text in Ihre Zwischenablage. Begriffe wie *Prompt*, *Halluzination* oder *RAG* erklärt die [Wissensbasis](appendix/wissensbasis.qmd); alle Prompts gesammelt stehen in der [Prompt-Bibliothek](appendix/prompt-bibliothek.qmd).

@@ -1,0 +1,22 @@
+---
+title: "Workshop 3 — KI als Lernunterstützung"
+subtitle: "Mittwoch, 04.11.2026 · 13:00–13:30 Uhr · Raum 3.102"
+---
+
+::: th-color-bar
+:::
+
+::: lernziel-box
+#### Was Sie nach diesem Workshop können
+
+- Multimodale Sprachmodelle (mit Bilderkennung) und quellengebundene Systeme (NotebookLM) gezielt für Folien oder lange Fachtexte auswählen (*Delegate*),
+- komplexe Vorlesungsfolien (Diagramme, Schaltungen, Formeln) durch die Trennung von **Syntax** (formale Schreibweise) und **Semantik** (inhaltliche Bedeutung) entschlüsseln (*Describe*, Stufe 1),
+- aus demselben Material nachhaltige Lernstrukturen erzeugen: Vokabel-Lexikon, zehn gestufte Übungsbeispiele, Text-Mindmap und Selbsttest-Quiz (*Describe*, Stufe 2),
+- Übertragungsfehler der Bilderkennung, etwa falsch gelesene Indizes oder Schaltzeichen, systematisch überprüfen (*Discern* und *Diligence*).
+:::
+
+::: callout-note
+## Material folgt
+
+Prompts und Übungsmaterial zu diesem Workshop erscheinen hier spätestens am 03.11.2026.
+:::

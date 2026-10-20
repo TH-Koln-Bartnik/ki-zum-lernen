@@ -1,0 +1,27 @@
+---
+title: "Troubleshooting"
+subtitle: "Wenn etwas nicht klappt"
+---
+
+::: th-color-bar
+:::
+
+## Kalenderdateien (.ics)
+
+**Alle Termine sind um eine oder zwei Stunden verschoben.** Die KI hat die Uhrzeiten als UTC (Weltzeit) geschrieben, erkennbar an einem `Z` am Ende, etwa `DTSTART:20261005T081500Z`. Richtig ist eine Zeile mit Zeitzone: `DTSTART;TZID=Europe/Berlin:20261005T081500`. Schreiben Sie in den Chat: *„Bitte alle Zeiten mit TZID=Europe/Berlin angeben, nicht in UTC.“*
+
+**Die Kalender-App meldet „ungültige Datei“.** Häufige Ursachen: Die Datei heißt `mathe1.ics.txt`, weil der Editor heimlich `.txt` angehängt hat (unter Windows im Explorer *Dateinamenerweiterungen* einblenden). Oder beim Kopieren fehlt die erste Zeile `BEGIN:VCALENDAR` oder die letzte Zeile `END:VCALENDAR`.
+
+**Es erscheint nur ein einziger Termin statt einer ganzen Serie.** Die KI hat die Wiederholungsregel vergessen. Jeder wöchentliche Termin braucht eine Zeile wie `RRULE:FREQ=WEEKLY;BYDAY=MO;UNTIL=20270129T225959Z`.
+
+**Die Serie läuft über Weihnachten oder Feiertage weiter.** Bitten Sie die KI, einzelne Daten auszunehmen: *„Nimm die Termine zwischen dem [Datum] und dem [Datum] aus.“* Sie ergänzt dann `EXDATE`-Zeilen, eine pro ausfallendem Termin.
+
+**Outlook importiert, zeigt aber falsche Zeiten.** Manche Outlook-Versionen brauchen in der Datei einen vollständigen Zeitzonen-Block (`BEGIN:VTIMEZONE … END:VTIMEZONE`). Die [Musterlösung](../material/beispiel-mathe1.ics){download="beispiel-mathe1.ics"} enthält ihn; Sie können ihn von dort übernehmen.
+
+**Ich habe 34 falsche Termine im Hauptkalender.** Beim nächsten Mal in einen eigenen Testkalender importieren. Jetzt hilft in Google Kalender und Outlook meist nur das Löschen der Serie über einen der Termine (*Alle Termine löschen*).
+
+## Chatbots allgemein
+
+**Die KI gibt trotz Verbot die fertige Lösung aus.** Lange Chats „vergessen“ frühe Anweisungen. Wiederholen Sie die Regel kurz oder starten Sie einen neuen Chat mit dem vollständigen Prompt.
+
+**Der Upload eines Screenshots funktioniert nicht.** Nicht jedes Modell versteht Bilder. Wählen Sie ein Modell mit Bilderkennung oder kopieren Sie den Text aus ILU direkt in den Chat.

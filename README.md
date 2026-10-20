@@ -1,0 +1,32 @@
+# KI zum Lernen — Kurz-Workshops für Studierende aller Semester
+
+Begleitseite zu vier 30-Minuten-Workshops am Campus Gummersbach, WiSe 2026/27
+(mittwochs 21.10., 28.10., 04.11., 11.11., 13:00–13:30 Uhr, Raum 3.102).
+
+Pages: <https://r0m0n.github.io/ai-4-learning/>
+
+## Bauen und veröffentlichen
+
+```bash
+quarto preview                     # Live-Vorschau
+quarto render                      # Studierendenfassung nach docs/
+quarto render --profile dozent     # Dozentenfassung nach ../ai-4-learning-dozent/ (außerhalb des Repos)
+```
+
+GitHub Pages serviert aus `/docs` auf `main`. Nach jedem `quarto render` committen und pushen.
+
+## Struktur
+
+- `index.qmd` — Startseite mit Terminen und Werkzeugen
+- `parts/` — eine Seite pro Workshop
+- `prompts/` — jeder Prompt genau einmal als `_name.qmd`; eingebunden per
+  `{{< include ../prompts/_name.qmd >}}` auf der Workshop-Seite **und** in der Prompt-Bibliothek
+- `appendix/` — Prompt-Bibliothek, Wissensbasis, Troubleshooting
+- `material/` — Übungsdateien zum Download (Stoffkatalog, Muster-.ics)
+- `_variables.yml` — zentrale Platzhalter (Toolname, Raum, Zeit, Semesterdaten), Aufruf `{{< var thki >}}`
+- `_quarto-dozent.yml` — Profil für die Dozentenfassung; Blöcke mit
+  `::: {.content-visible when-profile="dozent"}` erscheinen nur dort
+
+## Lizenz
+
+Texte: CC BY-NC-SA 4.0. Das 4D-Framework folgt Dakan & Feller (2025), CC BY-NC-ND 4.0.

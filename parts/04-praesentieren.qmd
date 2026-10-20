@@ -1,0 +1,22 @@
+---
+title: "Workshop 4 — Präsentieren mit KI"
+subtitle: "Mittwoch, 11.11.2026 · 13:00–13:30 Uhr · Raum 3.102"
+---
+
+::: th-color-bar
+:::
+
+::: lernziel-box
+#### Was Sie nach diesem Workshop können
+
+- Typische KI-Designfehler bei Präsentationen (*Volume Trap*, *Split-Attention-Effekt*) erkennen und erklären, warum ein einstufiger Befehl („Mach mir eine Folie“) scheitert (*Discern*),
+- den Erstellungsprozess aufteilen: Text-KI als strengen Redakteur für die inhaltliche Reduktion nutzen und das Layout im Präsentationstool Ihrer Wahl umsetzen (*Delegate* und *Describe*, Stufe 1),
+- Sprechernotizen von sperriger Schriftsprache in flüssige, frei vortragbare Sprechsprache umwandeln (*Describe*, Stufe 2),
+- die Diktierfunktion oder den kostenlosen Sprachmodus unterwegs als **Prüfungs-Simulator** mit einer Prüfer-Persona nutzen (*Diligence*).
+:::
+
+::: callout-note
+## Material folgt
+
+Prompts und Übungsmaterial zu diesem Workshop erscheinen hier spätestens am 10.11.2026.
+:::

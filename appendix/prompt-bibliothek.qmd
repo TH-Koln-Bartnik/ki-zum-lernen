@@ -1,0 +1,29 @@
+---
+title: "Prompt-Bibliothek"
+subtitle: "Alle Prompts zum Mitnehmen auf einer Seite"
+---
+
+::: th-color-bar
+:::
+
+Hier stehen alle Prompts der Workshop-Reihe zum Kopieren. Eckige Klammern `[...]` sind Platzhalter, die Sie durch Ihre eigenen Angaben ersetzen. Die Seite wächst mit jedem Workshop.
+
+## Workshop 1 — Organisieren mit KI
+
+### Stufe 1: Termin- und Kalender-Extraktor
+
+Erzeugt aus Terminangaben (Text oder Screenshot) eine Kontrolltabelle und eine importierbare .ics-Datei. Details: [Workshop 1, Block 1](../parts/01-organisieren.qmd).
+
+{{< include ../prompts/_w1-stufe1.qmd >}}
+
+### Stufe 2: Taktischer Klausur-Lernplaner
+
+Sortiert einen Stoffkatalog nach fachlichen Abhängigkeiten und verteilt ihn auf zehn Tage mit Puffertag. Details: [Workshop 1, Block 2](../parts/01-organisieren.qmd).
+
+{{< include ../prompts/_w1-stufe2.qmd >}}
+
+### Erweiterung: Lernplan in den Kalender
+
+Im selben Chat direkt nach Stufe 2 anhängen.
+
+{{< include ../prompts/_w1-erweiterung.qmd >}}

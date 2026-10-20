@@ -1,0 +1,47 @@
+# --- R / RStudio ---
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# --- Quarto ---
+.quarto/
+_freeze/
+
+# --- LaTeX intermediates (PDF render) ---
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+index.tex
+
+# --- macOS / Windows ---
+.DS_Store
+Thumbs.db
+
+# --- Editor ---
+.vscode/
+.idea/
+
+# --- WICHTIG: docs/ NICHT ignorieren ---
+# GitHub Pages serviert aus /docs. Die gerenderten HTML-Dateien
+# muessen ins Repo. Falls eine R/Quarto-Default-.gitignore docs/
+# ausschliesst, bitte hier explizit !docs/ ergaenzen.
+
+# --- Verstetigungs-Lieferungen, gehoert nicht ins Repo ---
+_persist/
+z-docs-not-synched/
+
+# --- Verwaister Sub-Klon, wird vom Push-Skript geloescht ---
+ai-4-learning/
+
+/.quarto/
+.positai
+
+# Dozentenfassung (lokal, nicht veröffentlichen)
+_dozent/

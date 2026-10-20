@@ -1,0 +1,18 @@
+Themenliste Klausur "Mathematisch-physikalische Grundlagen 1" (Übungsbeispiel für den Workshop)
+
+Mathematik
+Mathe 1: Funktionen und Grenzwerte
+Mathe 2: Differentialrechnung (Ableitungsregeln, Kettenregel, Kurvendiskussion)
+Mathe 3: Vektoren (Darstellung, Komponenten, Betrag, Einheitsvektor)
+Mathe 4: Vektoraddition und Zerlegung von Vektoren
+Mathe 5: Skalarprodukt (Winkel zwischen Vektoren, Projektion)
+Mathe 6: Integralrechnung (Stammfunktion, bestimmtes Integral)
+Mathe 7: Vektorprodukt (Kreuzprodukt, Rechte-Hand-Regel)
+
+Physik
+Physik 1: Physikalische Größen, Einheiten und Messunsicherheit
+Physik 2: Kinematik (Ort, Geschwindigkeit, Beschleunigung, Wurf)
+Physik 3: Dynamik (Newtonsche Axiome, Kräfte, Reibung)
+Physik 4: Arbeit, Energie und Leistung
+Physik 5: Impuls und Stoß
+Physik 6: Drehbewegung (Winkelgeschwindigkeit, Drehmoment, Trägheitsmoment)

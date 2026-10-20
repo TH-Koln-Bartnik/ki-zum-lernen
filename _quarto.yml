@@ -1,0 +1,73 @@
+project:
+  type: book
+  output-dir: docs
+  resources:
+    - "material/**"
+    - "images/**"
+    - ".nojekyll"
+
+book:
+  title: "KI zum Lernen"
+  subtitle: "Vier Kurz-Workshops für Studierende · Campus Gummersbach · WiSe 2026/27"
+  author: "Prof. Dr. Roman Bartnik"
+  date: "2026-10-21"
+  date-format: "DD.MM.YYYY"
+  search: true
+  repo-url: "https://github.com/r0m0n/ai-4-learning"
+  repo-actions: [edit, issue]
+  page-navigation: true
+  back-to-top-navigation: true
+  sidebar:
+    style: docked
+    background: light
+    collapse-level: 2
+    logo: images/th-koeln-logo.png
+  chapters:
+    - index.qmd
+    - part: "Mi, 21.10. — Organisieren"
+      chapters:
+        - parts/01-organisieren.qmd
+    - part: "Mi, 28.10. — Kommunizieren"
+      chapters:
+        - parts/02-kommunizieren.qmd
+    - part: "Mi, 04.11. — Lernen"
+      chapters:
+        - parts/03-lernen.qmd
+    - part: "Mi, 11.11. — Präsentieren"
+      chapters:
+        - parts/04-praesentieren.qmd
+    - part: "Anhang"
+      chapters:
+        - appendix/prompt-bibliothek.qmd
+        - appendix/wissensbasis.qmd
+        - appendix/troubleshooting.qmd
+    - references.qmd
+  page-footer:
+    left: "© 2026 Prof. Dr. Roman Bartnik · TH Köln · CC BY-NC-SA 4.0"
+    right: "Erstellt mit [Quarto](https://quarto.org)"
+
+bibliography: references.bib
+csl: apa.csl
+citations-hover: true
+link-citations: true
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: true
+    toc-depth: 3
+    toc-title: "Inhalt"
+    toc-location: right
+    code-copy: true
+    code-overflow: wrap
+    link-external-newwindow: true
+    callout-appearance: simple
+    smooth-scroll: true
+    anchor-sections: true
+    number-sections: false
+    grid:
+      sidebar-width: 280px
+
+lang: de

@@ -1,0 +1,22 @@
+---
+title: "Workshop 2 — Kommunizieren mit KI"
+subtitle: "Mittwoch, 28.10.2026 · 13:00–13:30 Uhr · Raum 3.102"
+---
+
+::: th-color-bar
+:::
+
+::: lernziel-box
+#### Was Sie nach diesem Workshop können
+
+- Die verschiedenen KI-Werkzeuge (ChatGPT, Claude, Gemini, NotebookLM, {{< var thki >}}) gezielt nach Eignung auswählen (*Delegate*),
+- fünf Steuerungsmechanismen (Denkverbote, Rollenkalibrierung, Chain-of-Thought, Formatvorgaben, Few-Shot) anwenden, um die KI als Tutor statt als Lösungsautomaten zu nutzen (*Describe*, Stufe 1),
+- KI-Halluzinationen gezielt provozieren, erkennen und erklären, warum Sprachmodelle überzeugend „lügen“ (*Discern*),
+- den Tutor-Prompt durch strikte **Quellenbindung** absichern und als fertiges Werkzeug mitnehmen (*Describe*, Stufe 2, und *Diligence*).
+:::
+
+::: callout-note
+## Material folgt
+
+Prompts und Übungsmaterial zu diesem Workshop erscheinen hier spätestens am 27.10.2026.
+:::
