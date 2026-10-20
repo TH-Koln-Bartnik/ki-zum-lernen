@@ -18,7 +18,7 @@ GitHub Pages serviert aus `/docs` auf `main`. Nach jedem `quarto render` committ
 ## Struktur
 
 - `index.qmd` — Startseite mit Terminen und Werkzeugen
-- `parts/` — eine Seite pro Workshop
+- `parts/` — eine Seite pro Workshop. Aufbau: Theorie-Input (`## Theorie-Input — … {#sec-theorie}`: ein Absatz von 120–150 Wörtern mit zwei bis vier Studien aus `references.bib`, eine Grafik als Include in `includes/`, ein Merksatz als `::: merksatz`), danach Block 1 und Block 2 mit je einer Anwendungsübung
 - `prompts/` — jeder Prompt genau einmal als `_name.qmd`; eingebunden per
   `{{< include ../prompts/_name.qmd >}}` auf der Workshop-Seite **und** in der Prompt-Bibliothek
 - `appendix/` — Prompt-Bibliothek, Wissensbasis, Troubleshooting

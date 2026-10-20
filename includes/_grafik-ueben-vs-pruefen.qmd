@@ -1,0 +1,28 @@
+<!-- Theorie-Input Workshop 1: Übungsleistung mit KI vs. Prüfungsleistung ohne KI (Bastani et al., 2025). Stil: .ti-* in styles.scss -->
+
+```{=html}
+<figure class="ti-grafik" aria-label="Balkendiagramm: In der Übung mit KI verbesserte sich die Leistung mit normalem GPT-4 um 48 Prozent und mit der Tutor-Variante um 127 Prozent. In der Prüfung ohne KI lag die Gruppe mit normalem GPT-4 17 Prozent unter der Gruppe ohne KI, die Tutor-Gruppe etwa gleichauf.">
+  <svg viewBox="0 0 640 300" role="img" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+    <text x="20" y="22" font-size="17" fill="#6b6b73">Veränderung gegenüber der Gruppe ohne KI</text>
+    <line x1="20" y1="205" x2="620" y2="205" stroke="#6b6b73" stroke-width="1"/>
+    <!-- Übung mit KI -->
+    <rect x="70"  y="148" width="80" height="57"  fill="#c81e0f"/>
+    <rect x="170" y="55"  width="80" height="150" fill="#b43092"/>
+    <text x="110" y="138" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">+48 %</text>
+    <text x="210" y="45"  font-size="24" font-weight="700" fill="#111111" text-anchor="middle">+127 %</text>
+    <!-- Prüfung ohne KI -->
+    <rect x="390" y="205" width="80" height="20"  fill="#c81e0f"/>
+    <rect x="490" y="202" width="80" height="4"   fill="#b43092"/>
+    <text x="430" y="190" font-size="30" font-weight="700" fill="#c81e0f" text-anchor="middle">−17 %</text>
+    <text x="530" y="190" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">≈ 0</text>
+    <!-- Reihen- und Gruppenbeschriftung -->
+    <text x="110" y="248" font-size="19" fill="#111111" text-anchor="middle">normal</text>
+    <text x="210" y="248" font-size="19" fill="#111111" text-anchor="middle">Tutor</text>
+    <text x="430" y="248" font-size="19" fill="#111111" text-anchor="middle">normal</text>
+    <text x="530" y="248" font-size="19" fill="#111111" text-anchor="middle">Tutor</text>
+    <text x="160" y="284" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Übung mit KI</text>
+    <text x="480" y="284" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Prüfung ohne KI</text>
+  </svg>
+  <figcaption>Wer mit einem normalen GPT übt, ist in der Übung besser und in der Prüfung ohne KI schlechter. Eigene Darstellung nach Bastani et al. (2025), Feldexperiment mit Mathematikaufgaben an türkischen Gymnasien.</figcaption>
+</figure>
+```

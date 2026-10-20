@@ -450,3 +450,36 @@ pre, pre code, div.sourceCode pre, div.sourceCode code {
 .lq-score { font-size: 1.1rem; margin: 0.2rem 0 0.3rem; }
 .lq-score span { font-size: 2rem; font-weight: 700; color: var(--th-red); }
 .lq-verdict { margin: 0 0 0.8rem; }
+
+/* Theorie-Input je Workshop: Grafik (.ti-grafik) und Merksatz (.merksatz) */
+.ti-grafik {
+  margin: 1.5rem 0 1rem;
+  max-width: 640px;
+}
+.ti-grafik svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.ti-grafik figcaption { margin-top: 0.4rem; }
+
+.merksatz {
+  border: 1px solid var(--gray-200);
+  border-left: 4px solid var(--th-red);
+  background: var(--paper);
+  padding: 0.9rem 1.25rem;
+  margin: 1.25rem 0 2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.merksatz p { margin: 0; }
+.merksatz p::before {
+  content: "Merksatz";
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--th-red);
+  margin-bottom: 0.25rem;
+}

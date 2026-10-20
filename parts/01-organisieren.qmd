@@ -9,6 +9,7 @@ subtitle: "Mittwoch, 21.10.2026 · 12:30–13:00 Uhr · Hörsaal 0402 · Input: 
 ::: lernziel-box
 #### Was Sie nach diesem Workshop können
 
+- erklären, warum KI-Hilfe in der Übung nicht automatisch zu mehr Wissen in der Prüfung führt,
 - Unstrukturierte Terminangaben aus ILU oder Modulbeschreibungen automatisch in importierbare Kalenderdaten (.ics) überführen,
 - umfangreiche Stoffkataloge (z. B. *Mathematisch-physikalische Grundlagen 1*) von einer KI auf logische Abhängigkeiten analysieren lassen,
 - das **4D-Framework** (*Delegate*, *Describe*, *Discern*, *Diligence*) an einer praktischen Organisationsaufgabe anwenden,
@@ -22,6 +23,26 @@ subtitle: "Mittwoch, 21.10.2026 · 12:30–13:00 Uhr · Hörsaal 0402 · Input: 
 Keine lange Theorie. Kurz auf die kostenlosen Standard-Tools (ChatGPT Free, Claude, Gemini) hinweisen und den hochschuleigenen, datenschutzkonformen Zugang ({{< var thki >}}) zeigen. Für die Frage „Mit oder ohne Websuche?“ die Harness-Grafik und die Checkliste auf der Seite [THKI Chat](00-thki-chat.qmd#sec-harness) zeigen (1 Minute). Zeitbudget prüfen: Block 2 ist mit 14 Minuten angesetzt; für Block 0 und Block 1 bleiben damit zusammen 16 Minuten.
 :::
 :::
+
+## Theorie-Input — Mit KI besser lernen und das Wissen behalten · 5 Min {#sec-theorie}
+
+::: {.content-visible when-profile="dozent"}
+::: callout-important
+## Dozentenhinweis — Theorie-Input
+
+Folien: `KI-Lernen-Kurzinput.pptx` (TH-Köln-Stil, Sprechernotizen für rund 5 Minuten). Mit dem Input bleiben für Block 0 und Block 1 zusammen etwa 11 Minuten.
+:::
+:::
+
+Wer mit KI übt, ist schneller fertig, lernt aber nicht automatisch mehr. In einem Feldexperiment verbesserte ein normales GPT-4 die Übungsleistung um 48 %; in der anschließenden Prüfung ohne KI schnitt dieselbe Gruppe jedoch 17 % schlechter ab als Lernende, die nie KI hatten. Eine Tutor-Variante, die nur Hinweise gab, verhinderte diesen Verlust weitgehend [@bastani2025generative]. An Hochschulen zeigen sich zwei Fehler: An der University of Maryland nutzten nur 15 % der Studierenden einen angebotenen Kurs-Tutor, und knapp drei Viertel der Anfragen zielten auf Informationen, Erklärungen oder Lösungen [@liu2026courseintegrated]. Den Unterschied macht die Art der Nutzung. Wer sich von der KI erklären lässt und selbst schreibt, behält den Lerngewinn auch nach einer Woche [@contractor2026learning], und eine Anleitung zur Nutzung als Tutor hob die Klausurnote messbar [@gallegos2026guidance].
+
+{{< include ../includes/_grafik-ueben-vs-pruefen.qmd >}}
+
+::: merksatz
+Erst selbst denken, dann die KI um einen Hinweis bitten und zum Schluss ohne KI prüfen.
+:::
+
+Für die beiden Übungen heute heißt das: Den Kalender in Block 1 darf die KI für Sie schreiben, denn dort wollen Sie Zeit sparen, nicht etwas lernen. Im Lernplan aus Block 2 übernimmt die KI die Planung, das Rechnen bleibt bei Ihnen. Die drei Studien von 2026 sind Vorabveröffentlichungen, deren Begutachtung noch aussteht.
 
 ::: callout-tip
 ## Praxis-Hinweis vorab: So wird aus Code eine Kalenderdatei

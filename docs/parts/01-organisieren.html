@@ -62,7 +62,7 @@ div.csl-indent {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1c9447ad724195134eb0431423fce99f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-32f9f32c41a0ff58a35beb6bf38d10ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -258,7 +258,8 @@ div.csl-indent {
     <h2 id="toc-title">Inhalt</h2>
    
   <ul>
-  <li><a href="#block-1-termin--und-kalenderverwaltung" id="toc-block-1-termin--und-kalenderverwaltung" class="nav-link active" data-scroll-target="#block-1-termin--und-kalenderverwaltung">Block 1 — Termin- und Kalenderverwaltung</a>
+  <li><a href="#sec-theorie" id="toc-sec-theorie" class="nav-link active" data-scroll-target="#sec-theorie">Theorie-Input — Mit KI besser lernen und das Wissen behalten · 5 Min</a></li>
+  <li><a href="#block-1-termin--und-kalenderverwaltung" id="toc-block-1-termin--und-kalenderverwaltung" class="nav-link" data-scroll-target="#block-1-termin--und-kalenderverwaltung">Block 1 — Termin- und Kalenderverwaltung</a>
   <ul class="collapse">
   <li><a href="#delegate-wer-macht-was" id="toc-delegate-wer-macht-was" class="nav-link" data-scroll-target="#delegate-wer-macht-was">Delegate — wer macht was?</a></li>
   <li><a href="#describe-der-basis-prompt-stufe-1" id="toc-describe-der-basis-prompt-stufe-1" class="nav-link" data-scroll-target="#describe-der-basis-prompt-stufe-1">Describe — der Basis-Prompt (Stufe 1)</a></li>
@@ -307,12 +308,45 @@ div.csl-indent {
 <section id="was-sie-nach-diesem-workshop-können" class="level4 lernziel-box">
 <h4 class="anchored" data-anchor-id="was-sie-nach-diesem-workshop-können">Was Sie nach diesem Workshop können</h4>
 <ul>
+<li>erklären, warum KI-Hilfe in der Übung nicht automatisch zu mehr Wissen in der Prüfung führt,</li>
 <li>Unstrukturierte Terminangaben aus ILU oder Modulbeschreibungen automatisch in importierbare Kalenderdaten (.ics) überführen,</li>
 <li>umfangreiche Stoffkataloge (z. B. <em>Mathematisch-physikalische Grundlagen 1</em>) von einer KI auf logische Abhängigkeiten analysieren lassen,</li>
 <li>das <strong>4D-Framework</strong> (<em>Delegate</em>, <em>Describe</em>, <em>Discern</em>, <em>Diligence</em>) an einer praktischen Organisationsaufgabe anwenden,</li>
 <li>einen zweistufigen <strong>Master-Prompt zur Semester- und Lernorganisation</strong> aufbauen und für eigene Module nutzen.</li>
 </ul>
 </section>
+<section id="sec-theorie" class="level2">
+<h2 class="anchored" data-anchor-id="sec-theorie">Theorie-Input — Mit KI besser lernen und das Wissen behalten · 5 Min</h2>
+<p>Wer mit KI übt, ist schneller fertig, lernt aber nicht automatisch mehr. In einem Feldexperiment verbesserte ein normales GPT-4 die Übungsleistung um 48 %; in der anschließenden Prüfung ohne KI schnitt dieselbe Gruppe jedoch 17 % schlechter ab als Lernende, die nie KI hatten. Eine Tutor-Variante, die nur Hinweise gab, verhinderte diesen Verlust weitgehend <span class="citation" data-cites="bastani2025generative">(<a href="../references.html#ref-bastani2025generative" role="doc-biblioref">Bastani et al., 2025</a>)</span>. An Hochschulen zeigen sich zwei Fehler: An der University of Maryland nutzten nur 15 % der Studierenden einen angebotenen Kurs-Tutor, und knapp drei Viertel der Anfragen zielten auf Informationen, Erklärungen oder Lösungen <span class="citation" data-cites="liu2026courseintegrated">(<a href="../references.html#ref-liu2026courseintegrated" role="doc-biblioref">Liu et al., 2026</a>)</span>. Den Unterschied macht die Art der Nutzung. Wer sich von der KI erklären lässt und selbst schreibt, behält den Lerngewinn auch nach einer Woche <span class="citation" data-cites="contractor2026learning">(<a href="../references.html#ref-contractor2026learning" role="doc-biblioref">Contractor &amp; Reyes, 2026</a>)</span>, und eine Anleitung zur Nutzung als Tutor hob die Klausurnote messbar <span class="citation" data-cites="gallegos2026guidance">(<a href="../references.html#ref-gallegos2026guidance" role="doc-biblioref">Gallegos, 2026</a>)</span>.</p>
+<!-- Theorie-Input Workshop 1: Übungsleistung mit KI vs. Prüfungsleistung ohne KI (Bastani et al., 2025). Stil: .ti-* in styles.scss -->
+<figure class="ti-grafik figure" aria-label="Balkendiagramm: In der Übung mit KI verbesserte sich die Leistung mit normalem GPT-4 um 48 Prozent und mit der Tutor-Variante um 127 Prozent. In der Prüfung ohne KI lag die Gruppe mit normalem GPT-4 17 Prozent unter der Gruppe ohne KI, die Tutor-Gruppe etwa gleichauf.">
+  <svg viewbox="0 0 640 300" role="img" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+    <text x="20" y="22" font-size="17" fill="#6b6b73">Veränderung gegenüber der Gruppe ohne KI</text>
+    <line x1="20" y1="205" x2="620" y2="205" stroke="#6b6b73" stroke-width="1"></line>
+    <!-- Übung mit KI -->
+    <rect x="70" y="148" width="80" height="57" fill="#c81e0f"></rect>
+    <rect x="170" y="55" width="80" height="150" fill="#b43092"></rect>
+    <text x="110" y="138" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">+48 %</text>
+    <text x="210" y="45" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">+127 %</text>
+    <!-- Prüfung ohne KI -->
+    <rect x="390" y="205" width="80" height="20" fill="#c81e0f"></rect>
+    <rect x="490" y="202" width="80" height="4" fill="#b43092"></rect>
+    <text x="430" y="190" font-size="30" font-weight="700" fill="#c81e0f" text-anchor="middle">−17 %</text>
+    <text x="530" y="190" font-size="24" font-weight="700" fill="#111111" text-anchor="middle">≈ 0</text>
+    <!-- Reihen- und Gruppenbeschriftung -->
+    <text x="110" y="248" font-size="19" fill="#111111" text-anchor="middle">normal</text>
+    <text x="210" y="248" font-size="19" fill="#111111" text-anchor="middle">Tutor</text>
+    <text x="430" y="248" font-size="19" fill="#111111" text-anchor="middle">normal</text>
+    <text x="530" y="248" font-size="19" fill="#111111" text-anchor="middle">Tutor</text>
+    <text x="160" y="284" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Übung mit KI</text>
+    <text x="480" y="284" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">Prüfung ohne KI</text>
+  </svg>
+  <figcaption>Wer mit einem normalen GPT übt, ist in der Übung besser und in der Prüfung ohne KI schlechter. Eigene Darstellung nach Bastani et al. (2025), Feldexperiment mit Mathematikaufgaben an türkischen Gymnasien.</figcaption>
+</figure>
+<div class="merksatz">
+<p>Erst selbst denken, dann die KI um einen Hinweis bitten und zum Schluss ohne KI prüfen.</p>
+</div>
+<p>Für die beiden Übungen heute heißt das: Den Kalender in Block 1 darf die KI für Sie schreiben, denn dort wollen Sie Zeit sparen, nicht etwas lernen. Im Lernplan aus Block 2 übernimmt die KI die Planung, das Rechnen bleibt bei Ihnen. Die drei Studien von 2026 sind Vorabveröffentlichungen, deren Begutachtung noch aussteht.</p>
 <div class="callout callout-style-simple callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -326,6 +360,7 @@ div.csl-indent {
 <p>Eine <strong>.ics-Datei</strong> ist ein standardisiertes Austauschformat für Termine, vergleichbar mit einem genormten Briefumschlag, den jede Kalender-App öffnen kann, ob Apple, Google oder Outlook <span class="citation" data-cites="rfc5545">(<a href="../references.html#ref-rfc5545" role="doc-biblioref">Desruisseaux, 2009</a>)</span>. ChatGPT bietet die Datei oft direkt als Download an. Der THKI Chat oder Claude geben stattdessen einen grauen Codeblock aus: Kopieren Sie ihn in einen einfachen Texteditor (Windows: <em>Editor</em>, Mac: <em>TextEdit</em> im Modus „Reiner Text“) und speichern Sie die Datei mit der Endung <code>.ics</code>, etwa <code>mathe1.ics</code>. Die Schritte zum Import in Ihre Kalender-App stehen unten in <a href="#sec-import">Kalenderdatei importieren</a>.</p>
 </div>
 </div>
+</section>
 <section id="block-1-termin--und-kalenderverwaltung" class="level2">
 <h2 class="anchored" data-anchor-id="block-1-termin--und-kalenderverwaltung">Block 1 — Termin- und Kalenderverwaltung</h2>
 <p>Jeder Block folgt den vier Schritten des <strong>4D-Frameworks</strong> <span class="citation" data-cites="dakan2025framework">(<a href="../references.html#ref-dakan2025framework" role="doc-biblioref">Dakan &amp; Feller, 2025</a>)</span>. So sehen sie für die Kalenderaufgabe aus:</p>
@@ -576,6 +611,12 @@ Physik 6: Drehbewegung (Winkelgeschwindigkeit, Drehmoment, Trägheitsmoment)</co
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-bastani2025generative" class="csl-entry" role="listitem">
+Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakçı, Ö., &amp; Mariman, R. (2025). Generative <span>AI</span> without guardrails can harm learning: Evidence from high school mathematics. <em>Proceedings of the National Academy of Sciences</em>, <em>122</em>(26), e2422633122. <a href="https://doi.org/10.1073/pnas.2422633122">https://doi.org/10.1073/pnas.2422633122</a>
+</div>
+<div id="ref-contractor2026learning" class="csl-entry" role="listitem">
+Contractor, Z., &amp; Reyes, G. (2026). <em>Experimental Evidence on the Learning Impact of Generative <span>AI</span></em> (IZA Discussion Paper 18792). IZA Institute of Labor Economics. <a href="https://arxiv.org/abs/2607.08849">https://arxiv.org/abs/2607.08849</a>
+</div>
 <div id="ref-dakan2025framework" class="csl-entry" role="listitem">
 Dakan, R., &amp; Feller, J. (2025). <em>Framework for <span>AI</span> Fluency: Practical Overview Document</em>. <a href="https://ringling.libguides.com/ai/framework">https://ringling.libguides.com/ai/framework</a>
 </div>
@@ -584,6 +625,12 @@ Desruisseaux, B. (2009). <em>Internet Calendaring and Scheduling Core Object Spe
 </div>
 <div id="ref-dunlosky2013improving" class="csl-entry" role="listitem">
 Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., &amp; Willingham, D. T. (2013). Improving Students’ Learning With Effective Learning Techniques: Promising Directions From Cognitive and Educational Psychology. <em>Psychological Science in the Public Interest</em>, <em>14</em>(1), 4–58. <a href="https://doi.org/10.1177/1529100612453266">https://doi.org/10.1177/1529100612453266</a>
+</div>
+<div id="ref-gallegos2026guidance" class="csl-entry" role="listitem">
+Gallegos, S. (2026). <em>Guidance over Adoption: Experimental Evidence on <span>AI</span>-Assisted Learning</em> (IZA Discussion Paper 18513). IZA Institute of Labor Economics. <a href="https://docs.iza.org/dp18513.pdf">https://docs.iza.org/dp18513.pdf</a>
+</div>
+<div id="ref-liu2026courseintegrated" class="csl-entry" role="listitem">
+Liu, J., Sweet, T., Chen, M. H., Engelberg, J., Masters, M. C., Clark, M., Persaud, A., Lancaster, A., Hollingsworth, J. K., &amp; Rice, J. K. (2026). <em>The Effects of Course-Integrated <span>AI</span> Tutoring on Student Performance and Engagement: A Randomized University Trial</em> (EdWorkingPaper 26-1598). Annenberg Institute at Brown University. <a href="https://doi.org/10.26300/y3f8-vh05">https://doi.org/10.26300/y3f8-vh05</a>
 </div>
 </div>
 </section>

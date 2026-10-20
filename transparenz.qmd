@@ -5,6 +5,6 @@
 
 Diese Seite zeigt, wie man KI im Studium sinnvoll einsetzt, und sie ist selbst mit KI-Unterstützung entstanden. Das gehört offengelegt, aus demselben Grund, aus dem die Workshops unter *Diligence* Transparenz über den KI-Einsatz verlangen [@dakan2025framework].
 
-Bei der Erstellung dieser Webseite wurde das Sprachmodell Claude (Anthropic) zur Aufwertung der Inhalte genutzt, speziell für Beispiele, Übungen und Prompt-Varianten, außerdem als Reviewer für Sprach- und Konsistenzchecks und zur Gestaltung des Layouts, einschließlich der Grafiken zum 4D-Framework. Das Lernspiel zu den Grundbegriffen stammt aus dem Skript [*GenAI in der Lehre*](https://th-koln-bartnik.github.io/genai4teaching/){target="_blank"} und wurde dort mit Unterstützung von Sprachmodellen programmiert.
+Bei der Erstellung dieser Webseite wurde das Sprachmodell Claude (Anthropic) zur Aufwertung der Inhalte genutzt, speziell für Beispiele, Übungen und Prompt-Varianten, außerdem als Reviewer für Sprach- und Konsistenzchecks und zur Gestaltung des Layouts, einschließlich der Grafiken zum 4D-Framework und zu den Theorie-Inputs; bei den Theorie-Inputs half Claude zudem bei der Recherche und Prüfung der Studien. Das Lernspiel zu den Grundbegriffen stammt aus dem Skript [*GenAI in der Lehre*](https://th-koln-bartnik.github.io/genai4teaching/){target="_blank"} und wurde dort mit Unterstützung von Sprachmodellen programmiert.
 
 Alle Inhalte wurden von den Autoren geprüft, überarbeitet und verantwortet.
