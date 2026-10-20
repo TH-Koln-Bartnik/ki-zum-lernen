@@ -196,7 +196,7 @@ Wer weiterbauen will, findet im Prompt-Pattern-Katalog von @white2023prompt sech
 
 | Werkzeug | Stärke | Vorsicht |
 |---|---|---|
-| **{{< var thki >}}** | kostenlos, Anmeldung mit campusID, datenschutzfreundlich [@thkoeln2025thkichat] | keine personenbezogenen Daten und keine urheberrechtlich geschützten Texte hochladen |
+| **[{{< var thki >}}]({{< var thki-url >}})** | kostenlos, über KI:connect, Anmeldung mit campusID, datenschutzfreundlich [@thkoeln2025thkichat] | keine personenbezogenen Daten und keine urheberrechtlich geschützten Texte hochladen |
 | **ChatGPT, Claude, Gemini** (Free) | Allrounder für Text, Code, Logik; meist mit Bild-Upload | Wissen stammt aus dem Training; bei Spezialwissen Halluzinationsgefahr |
 | **NotebookLM** | antwortet nur auf Basis Ihrer hochgeladenen Dokumente, mit Quellenverweisen | nur so gut wie die Dokumente, die Sie hochladen |
 

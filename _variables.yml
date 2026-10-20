@@ -1,6 +1,7 @@
 # Zentrale Platzhalter. Eine Änderung hier wirkt auf allen Seiten.
 # Aufruf in .qmd-Dateien: {{< var thki >}}
-thki: "THKI Lab"
+thki: "THKI Chat"
+thki-url: "https://chat.kiconnect.nrw/app"
 raum: "Hörsaal 0402"
 zeit: "12:30–13:00 Uhr"
 semester-start: "01.10.2026"
