@@ -1,0 +1,158 @@
+<!-- Lernfragen-Widget zur THKI-Chat-Seite. Seite: parts/00-thki-chat.qmd. Stil: .lq-* in styles.scss.
+     Fragen ändern: im Array LQ_FRAGEN unten; "richtig" ist der Index der richtigen Option (0 = erste). -->
+
+```{=html}
+<div class="lq" id="lq-thki" aria-label="Lernfragen zur Seite THKI Chat">
+  <div class="lq-head">
+    <span class="lq-label">Lernfragen</span>
+    <span class="lq-progress" aria-live="polite"></span>
+  </div>
+  <div class="lq-body"></div>
+  <div class="lq-foot">
+    <button type="button" class="lq-btn lq-next" hidden>Nächste Frage →</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  const LQ_FRAGEN = [
+    {
+      frage: "Was ist mit der „Harness“ eines Sprachmodells gemeint?",
+      optionen: [
+        "Eine größere Version desselben Modells mit mehr Trainingsdaten",
+        "Die Werkzeuge rund um das Modell, etwa Websuche, Datei-Upload, Code-Ausführung und Gedächtnis",
+        "Ein Sicherheitsfilter, der Halluzinationen zuverlässig verhindert",
+        "Der Benchmark, mit dem man Modelle vergleicht"
+      ],
+      richtig: 1,
+      erklaerung: "Wie das Geschirr die Kraft eines Pferdes auf den Wagen überträgt, verbindet die Harness das Modell mit Werkzeugen. Dasselbe Modell kann dadurch nachschlagen, lesen und rechnen statt nur zu reden."
+    },
+    {
+      frage: "Was unterscheidet einen Agenten von einem erweiterten LLM?",
+      optionen: [
+        "Der Agent hat Internetzugang, das erweiterte LLM nicht",
+        "Der Agent macht keine Fehler mehr",
+        "Der Agent arbeitet in einer Schleife aus Ziel, Plan, Werkzeug und Bewertung und erledigt mehrschrittige Aufgaben selbstständig",
+        "Der Agent ist immer ein anderes, stärkeres Sprachmodell"
+      ],
+      richtig: 2,
+      erklaerung: "Werkzeuge haben beide. Der Agent setzt sie aber in einer Schleife ein: planen, handeln, Ergebnis bewerten, neu planen. Er meldet sich erst zurück, wenn die Aufgabe erledigt ist."
+    },
+    {
+      frage: "Sie fragen eine KI nach dem Raum Ihrer Mathe-Übung. Die Antwort klingt sicher, enthält aber keinen einzigen Quellenlink. Was folgt daraus?",
+      optionen: [
+        "Die Antwort stammt vermutlich aus dem Gedächtnis des Modells; ich prüfe den Raum selbst nach",
+        "Die Angabe stimmt, denn das Modell hätte sonst Unsicherheit geäußert",
+        "Die Angabe stimmt, wenn ich das stärkste Modell gewählt habe",
+        "Die Angabe stimmt, weil Halluzinationen seit 2026 kein Thema mehr sind"
+      ],
+      richtig: 0,
+      erklaerung: "Ein Sprachmodell ohne Werkzeuge erfindet eine Raumnummer mit derselben Sicherheit, mit der ein Modell mit Websuche sie nachschlägt. Ein sicherer Ton ist kein Beleg; ein Link, den Sie selbst öffnen, schon."
+    },
+    {
+      frage: "Wie finden Sie am verlässlichsten heraus, ob Ihr Chatbot gerade im Web sucht?",
+      optionen: [
+        "Ich frage ihn: „Hast du Internetzugang?“",
+        "Ich frage nach einer Nachricht von heute und achte darauf, ob anklickbare Quellen erscheinen",
+        "Ich schaue nach, wie gut das Modell im Benchmark abschneidet",
+        "Ich achte darauf, ob die Antwort lang und ausführlich ist"
+      ],
+      richtig: 1,
+      erklaerung: "Die Selbstauskunft des Modells ist unzuverlässig, es kann seine eigene Harness falsch beschreiben. Der Test mit einer tagesaktuellen Nachricht zeigt, was das System tatsächlich tut: Quellen erscheinen nur, wenn es wirklich sucht."
+    },
+    {
+      frage: "Was darf auch im THKI Chat nicht in den Prompt?",
+      optionen: [
+        "Fragen zu Ihrem eigenen Vorlesungsskript",
+        "Die Bitte, eine Rechnung mit Code durchzuführen",
+        "Namen, Matrikelnummern oder Noten anderer sowie eingescannte Buchkapitel",
+        "Eine Modulbeschreibung, die öffentlich auf der Hochschulseite steht"
+      ],
+      richtig: 2,
+      erklaerung: "Personenbezogene Daten und urheberrechtlich geschützte Texte gehören in keinen Chat, auch nicht in den hochschuleigenen. Öffentliche Modulbeschreibungen und eigene Fragen sind dagegen genau das, was die KI als Kontext braucht."
+    }
+  ];
+
+  const root = document.getElementById("lq-thki");
+  if (!root) return;
+  const body = root.querySelector(".lq-body");
+  const progress = root.querySelector(".lq-progress");
+  const next = root.querySelector(".lq-next");
+  const BUCHST = ["A", "B", "C", "D"];
+  let i = 0, punkte = 0;
+
+  function zeigeFrage() {
+    const f = LQ_FRAGEN[i];
+    progress.textContent = "Frage " + (i + 1) + " von " + LQ_FRAGEN.length;
+    next.hidden = true;
+    body.innerHTML = "";
+    const p = document.createElement("p");
+    p.className = "lq-question";
+    p.textContent = f.frage;
+    body.appendChild(p);
+    const liste = document.createElement("div");
+    liste.className = "lq-options";
+    liste.setAttribute("role", "group");
+    f.optionen.forEach(function (text, k) {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "lq-option";
+      b.innerHTML = '<span class="lq-key">' + BUCHST[k] + "</span><span></span>";
+      b.lastChild.textContent = text;
+      b.addEventListener("click", function () { antworte(k); });
+      liste.appendChild(b);
+    });
+    body.appendChild(liste);
+    const fb = document.createElement("div");
+    fb.className = "lq-feedback";
+    fb.setAttribute("aria-live", "polite");
+    body.appendChild(fb);
+  }
+
+  function antworte(k) {
+    const f = LQ_FRAGEN[i];
+    const knoepfe = body.querySelectorAll(".lq-option");
+    knoepfe.forEach(function (b, n) {
+      b.disabled = true;
+      if (n === f.richtig) b.classList.add("lq-correct");
+      else if (n === k) b.classList.add("lq-wrong");
+    });
+    const ok = k === f.richtig;
+    if (ok) punkte++;
+    const fb = body.querySelector(".lq-feedback");
+    fb.className = "lq-feedback " + (ok ? "lq-fb-ok" : "lq-fb-no");
+    fb.innerHTML = "<strong></strong> <span></span>";
+    fb.firstChild.textContent = ok ? "Richtig." : "Nicht ganz – richtig ist " + BUCHST[f.richtig] + ".";
+    fb.lastChild.textContent = f.erklaerung;
+    next.textContent = i < LQ_FRAGEN.length - 1 ? "Nächste Frage →" : "Auswertung →";
+    next.hidden = false;
+    next.focus();
+  }
+
+  function auswertung() {
+    progress.textContent = "Fertig";
+    next.hidden = true;
+    const n = LQ_FRAGEN.length;
+    let urteil;
+    if (punkte === n) urteil = "Alles richtig. Sie wissen, mit welcher KI Sie arbeiten.";
+    else if (punkte >= n - 2) urteil = "Gut. Lesen Sie zu den verpassten Fragen den passenden Abschnitt noch einmal.";
+    else urteil = "Gehen Sie den Abschnitt zur Harness und die Checkliste oben noch einmal durch und versuchen Sie es dann erneut.";
+    body.innerHTML =
+      '<p class="lq-score"><span>' + punkte + "</span> von " + n + " richtig</p>" +
+      '<p class="lq-verdict"></p>' +
+      '<button type="button" class="lq-btn lq-restart">Noch einmal</button>';
+    body.querySelector(".lq-verdict").textContent = urteil;
+    body.querySelector(".lq-restart").addEventListener("click", function () {
+      i = 0; punkte = 0; zeigeFrage();
+    });
+  }
+
+  next.addEventListener("click", function () {
+    i++;
+    if (i < LQ_FRAGEN.length) zeigeFrage(); else auswertung();
+  });
+
+  zeigeFrage();
+})();
+</script>
+```

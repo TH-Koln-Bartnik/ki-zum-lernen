@@ -13,7 +13,7 @@ subtitle: "Der kostenlose KI-Zugang der TH Köln, was er kann und wo seine Grenz
 - welche Sprachmodelle dort zur Auswahl stehen und wie sie im Vergleich zur aktuellen Modellspitze abschneiden,
 - welches Modell Sie für welche Aufgabe wählen und warum Sie die Ergebnisse trotzdem prüfen müssen,
 - warum dasselbe Modell mit und ohne **Harness** (Werkzeuge wie Websuche oder Datei-Upload) ganz unterschiedlich leistungsfähig ist,
-- wie Sie mit einer kurzen Checkliste klären, mit welcher KI Sie gerade arbeiten.
+- wie Sie mit einer kurzen Checkliste klären, mit welcher KI Sie gerade arbeiten, und wie Sie Ihr Verständnis mit fünf Lernfragen prüfen.
 :::
 
 ## Anmelden
@@ -106,3 +106,9 @@ Gehen Sie die Liste einmal durch, wenn Sie ein neues Werkzeug oder Modell auspro
 - [ ] Ich weiß, ob KI in meinem Modul erlaubt ist und wie ich ihre Nutzung kennzeichnen muss.
 - [ ] Verwende ich ein KI-Ergebnis weiter, notiere ich Werkzeug, Modell und Datum, damit ich es später nachvollziehen kann.
 :::
+
+## Lernfragen: Haben Sie es verstanden? {#sec-lernfragen}
+
+Fünf kurze Fragen zu dieser Seite. Nach jeder Antwort sehen Sie sofort, ob sie stimmt und warum.
+
+{{< include ../includes/_lernfragen-thki.qmd >}}
