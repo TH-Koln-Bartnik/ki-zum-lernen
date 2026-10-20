@@ -1,7 +1,7 @@
 # Zentrale Platzhalter. Eine Änderung hier wirkt auf allen Seiten.
 # Aufruf in .qmd-Dateien: {{< var thki >}}
 thki: "THKI Lab"
-raum: "Raum 3.102"
-zeit: "13:00–13:30 Uhr"
+raum: "Hörsaal 0402"
+zeit: "12:30–13:00 Uhr"
 semester-start: "01.10.2026"
 semester-ende: "29.01.2027"

@@ -1,6 +1,6 @@
 ---
 title: "Workshop 3 — KI als Lernunterstützung"
-subtitle: "Mittwoch, 04.11.2026 · 13:00–13:30 Uhr · Raum 3.102"
+subtitle: "Mittwoch, 04.11.2026 · 12:30–13:00 Uhr · Hörsaal 0402"
 ---
 
 ::: th-color-bar

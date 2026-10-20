@@ -9,7 +9,10 @@ project:
 book:
   title: "KI zum Lernen"
   subtitle: "Vier Kurz-Workshops für Studierende · Campus Gummersbach · WiSe 2026/27"
-  author: "Prof. Dr. Roman Bartnik"
+  author:
+    - "Prof. Dr. Roman Bartnik"
+    - "Prof. Uwe van Heesch"
+    - "Ben Moser (Tutor)"
   date: "2026-10-21"
   date-format: "DD.MM.YYYY"
   search: true
@@ -43,7 +46,7 @@ book:
         - appendix/troubleshooting.qmd
     - references.qmd
   page-footer:
-    left: "© 2026 Prof. Dr. Roman Bartnik · TH Köln · CC BY-NC-SA 4.0"
+    left: "© 2026 R. Bartnik, U. van Heesch, B. Moser · TH Köln · CC BY-NC-SA 4.0"
     right: "Erstellt mit [Quarto](https://quarto.org)"
 
 bibliography: references.bib

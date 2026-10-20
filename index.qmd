@@ -8,9 +8,11 @@ subtitle: "Vier Kurz-Workshops à 30 Minuten für alle Studierenden am Campus Gu
 
 Wie holt man im Studium das Beste aus ChatGPT, Claude, Gemini oder dem hochschuleigenen {{< var thki >}} heraus, ohne in die Copy-Paste-Falle zu tappen? Jeder Workshop zeigt in 30 Minuten eine konkrete Aufgabe aus dem Studienalltag, ein Prompt wird live ausprobiert, und am Ende nehmen Sie ein fertiges Werkzeug mit. Auf dieser Seite finden Sie alle Prompts zum Kopieren, die Übungsmaterialien und eine Wissensbasis zum Nachschlagen.
 
+![](images/flyer-ki-zum-lernen.jpg){fig-alt="Flyer: KI zum Lernen – Wie geht das eigentlich sinnvoll? 4 kurze Workshops für alle, ohne Anmeldung, ohne Test, Mittagessen erlaubt. Mittwochs 21.10., 28.10., 04.11., 11.11., jeweils 12:30 bis 13:00 Uhr, Hörsaal 0402." width="360px" fig-align="center"}
+
 ## Termine
 
-Alle Termine finden mittwochs von {{< var zeit >}} in {{< var raum >}} statt.
+Alle Termine finden mittwochs von {{< var zeit >}} in {{< var raum >}} statt. Ohne Anmeldung, ohne Test, Mittagessen erlaubt. Bringen Sie gern Laptop oder Tablet mit, oder kommen Sie einfach so vorbei.
 
 | Datum | Workshop | Was Sie mitnehmen |
 |---|---|---|
@@ -20,6 +22,10 @@ Alle Termine finden mittwochs von {{< var zeit >}} in {{< var raum >}} statt.
 | 11.11.2026 | [Präsentieren mit KI](parts/04-praesentieren.qmd) | Folien-Redakteur und Prüfungs-Simulator |
 
 Die Workshops bauen lose aufeinander auf, jeder funktioniert aber auch allein.
+
+## Wer Sie begleitet
+
+Die Inputs kommen abwechselnd von **Prof. Dr. Roman Bartnik** (Supply Management und Projektmanagement) und **Prof. Uwe van Heesch** (Schwerpunkt Informatik). **Ben Moser** begleitet die Übungen als Tutor und hilft, wenn ein Prompt oder ein Import hakt.
 
 ## Was Sie brauchen
 
