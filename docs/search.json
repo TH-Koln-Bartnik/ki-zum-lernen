@@ -44,7 +44,7 @@
     "href": "index.html#so-nutzen-sie-diese-seite",
     "title": "KI zum Lernen",
     "section": "So nutzen Sie diese Seite",
-    "text": "So nutzen Sie diese Seite\nJede Workshop-Seite beginnt mit einem kurzen Theorie-Input: ein Absatz zum Stand der Forschung, eine Grafik und ein Merksatz. Danach folgen zwei Anwendungen, jeweils mit demselben Aufbau: ein Problem aus dem Studienalltag, die Einordnung in das 4D-Framework (Delegate, Describe, Discern, Diligence), der Prompt zum Kopieren, die Übung und ein kurzer Qualitätscheck. Das Kopiersymbol oben rechts an jedem grauen Prompt-Kasten legt den Text in Ihre Zwischenablage. Begriffe wie Prompt, Halluzination oder RAG erklärt die Wissensbasis; alle Prompts gesammelt stehen in der Prompt-Bibliothek. Wie gut Sie die Grundbegriffe schon kennen, testen Sie mit dem Lernspiel in der Wissensbasis.\n\n\n\n\nDakan, R., & Feller, J. (2025). Framework for AI Fluency: Practical Overview Document. https://ringling.libguides.com/ai/framework\n\n\nTH Köln. (2025). THKI Chat – Handreichung für Studierende (v07). https://lehrpfade.th-koeln.de/wp-content/uploads/2025/09/THKI_Chat_Handreichung_Studierende_v07.pdf",
+    "text": "So nutzen Sie diese Seite\nJede Workshop-Seite beginnt mit einem kurzen Theorie-Input: ein Absatz zum Stand der Forschung, eine Grafik und ein Merksatz. Danach folgen zwei Anwendungen, jeweils mit demselben Aufbau: ein Problem aus dem Studienalltag, die Einordnung in das 4D-Framework (Delegate, Describe, Discern, Diligence), der Prompt zum Kopieren, die Übung und ein kurzer Qualitätscheck. Das Kopiersymbol oben rechts an jedem grauen Prompt-Kasten legt den Text in Ihre Zwischenablage. Begriffe wie Prompt, Halluzination oder RAG erklärt die Wissensbasis; alle Prompts gesammelt stehen in der Prompt-Bibliothek. Wie gut Sie die Grundbegriffe schon kennen, testen Sie mit dem Lernspiel im Anhang.\n\n\n\n\nDakan, R., & Feller, J. (2025). Framework for AI Fluency: Practical Overview Document. https://ringling.libguides.com/ai/framework\n\n\nTH Köln. (2025). THKI Chat – Handreichung für Studierende (v07). https://lehrpfade.th-koeln.de/wp-content/uploads/2025/09/THKI_Chat_Handreichung_Studierende_v07.pdf",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>KI zum Lernen — verstehen und sinnvoll nutzen</span>"
     ]
@@ -234,18 +234,7 @@
     "href": "appendix/wissensbasis.html",
     "title": "Wissensbasis",
     "section": "",
-    "text": "Was Sie in dieser Wissensbasis finden\nDiese Seite ist absichtlich ein einziges, durchsuchbares Dokument. Sie wächst mit jedem Workshop. Stand: 20.10.2026. Jeder Abschnitt endet mit Quellen zum Weiterlesen.",
-    "crumbs": [
-      "Anhang",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Wissensbasis</span>"
-    ]
-  },
-  {
-    "objectID": "appendix/wissensbasis.html#sec-lernspiel",
-    "href": "appendix/wissensbasis.html#sec-lernspiel",
-    "title": "Wissensbasis",
-    "section": "Lernspiel: Welche Grundbegriffe kennen Sie schon?",
-    "text": "Lernspiel: Welche Grundbegriffe kennen Sie schon?\nVon Prompt über Token bis Halluzination: Ordnen Sie die Begriffe den passenden Definitionen zu. Wer die Grundbegriffe schon kennt, wählt am Start das Level Fortgeschritten: Dort geht es um Agent, Skill, Orchestrator und MCP, und in einer Diagnose-Runde ordnen Sie Szenen aus dem Studium typischen Problemen wie Cognitive Debt oder Automation Complacency zu. Das Spiel stammt aus Kapitel 2 des Skripts GenAI in der Lehre und läuft am besten auf dem Computer.\n\n\nAuf dem Smartphone zu eng? Spiel im eigenen Fenster öffnen.",
+    "text": "Was Sie in dieser Wissensbasis finden\nDiese Seite ist absichtlich ein einziges, durchsuchbares Dokument. Sie wächst mit jedem Workshop. Stand: 20.10.2026. Jeder Abschnitt endet mit Quellen zum Weiterlesen. Zum Selbsttest gibt es die Lernspiele.",
     "crumbs": [
       "Anhang",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Wissensbasis</span>"
@@ -296,6 +285,17 @@
     ]
   },
   {
+    "objectID": "appendix/lernspiele.html",
+    "href": "appendix/lernspiele.html",
+    "title": "Lernspiele",
+    "section": "",
+    "text": "Welche Begriffe kennen Sie schon?\nWer einen Begriff erklären kann, hat ihn noch nicht unbedingt verstanden. Das zeigt sich erst, wenn man ihn in einer Situation wiedererkennt. Die Spiele auf dieser Seite üben beides. Die Fachbegriffe selbst erklärt die Wissensbasis.\nAm Start wählen Sie eines von zwei Leveln.\nGrundbegriffe. Von Prompt über Token bis Halluzination: Sie ordnen die Begriffe den passenden Definitionen zu, drei Runden mit je fünf Paaren.\nFortgeschritten. Vier Runden im Wechsel. In den Konzept-Runden geht es um Agent, Skill, Orchestrator, MCP und weitere Bausteine agentischer Systeme. In den Diagnose-Runden lesen Sie kurze Szenen aus dem Studium und benennen das typische Problem dahinter, etwa Cognitive Debt, Automation Complacency oder Sycophancy. Nach jedem Treffer erklärt das Spiel den Begriff, nennt ein Gegenmittel und die Quelle.\nDas Spiel stammt aus Kapitel 2 des Skripts GenAI in der Lehre und läuft am besten auf dem Computer.\nAuf dem Smartphone zu eng? Spiel im eigenen Fenster öffnen.",
+    "crumbs": [
+      "Anhang",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Lernspiele</span>"
+    ]
+  },
+  {
     "objectID": "appendix/troubleshooting.html",
     "href": "appendix/troubleshooting.html",
     "title": "Troubleshooting",
@@ -303,7 +303,7 @@
     "text": "Kalenderdateien (.ics)\nAlle Termine sind um eine oder zwei Stunden verschoben. Die KI hat die Uhrzeiten als UTC (Weltzeit) geschrieben, erkennbar an einem Z am Ende, etwa DTSTART:20261005T081500Z. Richtig ist eine Zeile mit Zeitzone: DTSTART;TZID=Europe/Berlin:20261005T081500. Schreiben Sie in den Chat: „Bitte alle Zeiten mit TZID=Europe/Berlin angeben, nicht in UTC.“\nDie Kalender-App meldet „ungültige Datei“. Häufige Ursachen: Die Datei heißt mathe1.ics.txt, weil der Editor heimlich .txt angehängt hat (unter Windows im Explorer Dateinamenerweiterungen einblenden). Oder beim Kopieren fehlt die erste Zeile BEGIN:VCALENDAR oder die letzte Zeile END:VCALENDAR.\nEs erscheint nur ein einziger Termin statt einer ganzen Serie. Die KI hat die Wiederholungsregel vergessen. Jeder wöchentliche Termin braucht eine Zeile wie RRULE:FREQ=WEEKLY;BYDAY=MO;UNTIL=20270129T225959Z.\nDie Serie läuft über Weihnachten oder Feiertage weiter. Bitten Sie die KI, einzelne Daten auszunehmen: „Nimm die Termine zwischen dem [Datum] und dem [Datum] aus.“ Sie ergänzt dann EXDATE-Zeilen, eine pro ausfallendem Termin.\nOutlook importiert, zeigt aber falsche Zeiten. Manche Outlook-Versionen brauchen in der Datei einen vollständigen Zeitzonen-Block (BEGIN:VTIMEZONE … END:VTIMEZONE). Die Musterlösung enthält ihn; Sie können ihn von dort übernehmen.\nIch habe 34 falsche Termine im Hauptkalender. Beim nächsten Mal in einen eigenen Testkalender importieren. Jetzt hilft in Google Kalender und Outlook meist nur das Löschen der Serie über einen der Termine (Alle Termine löschen).",
     "crumbs": [
       "Anhang",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Troubleshooting</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Troubleshooting</span>"
     ]
   },
   {
@@ -314,7 +314,7 @@
     "text": "Chatbots allgemein\nDie KI gibt trotz Verbot die fertige Lösung aus. Lange Chats „vergessen“ frühe Anweisungen. Wiederholen Sie die Regel kurz oder starten Sie einen neuen Chat mit dem vollständigen Prompt.\nDer Upload eines Screenshots funktioniert nicht. Nicht jedes Modell versteht Bilder. Wählen Sie ein Modell mit Bilderkennung oder kopieren Sie den Text aus ILU direkt in den Chat.",
     "crumbs": [
       "Anhang",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Troubleshooting</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Troubleshooting</span>"
     ]
   },
   {

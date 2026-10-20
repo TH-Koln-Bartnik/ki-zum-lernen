@@ -45,6 +45,7 @@ book:
       chapters:
         - appendix/prompt-bibliothek.qmd
         - appendix/wissensbasis.qmd
+        - appendix/lernspiele.qmd
         - appendix/troubleshooting.qmd
         - transparenz.qmd
     - references.qmd

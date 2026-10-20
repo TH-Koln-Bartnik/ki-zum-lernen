@@ -1,0 +1,25 @@
+---
+title: "Lernspiele"
+subtitle: "Begriffe zuordnen, Probleme erkennen"
+---
+
+::: th-color-bar
+:::
+
+Wer einen Begriff erklären kann, hat ihn noch nicht unbedingt verstanden. Das zeigt sich erst, wenn man ihn in einer Situation wiedererkennt. Die Spiele auf dieser Seite üben beides. Die Fachbegriffe selbst erklärt die [Wissensbasis](wissensbasis.qmd).
+
+## Welche Begriffe kennen Sie schon? {#sec-lernspiel}
+
+Am Start wählen Sie eines von zwei Leveln.
+
+**Grundbegriffe.** Von *Prompt* über *Token* bis *Halluzination*: Sie ordnen die Begriffe den passenden Definitionen zu, drei Runden mit je fünf Paaren.
+
+**Fortgeschritten.** Vier Runden im Wechsel. In den Konzept-Runden geht es um *Agent*, *Skill*, *Orchestrator*, *MCP* und weitere Bausteine agentischer Systeme. In den Diagnose-Runden lesen Sie kurze Szenen aus dem Studium und benennen das typische Problem dahinter, etwa *Cognitive Debt*, *Automation Complacency* oder *Sycophancy*. Nach jedem Treffer erklärt das Spiel den Begriff, nennt ein Gegenmittel und die Quelle.
+
+Das Spiel stammt aus Kapitel 2 des Skripts [*GenAI in der Lehre*](https://th-koln-bartnik.github.io/genai4teaching/kapitel02.html){target="_blank"} und läuft am besten auf dem Computer.
+
+::: {.content-visible when-format="html"}
+<iframe src="../interactions/llm-game-standalone.html" title="Lernspiel: Begriffe zu Sprachmodellen und Agenten zuordnen" width="100%" height="760px" style="border:1px solid #e6e6ea;" loading="lazy"></iframe>
+:::
+
+Auf dem Smartphone zu eng? [Spiel im eigenen Fenster öffnen](../interactions/llm-game-standalone.html){target="_blank"}.
