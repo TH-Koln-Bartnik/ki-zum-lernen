@@ -276,3 +276,88 @@ pre, pre code, div.sourceCode pre, div.sourceCode code {
   .d4-arrow { flex-direction: row; gap: 0.4rem; min-height: 1.8rem; }
   .d4-arrow span { display: inline-block; transform: rotate(90deg); }
 }
+
+/* Harness-Grafik (includes/_harness-grafik.qmd)
+   LLM allein vs. erweitertes LLM nebeneinander, Agent als Band darunter */
+.hx {
+  margin: 1.5rem 0 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hx-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+.hx-card {
+  --hxc: var(--gray-500);
+  border: 1px solid var(--gray-200);
+  border-top: 5px solid var(--hxc);
+  background: var(--paper);
+  padding: 0.8rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.hx-plain { --hxc: var(--gray-500); }
+.hx-tools { --hxc: var(--th-magenta); }
+.hx-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray-500);
+}
+.hx-title { font-weight: 700; font-size: 1.2rem; color: var(--hxc); }
+.hx-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0.6rem 0;
+}
+.hx-step {
+  font-size: 0.9rem;
+  border: 1px dashed var(--gray-500);
+  padding: 0.25rem 0.6rem;
+  color: var(--ink);
+  text-align: center;
+}
+.hx-model {
+  font-weight: 700;
+  background: var(--gray-100);
+  border: 2px solid var(--hxc);
+  padding: 0.45rem 1rem;
+  color: var(--ink);
+}
+.hx-belt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-top: 0.15rem;
+}
+.hx-tool {
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: var(--th-magenta);
+  color: var(--paper);
+  padding: 0.15rem 0.5rem;
+}
+.hx-arrow { color: var(--gray-500); font-size: 1.2rem; line-height: 1; }
+.hx-note { font-size: 0.88rem; line-height: 1.4; margin: 0.2rem 0 0; color: var(--ink); }
+.hx-agent {
+  margin-top: 0.5rem;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.7rem 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.9rem;
+}
+.hx-agent .hx-title { color: var(--paper); }
+.hx-agent .hx-loop { font-weight: 600; color: var(--paper); }
+.hx-agent .hx-note { color: var(--gray-200); flex-basis: 100%; margin: 0; }
+
+@media (max-width: 640px) {
+  .hx-grid { grid-template-columns: 1fr; }
+}

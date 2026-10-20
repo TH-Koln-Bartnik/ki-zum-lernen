@@ -62,7 +62,7 @@ div.csl-indent {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a43d718531462f1618eaea66269ec45c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2856efb0d6f5f2491ee99acfdd624887.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -261,6 +261,8 @@ div.csl-indent {
   <li><a href="#anmelden" id="toc-anmelden" class="nav-link active" data-scroll-target="#anmelden">Anmelden</a></li>
   <li><a href="#welches-modell" id="toc-welches-modell" class="nav-link" data-scroll-target="#welches-modell">Welches Modell?</a></li>
   <li><a href="#was-folgt-daraus-für-ihr-studium" id="toc-was-folgt-daraus-für-ihr-studium" class="nav-link" data-scroll-target="#was-folgt-daraus-für-ihr-studium">Was folgt daraus für Ihr Studium?</a></li>
+  <li><a href="#sec-harness" id="toc-sec-harness" class="nav-link" data-scroll-target="#sec-harness">Modell ist nicht alles: KI ohne und mit Harness</a></li>
+  <li><a href="#sec-checkliste" id="toc-sec-checkliste" class="nav-link" data-scroll-target="#sec-checkliste">Checkliste: Mit welcher KI arbeite ich gerade?</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/TH-Koln-Bartnik/ki-zum-lernen/edit/main/parts/00-thki-chat.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/TH-Koln-Bartnik/ki-zum-lernen/issues/new" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></nav>
     </div>
@@ -295,7 +297,9 @@ div.csl-indent {
 <ul>
 <li>wie Sie sich im THKI Chat anmelden,</li>
 <li>welche Sprachmodelle dort zur Auswahl stehen und wie sie im Vergleich zur aktuellen Modellspitze abschneiden,</li>
-<li>welches Modell Sie für welche Aufgabe wählen und warum Sie die Ergebnisse trotzdem prüfen müssen.</li>
+<li>welches Modell Sie für welche Aufgabe wählen und warum Sie die Ergebnisse trotzdem prüfen müssen,</li>
+<li>warum dasselbe Modell mit und ohne <strong>Harness</strong> (Werkzeuge wie Websuche oder Datei-Upload) ganz unterschiedlich leistungsfähig ist,</li>
+<li>wie Sie mit einer kurzen Checkliste klären, mit welcher KI Sie gerade arbeiten.</li>
 </ul>
 </section>
 <section id="anmelden" class="level2">
@@ -408,11 +412,161 @@ root.querySelectorAll('.kc-row').forEach(row => {row.hidden = filter.checked && 
 <li><strong>Immer prüfen:</strong> Ein schwächeres Modell ist kein Grund, auf KI zu verzichten, aber ein Grund mehr, jedes Ergebnis gegenzuprüfen. Genau darum geht es im <em>Discern</em>-Teil jedes Workshops.</li>
 </ul>
 <p>Die Werte sind eine Momentaufnahme vom 20.10.2026. Modelle und Ranglisten ändern sich im Monatstakt; den aktuellen Stand zeigt das <a href="https://artificialanalysis.ai/models">Leaderboard von Artificial Analysis</a>.</p>
+</section>
+<section id="sec-harness" class="level2">
+<h2 class="anchored" data-anchor-id="sec-harness">Modell ist nicht alles: KI ohne und mit Harness</h2>
+<p>„KI“ vor und nach November 2022 meint oft ganz verschiedene Dinge, KI-Äpfel und KI-Birnen gewissermaßen. Früher ging es aus Anwendersicht meist um bessere statistische Prognosemodelle, die Expertinnen und Experten etwa für optimale Routen oder die Ablage von Containern nutzten <span class="citation" data-cites="russell2021ai">(<a href="../references.html#ref-russell2021ai" role="doc-biblioref">Russell &amp; Norvig, 2021</a>)</span>. Seit ChatGPT sprechen wir von viel breiteren Formen der Nutzung, von Milliarden Nutzerinnen und Nutzern und von einem gewaltigen KI-Hype.</p>
+<p>Seit spätestens 2026 hat sich die Bedeutung erneut verschoben. Fortgeschrittene Modelle arbeiten inzwischen sehr selbstständig, denken teils über Stunden nach, recherchieren und stellen Texte oder Software zusammen. Mit den einfachen Chatbots ohne Internetanbindung, die 2022 und 2023 noch häufig halluzinierten, hat das wenig zu tun. Halluzinationen gibt es weiterhin, vor allem bei einfacheren Modellen und bei wenig professioneller Nutzung, etwa wenn man nur eine Frage ohne Kontext und ohne Qualitätskriterien stellt.</p>
+<p>Den Unterschied macht die <strong>Harness</strong>, auf Deutsch das <em>Geschirr</em>: Wie das Geschirr die Kraft eines Pferdes auf einen Wagen überträgt, verbindet die Harness ein Sprachmodell mit Werkzeugen, damit es nicht nur redet, sondern handelt <span class="citation" data-cites="mollick2026guide">(<a href="../references.html#ref-mollick2026guide" role="doc-biblioref">Mollick, 2026</a>)</span>. Drei Konfigurationen muss man heute unterscheiden <span class="citation" data-cites="grootendorst2025visual">(<a href="../references.html#ref-grootendorst2025visual" role="doc-biblioref">Grootendorst, 2025</a>)</span>:</p>
+<ul>
+<li><strong>LLM allein</strong> — ein Textgenerator. Stellen Sie sich einen sehr belesenen Bibliothekar vor, der nur reden kann, nichts nachschlagen und nichts ausführen.</li>
+<li><strong>Erweitertes LLM</strong> — dasselbe Modell mit einem Werkzeuggürtel aus Websuche, Datei-Upload oder Code-Ausführung. Der Bibliothekar bekommt eine Werkbank.</li>
+<li><strong>Agent</strong> — ein erweitertes LLM, das in einer Schleife arbeitet: Ziel, Plan, Werkzeug, Bewertung, neuer Plan. Der Bibliothekar erledigt mehrschrittige Aufgaben eigenständig und meldet sich erst zurück, wenn er fertig ist.</li>
+</ul>
+<!-- LLM ohne und mit Harness, darunter das Agenten-Band. Seite: parts/00-thki-chat.qmd. Stil: .hx-* in styles.scss -->
+<figure class="hx figure" aria-label="Vergleich: Ein Sprachmodell ohne Harness antwortet nur aus seinem Trainingsgedächtnis. Mit Harness kann dasselbe Modell im Web suchen, Dateien lesen, Code ausführen und sich an frühere Chats erinnern. Ein Agent nutzt diese Werkzeuge in einer Schleife aus Ziel, Plan, Werkzeug und Bewertung.">
+  <div class="hx-grid">
+    <div class="hx-card hx-plain">
+      <span class="hx-label">Ohne Harness</span>
+      <span class="hx-title">LLM allein</span>
+      <div class="hx-flow">
+        <span class="hx-step">Ihre Frage</span>
+        <span class="hx-arrow" aria-hidden="true">↓</span>
+        <span class="hx-model">Sprachmodell</span>
+        <span class="hx-arrow" aria-hidden="true">↓</span>
+        <span class="hx-step">Antwort aus dem Gedächtnis</span>
+      </div>
+      <p class="hx-note">Der belesene Bibliothekar, der nur reden kann. Sein Wissen endet am Trainingsstichtag, Belege liefert er nicht, gerechnet wird „im Kopf“.</p>
+    </div>
+    <div class="hx-card hx-tools">
+      <span class="hx-label">Mit Harness</span>
+      <span class="hx-title">Erweitertes LLM</span>
+      <div class="hx-flow">
+        <span class="hx-step">Ihre Frage</span>
+        <span class="hx-arrow" aria-hidden="true">↓</span>
+        <span class="hx-model">Sprachmodell</span>
+        <span class="hx-belt">
+          <span class="hx-tool">Websuche</span>
+          <span class="hx-tool">Dateien lesen</span>
+          <span class="hx-tool">Code ausführen</span>
+          <span class="hx-tool">Gedächtnis</span>
+        </span>
+        <span class="hx-arrow" aria-hidden="true">↓</span>
+        <span class="hx-step">Antwort mit Belegen</span>
+      </div>
+      <p class="hx-note">Derselbe Bibliothekar an einer Werkbank. Er schlägt nach, liest Ihr Skript, rechnet mit Code und zeigt, woher seine Aussagen stammen.</p>
+    </div>
+  </div>
+  <div class="hx-agent">
+    <span class="hx-title">Agent</span>
+    <span class="hx-loop">Ziel → Plan → Werkzeug → Bewertung → neuer Plan <span aria-hidden="true">↺</span></span>
+    <span class="hx-note">Das erweiterte LLM arbeitet in einer Schleife und meldet sich erst, wenn die mehrschrittige Aufgabe erledigt ist.</span>
+  </div>
+</figure>
+<p>Die Abbildung von Maarten Grootendorst zeigt, wie ein Agent intern aufgebaut ist: Im Kern sitzt das „erweiterte“ LLM mit Werkzeugen (<em>Tools</em>) und Gedächtnis (<em>Memory</em>). Es nimmt seine Umgebung wahr (<em>Perception</em>), plant in Schleifen (<em>Planning</em>) und handelt (<em>Action</em>), etwa indem es eine Webseite aufruft oder eine Datei schreibt.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/augmented-llm-agent-grootendorst.png" class="img-fluid figure-img" style="width:75.0%" alt="Schema eines Agenten: Ein Kasten 'The Augmented LLM' mit den Bausteinen Tools und Memory, darüber Perception, darunter Action, links ein Kreispfeil Planning; Action wirkt auf die Umgebung (Environment), die wiederum in die Perception zurückfließt."></p>
+<figcaption>Tools und mehrstufiges Überlegen machen einen großen Unterschied: Was ein Modell tatsächlich kann, hängt mindestens so stark von der Harness ab wie vom Modell selbst. Abbildung: Grootendorst (2025), <a href="https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents" target="_blank"><em>A Visual Guide to LLM Agents</em></a>.</figcaption>
+</figure>
+</div>
+<p>Wer Aufgaben an eine KI delegieren will, muss deshalb wissen, in welcher der drei Konfigurationen das eigene System läuft, weil Fähigkeiten und Risiken substanziell verschieden sind <span class="citation" data-cites="grootendorst2025visual mollick2024cointelligence">(<a href="../references.html#ref-grootendorst2025visual" role="doc-biblioref">Grootendorst, 2025</a>; <a href="../references.html#ref-mollick2024cointelligence" role="doc-biblioref">Mollick, 2024</a>)</span>. Ein LLM ohne Websuche erfindet eine Raumnummer mit derselben Sicherheit, mit der ein LLM mit Websuche sie auf der Hochschulseite nachschlägt.</p>
+<div class="weiterlesen">
+<p><strong>Quellen zu diesem Abschnitt:</strong> Grootendorst, M. (2025). <a href="https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents" target="_blank"><em>A visual guide to LLM agents</em></a> · Mollick, E. (2026). <a href="https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the" target="_blank"><em>A guide to which AI to use in the agentic era</em></a> · Mollick, E. (2024). <a href="https://search.worldcat.org/title/1408648878" target="_blank"><em>Co-intelligence: Living and working with AI</em></a> · Russell, S., &amp; Norvig, P. (2021). <a href="https://aima.cs.berkeley.edu/" target="_blank"><em>Artificial intelligence: A modern approach</em> (4. Aufl.)</a></p>
+</div>
+</section>
+<section id="sec-checkliste" class="level2">
+<h2 class="anchored" data-anchor-id="sec-checkliste">Checkliste: Mit welcher KI arbeite ich gerade?</h2>
+<p>Gehen Sie die Liste einmal durch, wenn Sie ein neues Werkzeug oder Modell ausprobieren, und danach immer dann, wenn viel vom Ergebnis abhängt. Die vier Abschnitte folgen dem 4D-Framework, das Sie in jedem Workshop wiederfinden <span class="citation" data-cites="dakan2025framework">(<a href="../references.html#ref-dakan2025framework" role="doc-biblioref">Dakan &amp; Feller, 2025</a>)</span>.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tipp</span>Vor dem Prompt — Delegate: Welches System habe ich vor mir?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul class="task-list">
+<li><label><input type="checkbox">Ich kenne das Werkzeug (die App) und das Modell mit Namen, zum Beispiel THKI Chat mit GPT-5.5.</label></li>
+<li><label><input type="checkbox">Ich weiß, ob eine <strong>Websuche</strong> aktiv ist. <em>Test:</em> Fragen Sie nach einer Nachricht von heute. Erscheinen anklickbare Quellen, sucht das System im Web; erscheinen keine, antwortet es aus dem Gedächtnis.</label></li>
+<li><label><input type="checkbox">Ich weiß, ob das System <strong>Dateien lesen</strong> (PDF, Screenshot) und <strong>Code ausführen</strong> kann. Für Rechnungen und Tabellen macht das den Unterschied zwischen Rechnen und Raten.</label></li>
+<li><label><input type="checkbox">Ich weiß, ob das System ein <strong>Gedächtnis</strong> hat, also frühere Chats kennt, und ob ich das möchte.</label></li>
+<li><label><input type="checkbox">Ich habe entschieden, was die Aufgabe braucht: Für Erklären, Umformulieren und Gliedern reicht ein LLM allein; für aktuelle Fakten, Ihre eigenen Unterlagen oder Zahlen brauchen Sie Werkzeuge.</label></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tipp</span>Beim Prompten — Describe: Habe ich der KI gegeben, was ihr fehlt?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul class="task-list">
+<li><label><input type="checkbox">Geht es um Fakten aus Ihrem Studium, hänge ich die Quelle an (Skript, Modulbeschreibung, Prüfungsordnung) oder verlange Links.</label></li>
+<li><label><input type="checkbox">Bei Zahlen bitte ich die KI, mit Code zu rechnen statt zu schätzen, sofern sie das kann.</label></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warnung</span>Nach der Antwort — Discern: Woher stammt das?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul class="task-list">
+<li><label><input type="checkbox">Ich öffne mindestens einen genannten Link und prüfe, ob die Aussage dort wirklich steht.</label></li>
+<li><label><input type="checkbox">Ohne Werkzeuge behandle ich die Antwort als Entwurf aus dem Gedächtnis: Termine, Raumnummern, Formeln und Literaturangaben prüfe ich immer selbst.</label></li>
+<li><label><input type="checkbox">Ich kann den Lösungsweg mit eigenen Worten erklären. Wenn nicht, habe ich eine Antwort, aber noch kein Verständnis.</label></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Wichtig</span>Immer — Diligence: Verantworte ich, wie ich die KI nutze?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul class="task-list">
+<li><label><input type="checkbox">Keine personenbezogenen Daten, keine urheberrechtlich geschützten Texte, auch nicht im privaten Account <span class="citation" data-cites="thkoeln2025thkichat">(<a href="../references.html#ref-thkoeln2025thkichat" role="doc-biblioref">TH Köln, 2025</a>)</span>.</label></li>
+<li><label><input type="checkbox">Ich weiß, ob KI in meinem Modul erlaubt ist und wie ich ihre Nutzung kennzeichnen muss.</label></li>
+<li><label><input type="checkbox">Verwende ich ein KI-Ergebnis weiter, notiere ich Werkzeug, Modell und Datum, damit ich es später nachvollziehen kann.</label></li>
+</ul>
+</div>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-ArtificialAnalysis2026" class="csl-entry" role="listitem">
 Artificial Analysis. (2026). <em>Comparison of Models: Intelligence, Performance and Price Analysis</em>. <a href="https://artificialanalysis.ai/models">https://artificialanalysis.ai/models</a>
+</div>
+<div id="ref-dakan2025framework" class="csl-entry" role="listitem">
+Dakan, R., &amp; Feller, J. (2025). <em>Framework for <span>AI</span> Fluency: Practical Overview Document</em>. <a href="https://ringling.libguides.com/ai/framework">https://ringling.libguides.com/ai/framework</a>
+</div>
+<div id="ref-grootendorst2025visual" class="csl-entry" role="listitem">
+Grootendorst, M. (2025). <em>A Visual Guide to <span>LLM</span> Agents</em>. <a href="https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents">https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents</a>
+</div>
+<div id="ref-mollick2024cointelligence" class="csl-entry" role="listitem">
+Mollick, E. (2024). <em>Co-Intelligence: Living and Working with <span>AI</span></em>. Portfolio/Penguin. <a href="https://search.worldcat.org/title/1408648878">https://search.worldcat.org/title/1408648878</a>
+</div>
+<div id="ref-mollick2026guide" class="csl-entry" role="listitem">
+Mollick, E. (2026). <em>A Guide to Which <span>AI</span> to Use in the Agentic Era</em>. One Useful Thing. <a href="https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the">https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the</a>
+</div>
+<div id="ref-russell2021ai" class="csl-entry" role="listitem">
+Russell, S., &amp; Norvig, P. (2021). <em>Artificial Intelligence: A Modern Approach</em> (4. Aufl.). Pearson. <a href="https://aima.cs.berkeley.edu/">https://aima.cs.berkeley.edu/</a>
 </div>
 <div id="ref-thkoeln2025thkichat" class="csl-entry" role="listitem">
 TH Köln. (2025). <em><span>THKI</span> Chat – Handreichung für Studierende (v07)</em>. <a href="https://lehrpfade.th-koeln.de/wp-content/uploads/2025/09/THKI_Chat_Handreichung_Studierende_v07.pdf">https://lehrpfade.th-koeln.de/wp-content/uploads/2025/09/THKI_Chat_Handreichung_Studierende_v07.pdf</a>

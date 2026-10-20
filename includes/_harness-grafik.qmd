@@ -1,0 +1,43 @@
+<!-- LLM ohne und mit Harness, darunter das Agenten-Band. Seite: parts/00-thki-chat.qmd. Stil: .hx-* in styles.scss -->
+
+```{=html}
+<figure class="hx" aria-label="Vergleich: Ein Sprachmodell ohne Harness antwortet nur aus seinem Trainingsgedächtnis. Mit Harness kann dasselbe Modell im Web suchen, Dateien lesen, Code ausführen und sich an frühere Chats erinnern. Ein Agent nutzt diese Werkzeuge in einer Schleife aus Ziel, Plan, Werkzeug und Bewertung.">
+  <div class="hx-grid">
+    <div class="hx-card hx-plain">
+      <span class="hx-label">Ohne Harness</span>
+      <span class="hx-title">LLM allein</span>
+      <div class="hx-flow">
+        <span class="hx-step">Ihre Frage</span>
+        <span class="hx-arrow" aria-hidden="true">↓</span>
+        <span class="hx-model">Sprachmodell</span>
+        <span class="hx-arrow" aria-hidden="true">↓</span>
+        <span class="hx-step">Antwort aus dem Gedächtnis</span>
+      </div>
+      <p class="hx-note">Der belesene Bibliothekar, der nur reden kann. Sein Wissen endet am Trainingsstichtag, Belege liefert er nicht, gerechnet wird „im Kopf“.</p>
+    </div>
+    <div class="hx-card hx-tools">
+      <span class="hx-label">Mit Harness</span>
+      <span class="hx-title">Erweitertes LLM</span>
+      <div class="hx-flow">
+        <span class="hx-step">Ihre Frage</span>
+        <span class="hx-arrow" aria-hidden="true">↓</span>
+        <span class="hx-model">Sprachmodell</span>
+        <span class="hx-belt">
+          <span class="hx-tool">Websuche</span>
+          <span class="hx-tool">Dateien lesen</span>
+          <span class="hx-tool">Code ausführen</span>
+          <span class="hx-tool">Gedächtnis</span>
+        </span>
+        <span class="hx-arrow" aria-hidden="true">↓</span>
+        <span class="hx-step">Antwort mit Belegen</span>
+      </div>
+      <p class="hx-note">Derselbe Bibliothekar an einer Werkbank. Er schlägt nach, liest Ihr Skript, rechnet mit Code und zeigt, woher seine Aussagen stammen.</p>
+    </div>
+  </div>
+  <div class="hx-agent">
+    <span class="hx-title">Agent</span>
+    <span class="hx-loop">Ziel → Plan → Werkzeug → Bewertung → neuer Plan <span aria-hidden="true">↺</span></span>
+    <span class="hx-note">Das erweiterte LLM arbeitet in einer Schleife und meldet sich erst, wenn die mehrschrittige Aufgabe erledigt ist.</span>
+  </div>
+</figure>
+```

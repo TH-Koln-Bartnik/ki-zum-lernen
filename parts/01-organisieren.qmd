@@ -19,7 +19,7 @@ subtitle: "Mittwoch, 21.10.2026 · 12:30–13:00 Uhr · Hörsaal 0402 · Input: 
 ::: callout-important
 ## Dozentenhinweis — Block 0, Tool-Vorstellung
 
-Keine lange Theorie. Kurz auf die kostenlosen Standard-Tools (ChatGPT Free, Claude, Gemini) hinweisen und den hochschuleigenen, datenschutzkonformen Zugang ({{< var thki >}}) zeigen. Zeitbudget prüfen: Block 2 ist mit 14 Minuten angesetzt; für Block 0 und Block 1 bleiben damit zusammen 16 Minuten.
+Keine lange Theorie. Kurz auf die kostenlosen Standard-Tools (ChatGPT Free, Claude, Gemini) hinweisen und den hochschuleigenen, datenschutzkonformen Zugang ({{< var thki >}}) zeigen. Für die Frage „Mit oder ohne Websuche?“ die Harness-Grafik und die Checkliste auf der Seite [THKI Chat](00-thki-chat.qmd#sec-harness) zeigen (1 Minute). Zeitbudget prüfen: Block 2 ist mit 14 Minuten angesetzt; für Block 0 und Block 1 bleiben damit zusammen 16 Minuten.
 :::
 :::
 

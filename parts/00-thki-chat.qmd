@@ -11,7 +11,9 @@ subtitle: "Der kostenlose KI-Zugang der TH Köln, was er kann und wo seine Grenz
 
 - wie Sie sich im {{< var thki >}} anmelden,
 - welche Sprachmodelle dort zur Auswahl stehen und wie sie im Vergleich zur aktuellen Modellspitze abschneiden,
-- welches Modell Sie für welche Aufgabe wählen und warum Sie die Ergebnisse trotzdem prüfen müssen.
+- welches Modell Sie für welche Aufgabe wählen und warum Sie die Ergebnisse trotzdem prüfen müssen,
+- warum dasselbe Modell mit und ohne **Harness** (Werkzeuge wie Websuche oder Datei-Upload) ganz unterschiedlich leistungsfähig ist,
+- wie Sie mit einer kurzen Checkliste klären, mit welcher KI Sie gerade arbeiten.
 :::
 
 ## Anmelden
@@ -43,3 +45,64 @@ Drei Faustregeln:
 - **Immer prüfen:** Ein schwächeres Modell ist kein Grund, auf KI zu verzichten, aber ein Grund mehr, jedes Ergebnis gegenzuprüfen. Genau darum geht es im *Discern*-Teil jedes Workshops.
 
 Die Werte sind eine Momentaufnahme vom 20.10.2026. Modelle und Ranglisten ändern sich im Monatstakt; den aktuellen Stand zeigt das [Leaderboard von Artificial Analysis](https://artificialanalysis.ai/models).
+
+## Modell ist nicht alles: KI ohne und mit Harness {#sec-harness}
+
+„KI“ vor und nach November 2022 meint oft ganz verschiedene Dinge, KI-Äpfel und KI-Birnen gewissermaßen. Früher ging es aus Anwendersicht meist um bessere statistische Prognosemodelle, die Expertinnen und Experten etwa für optimale Routen oder die Ablage von Containern nutzten [@russell2021ai]. Seit ChatGPT sprechen wir von viel breiteren Formen der Nutzung, von Milliarden Nutzerinnen und Nutzern und von einem gewaltigen KI-Hype.
+
+Seit spätestens 2026 hat sich die Bedeutung erneut verschoben. Fortgeschrittene Modelle arbeiten inzwischen sehr selbstständig, denken teils über Stunden nach, recherchieren und stellen Texte oder Software zusammen. Mit den einfachen Chatbots ohne Internetanbindung, die 2022 und 2023 noch häufig halluzinierten, hat das wenig zu tun. Halluzinationen gibt es weiterhin, vor allem bei einfacheren Modellen und bei wenig professioneller Nutzung, etwa wenn man nur eine Frage ohne Kontext und ohne Qualitätskriterien stellt.
+
+Den Unterschied macht die **Harness**, auf Deutsch das *Geschirr*: Wie das Geschirr die Kraft eines Pferdes auf einen Wagen überträgt, verbindet die Harness ein Sprachmodell mit Werkzeugen, damit es nicht nur redet, sondern handelt [@mollick2026guide]. Drei Konfigurationen muss man heute unterscheiden [@grootendorst2025visual]:
+
+- **LLM allein** — ein Textgenerator. Stellen Sie sich einen sehr belesenen Bibliothekar vor, der nur reden kann, nichts nachschlagen und nichts ausführen.
+- **Erweitertes LLM** — dasselbe Modell mit einem Werkzeuggürtel aus Websuche, Datei-Upload oder Code-Ausführung. Der Bibliothekar bekommt eine Werkbank.
+- **Agent** — ein erweitertes LLM, das in einer Schleife arbeitet: Ziel, Plan, Werkzeug, Bewertung, neuer Plan. Der Bibliothekar erledigt mehrschrittige Aufgaben eigenständig und meldet sich erst zurück, wenn er fertig ist.
+
+{{< include ../includes/_harness-grafik.qmd >}}
+
+Die Abbildung von Maarten Grootendorst zeigt, wie ein Agent intern aufgebaut ist: Im Kern sitzt das „erweiterte“ LLM mit Werkzeugen (*Tools*) und Gedächtnis (*Memory*). Es nimmt seine Umgebung wahr (*Perception*), plant in Schleifen (*Planning*) und handelt (*Action*), etwa indem es eine Webseite aufruft oder eine Datei schreibt.
+
+![Tools und mehrstufiges Überlegen machen einen großen Unterschied: Was ein Modell tatsächlich kann, hängt mindestens so stark von der Harness ab wie vom Modell selbst. Abbildung: Grootendorst (2025), [*A Visual Guide to LLM Agents*](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents){target="_blank"}.](../images/augmented-llm-agent-grootendorst.png){fig-alt="Schema eines Agenten: Ein Kasten 'The Augmented LLM' mit den Bausteinen Tools und Memory, darüber Perception, darunter Action, links ein Kreispfeil Planning; Action wirkt auf die Umgebung (Environment), die wiederum in die Perception zurückfließt." width="75%"}
+
+Wer Aufgaben an eine KI delegieren will, muss deshalb wissen, in welcher der drei Konfigurationen das eigene System läuft, weil Fähigkeiten und Risiken substanziell verschieden sind [@grootendorst2025visual; @mollick2024cointelligence]. Ein LLM ohne Websuche erfindet eine Raumnummer mit derselben Sicherheit, mit der ein LLM mit Websuche sie auf der Hochschulseite nachschlägt.
+
+::: weiterlesen
+**Quellen zu diesem Abschnitt:** Grootendorst, M. (2025). [*A visual guide to LLM agents*](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents){target="_blank"} · Mollick, E. (2026). [*A guide to which AI to use in the agentic era*](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the){target="_blank"} · Mollick, E. (2024). [*Co-intelligence: Living and working with AI*](https://search.worldcat.org/title/1408648878){target="_blank"} · Russell, S., & Norvig, P. (2021). [*Artificial intelligence: A modern approach* (4. Aufl.)](https://aima.cs.berkeley.edu/){target="_blank"}
+:::
+
+## Checkliste: Mit welcher KI arbeite ich gerade? {#sec-checkliste}
+
+Gehen Sie die Liste einmal durch, wenn Sie ein neues Werkzeug oder Modell ausprobieren, und danach immer dann, wenn viel vom Ergebnis abhängt. Die vier Abschnitte folgen dem 4D-Framework, das Sie in jedem Workshop wiederfinden [@dakan2025framework].
+
+::: callout-tip
+## Vor dem Prompt — Delegate: Welches System habe ich vor mir?
+
+- [ ] Ich kenne das Werkzeug (die App) und das Modell mit Namen, zum Beispiel {{< var thki >}} mit GPT-5.5.
+- [ ] Ich weiß, ob eine **Websuche** aktiv ist. *Test:* Fragen Sie nach einer Nachricht von heute. Erscheinen anklickbare Quellen, sucht das System im Web; erscheinen keine, antwortet es aus dem Gedächtnis.
+- [ ] Ich weiß, ob das System **Dateien lesen** (PDF, Screenshot) und **Code ausführen** kann. Für Rechnungen und Tabellen macht das den Unterschied zwischen Rechnen und Raten.
+- [ ] Ich weiß, ob das System ein **Gedächtnis** hat, also frühere Chats kennt, und ob ich das möchte.
+- [ ] Ich habe entschieden, was die Aufgabe braucht: Für Erklären, Umformulieren und Gliedern reicht ein LLM allein; für aktuelle Fakten, Ihre eigenen Unterlagen oder Zahlen brauchen Sie Werkzeuge.
+:::
+
+::: callout-tip
+## Beim Prompten — Describe: Habe ich der KI gegeben, was ihr fehlt?
+
+- [ ] Geht es um Fakten aus Ihrem Studium, hänge ich die Quelle an (Skript, Modulbeschreibung, Prüfungsordnung) oder verlange Links.
+- [ ] Bei Zahlen bitte ich die KI, mit Code zu rechnen statt zu schätzen, sofern sie das kann.
+:::
+
+::: callout-warning
+## Nach der Antwort — Discern: Woher stammt das?
+
+- [ ] Ich öffne mindestens einen genannten Link und prüfe, ob die Aussage dort wirklich steht.
+- [ ] Ohne Werkzeuge behandle ich die Antwort als Entwurf aus dem Gedächtnis: Termine, Raumnummern, Formeln und Literaturangaben prüfe ich immer selbst.
+- [ ] Ich kann den Lösungsweg mit eigenen Worten erklären. Wenn nicht, habe ich eine Antwort, aber noch kein Verständnis.
+:::
+
+::: callout-important
+## Immer — Diligence: Verantworte ich, wie ich die KI nutze?
+
+- [ ] Keine personenbezogenen Daten, keine urheberrechtlich geschützten Texte, auch nicht im privaten Account [@thkoeln2025thkichat].
+- [ ] Ich weiß, ob KI in meinem Modul erlaubt ist und wie ich ihre Nutzung kennzeichnen muss.
+- [ ] Verwende ich ein KI-Ergebnis weiter, notiere ich Werkzeug, Modell und Datum, damit ich es später nachvollziehen kann.
+:::
