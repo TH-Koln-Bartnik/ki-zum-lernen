@@ -1,9 +1,9 @@
 # Dozentenfassung: zeigt zusätzlich alle Blöcke mit
 #   ::: {.content-visible when-profile="dozent"}
 # Aufruf:  quarto render --profile dozent
-# Ergebnis landet neben dem Projektordner in ../ai-4-learning-dozent/ und damit nie im Repo.
+# Ergebnis landet neben dem Projektordner in ../ki-zum-lernen-dozent/ und damit nie im Repo.
 project:
-  output-dir: ../ai-4-learning-dozent
+  output-dir: ../ki-zum-lernen-dozent
 
 book:
   title: "KI zum Lernen — Dozentenfassung"

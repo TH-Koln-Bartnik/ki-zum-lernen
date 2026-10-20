@@ -16,7 +16,7 @@ book:
   date: "2026-10-21"
   date-format: "DD.MM.YYYY"
   search: true
-  repo-url: "https://github.com/r0m0n/ai-4-learning"
+  repo-url: "https://github.com/TH-Koln-Bartnik/ki-zum-lernen"
   repo-actions: [edit, issue]
   page-navigation: true
   back-to-top-navigation: true

@@ -3,14 +3,14 @@
 Begleitseite zu vier 30-Minuten-Workshops am Campus Gummersbach, WiSe 2026/27
 (mittwochs 21.10., 28.10., 04.11., 11.11., 12:30–13:00 Uhr, Hörsaal 0402; Inputs: R. Bartnik und U. van Heesch, Tutor: B. Moser).
 
-Pages: <https://r0m0n.github.io/ai-4-learning/>
+Pages: <https://th-koln-bartnik.github.io/ki-zum-lernen/>
 
 ## Bauen und veröffentlichen
 
 ```bash
 quarto preview                     # Live-Vorschau
 quarto render                      # Studierendenfassung nach docs/
-quarto render --profile dozent     # Dozentenfassung nach ../ai-4-learning-dozent/ (außerhalb des Repos)
+quarto render --profile dozent     # Dozentenfassung nach ../ki-zum-lernen-dozent/ (außerhalb des Repos)
 ```
 
 GitHub Pages serviert aus `/docs` auf `main`. Nach jedem `quarto render` committen und pushen.

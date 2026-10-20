@@ -8,15 +8,15 @@
 
 $ErrorActionPreference = "Stop"
 
-$repoUrl   = "https://github.com/r0m0n/ai-4-learning.git"
+$repoUrl   = "https://github.com/TH-Koln-Bartnik/ki-zum-lernen.git"
 $projDir   = $PSScriptRoot
-$subClone  = Join-Path $projDir "ai-4-learning"
+$subClone  = Join-Path $projDir "ki-zum-lernen"
 
 Write-Host "==> Projektordner: $projDir" -ForegroundColor Cyan
 
 # 1) Verwaisten Sub-Klon entfernen, falls vorhanden
 if (Test-Path $subClone) {
-    Write-Host "==> Entferne verwaisten Sub-Klon ai-4-learning\ ..." -ForegroundColor Yellow
+    Write-Host "==> Entferne verwaisten Sub-Klon ki-zum-lernen\ ..." -ForegroundColor Yellow
     Remove-Item -Recurse -Force $subClone
 }
 
@@ -77,4 +77,4 @@ Write-Host "  Source: Deploy from a branch" -ForegroundColor Green
 Write-Host "  Branch: main, Folder: /docs" -ForegroundColor Green
 Write-Host ""
 Write-Host "Pages-URL nach 1 - 2 Minuten:" -ForegroundColor Green
-Write-Host "  https://r0m0n.github.io/ai-4-learning/" -ForegroundColor Green
+Write-Host "  https://th-koln-bartnik.github.io/ki-zum-lernen/" -ForegroundColor Green

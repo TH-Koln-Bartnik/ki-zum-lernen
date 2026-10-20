@@ -5,16 +5,16 @@
 
 set -euo pipefail
 
-REPO_URL="https://github.com/r0m0n/ai-4-learning.git"
+REPO_URL="https://github.com/TH-Koln-Bartnik/ki-zum-lernen.git"
 PROJ_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 echo "==> Projektordner: $PROJ_DIR"
 cd "$PROJ_DIR"
 
 # 1) Verwaisten Sub-Klon entfernen, falls vorhanden
-if [ -d "ai-4-learning" ]; then
-  echo "==> Entferne verwaisten Sub-Klon ai-4-learning/ ..."
-  rm -rf "ai-4-learning"
+if [ -d "ki-zum-lernen" ]; then
+  echo "==> Entferne verwaisten Sub-Klon ki-zum-lernen/ ..."
+  rm -rf "ki-zum-lernen"
 fi
 
 # 2) Git-Repo initialisieren (idempotent)
@@ -61,5 +61,5 @@ Fertig. Auf GitHub unter Settings -> Pages pruefen:
   Branch: main, Folder: /docs
 
 Pages-URL nach 1 - 2 Minuten:
-  https://r0m0n.github.io/ai-4-learning/
+  https://th-koln-bartnik.github.io/ki-zum-lernen/
 EOF
