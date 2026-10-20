@@ -24,7 +24,7 @@ Eine ausführliche Einführung in die Funktionsweise von Sprachmodellen und eine
 
 ## Lernspiel: Welche Grundbegriffe kennen Sie schon? {#sec-lernspiel}
 
-Von *Prompt* über *Token* bis *Halluzination*: Ordnen Sie die Begriffe den passenden Definitionen zu. Das Spiel stammt aus Kapitel 2 des Skripts [*GenAI in der Lehre*](https://th-koln-bartnik.github.io/genai4teaching/kapitel02.html){target="_blank"} und läuft am besten auf dem Computer.
+Von *Prompt* über *Token* bis *Halluzination*: Ordnen Sie die Begriffe den passenden Definitionen zu. Wer die Grundbegriffe schon kennt, wählt am Start das Level *Fortgeschritten*: Dort geht es um *Agent*, *Skill*, *Orchestrator* und *MCP*, und in einer Diagnose-Runde ordnen Sie Szenen aus dem Studium typischen Problemen wie *Cognitive Debt* oder *Automation Complacency* zu. Das Spiel stammt aus Kapitel 2 des Skripts [*GenAI in der Lehre*](https://th-koln-bartnik.github.io/genai4teaching/kapitel02.html){target="_blank"} und läuft am besten auf dem Computer.
 
 ::: {.content-visible when-format="html"}
 <iframe src="../interactions/llm-game-standalone.html" title="Lernspiel: Grundbegriffe zu Sprachmodellen zuordnen" width="100%" height="700px" style="border:1px solid #e6e6ea;" loading="lazy"></iframe>
