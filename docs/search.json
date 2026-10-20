@@ -245,7 +245,7 @@
     "href": "appendix/wissensbasis.html#sec-lernspiel",
     "title": "Wissensbasis",
     "section": "Lernspiel: Welche Grundbegriffe kennen Sie schon?",
-    "text": "Lernspiel: Welche Grundbegriffe kennen Sie schon?\nVon Prompt über Token bis Halluzination: Ordnen Sie die Begriffe den passenden Definitionen zu. Das Spiel stammt aus Kapitel 2 des Skripts GenAI in der Lehre und läuft am besten auf dem Computer.\n\n\nAuf dem Smartphone zu eng? Spiel im eigenen Fenster öffnen.",
+    "text": "Lernspiel: Welche Grundbegriffe kennen Sie schon?\nVon Prompt über Token bis Halluzination: Ordnen Sie die Begriffe den passenden Definitionen zu. Wer die Grundbegriffe schon kennt, wählt am Start das Level Fortgeschritten: Dort geht es um Agent, Skill, Orchestrator und MCP, und in einer Diagnose-Runde ordnen Sie Szenen aus dem Studium typischen Problemen wie Cognitive Debt oder Automation Complacency zu. Das Spiel stammt aus Kapitel 2 des Skripts GenAI in der Lehre und läuft am besten auf dem Computer.\n\n\nAuf dem Smartphone zu eng? Spiel im eigenen Fenster öffnen.",
     "crumbs": [
       "Anhang",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Wissensbasis</span>"
