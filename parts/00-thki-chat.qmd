@@ -1,0 +1,45 @@
+---
+title: "Vorab: THKI Chat in fünf Minuten"
+subtitle: "Der kostenlose KI-Zugang der TH Köln, was er kann und wo seine Grenzen liegen"
+---
+
+::: th-color-bar
+:::
+
+::: lernziel-box
+#### Was Sie nach dieser Seite wissen
+
+- wie Sie sich im {{< var thki >}} anmelden,
+- welche Sprachmodelle dort zur Auswahl stehen und wie sie im Vergleich zur aktuellen Modellspitze abschneiden,
+- welches Modell Sie für welche Aufgabe wählen und warum Sie die Ergebnisse trotzdem prüfen müssen.
+:::
+
+## Anmelden
+
+Der {{< var thki >}} läuft über die NRW-Plattform KI:connect. Öffnen Sie [{{< var thki-url >}}]({{< var thki-url >}}), wählen Sie im Auswahlfenster die TH Köln und melden Sie sich mit Ihrer campusID an. Die Nutzung ist kostenlos; Ihre campusID-Daten werden laut Handreichung nicht an die Modellanbieter weitergegeben [@thkoeln2025thkichat].
+
+::: callout-warning
+## Zwei Regeln, bevor Sie loslegen
+
+Keine personenbezogenen Daten eingeben, also keine Namen, Matrikelnummern oder Noten. Keine urheberrechtlich geschützten Texte hochladen, etwa eingescannte Buchkapitel [@thkoeln2025thkichat].
+:::
+
+## Welches Modell?
+
+Im {{< var thki >}} wählen Sie in der Chat-Oberfläche ein Sprachmodell aus. Die Modelle unterscheiden sich deutlich. Die Grafik unten vergleicht sie mit Hilfe eines **Benchmarks**, einer standardisierten Testbatterie, die alle Modelle unter gleichen Bedingungen durchlaufen. *Bild:* ein Zehnkampf für Sprachmodelle, bei dem am Ende eine Gesamtpunktzahl steht. Der hier verwendete Intelligence Index bündelt zehn solcher Tests, von Wissensfragen über logisches Schließen bis zum Programmieren [@ArtificialAnalysis2026].
+
+Türkis sind die Modelle, die im {{< var thki >}} freigeschaltet sind, grau zum Vergleich ausgewählte führende kommerzielle Modelle. Ein Klick auf eine Zeile zeigt die getestete Einstellung und die Quelle.
+
+{{< include ../includes/_kichat-vergleich.qmd >}}
+
+## Was folgt daraus für Ihr Studium?
+
+Das stärkste Modell im {{< var thki >}} ist derzeit GPT-5.5. Es liegt mit 38 Punkten klar vor den übrigen freigeschalteten Modellen, aber ebenso klar hinter der Modellspitze mit 58 Punkten. Für die Aufgaben in diesen Workshops, also Termine auslesen, Stoff sortieren, Leitfragen stellen und Texte kürzen, reicht das gut. Je schwieriger die Aufgabe, desto größer wird der Abstand: Bei mehrschrittigen Herleitungen, Beweisen oder Programmcode machen schwächere Modelle mehr Fehler, und sie klingen dabei genauso sicher.
+
+Drei Faustregeln:
+
+- **Standardwahl:** GPT-5.5 für alles, was Nachdenken verlangt, etwa den Klausur-Lernplan aus [Workshop 1](01-organisieren.qmd).
+- **Schnelle Kleinigkeiten:** Kleinere Modelle wie GPT-5.4 mini antworten meist schneller und genügen für Umformulierungen oder einfache Listen.
+- **Immer prüfen:** Ein schwächeres Modell ist kein Grund, auf KI zu verzichten, aber ein Grund mehr, jedes Ergebnis gegenzuprüfen. Genau darum geht es im *Discern*-Teil jedes Workshops.
+
+Die Werte sind eine Momentaufnahme vom 20.10.2026. Modelle und Ranglisten ändern sich im Monatstakt; den aktuellen Stand zeigt das [Leaderboard von Artificial Analysis](https://artificialanalysis.ai/models).

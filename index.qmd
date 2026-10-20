@@ -31,7 +31,7 @@ Die Inputs kommen abwechselnd von **Prof. Dr. Roman Bartnik** (Supply Management
 
 Ein Laptop oder Smartphone genügt. Für alle Übungen reicht ein kostenloser Zugang zu einem der folgenden Werkzeuge:
 
-- **[{{< var thki >}}]({{< var thki-url >}})** — der kostenlose Zugang der TH Köln zu verschiedenen Sprachmodellen, bereitgestellt über die NRW-Plattform KI:connect. Link öffnen, im Auswahlfenster die TH Köln wählen und mit Ihrer campusID anmelden; ein privater Account ist nicht nötig [@thkoeln2025thkichat].
+- **[{{< var thki >}}]({{< var thki-url >}})** — der kostenlose Zugang der TH Köln zu verschiedenen Sprachmodellen, bereitgestellt über die NRW-Plattform KI:connect. Link öffnen, im Auswahlfenster die TH Köln wählen und mit Ihrer campusID anmelden; ein privater Account ist nicht nötig [@thkoeln2025thkichat]. Wie der Zugang funktioniert und welches Modell sich wofür eignet, zeigt die Seite [THKI Chat in fünf Minuten](parts/00-thki-chat.qmd).
 - **ChatGPT, Claude oder Gemini** in der kostenlosen Version, falls Sie bereits einen Account haben.
 - **NotebookLM** von Google für die Workshops 2 und 3, wenn Sie Fragen nur auf Basis eigener Skripte beantworten lassen wollen.
 

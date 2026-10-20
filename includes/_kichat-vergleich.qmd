@@ -1,0 +1,80 @@
+```{=html}
+<section id="kc-reasoning" aria-labelledby="kc-title">
+<style>
+#kc-reasoning {--kc-ink:#182d3c;--kc-muted:#4f6370;--kc-accent:#007e87;--kc-ref:#8c9ba8;--kc-track:#e8eef1;--kc-bg:#fff;color:var(--kc-ink);background:var(--kc-bg);font:16px/1.5 system-ui,sans-serif;max-width:950px;margin:auto;padding:24px;box-sizing:border-box}
+#kc-reasoning *{box-sizing:border-box}#kc-reasoning h2{font-size:1.65em;line-height:1.2;margin:0 0 8px}#kc-reasoning a{color:var(--kc-accent);text-decoration:underline}#kc-reasoning .kc-sub{color:var(--kc-muted);margin:0 0 16px}
+#kc-reasoning .kc-toolbar{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;margin:18px 0}#kc-reasoning label{cursor:pointer}#kc-reasoning input{accent-color:var(--kc-accent);width:18px;height:18px;vertical-align:middle}
+#kc-reasoning .kc-scale{display:flex;justify-content:space-between;color:var(--kc-muted);font-size:.8em;margin-bottom:8px}
+#kc-reasoning .kc-row{margin:0 0 15px}#kc-reasoning summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;border-radius:3px}#kc-reasoning summary::-webkit-details-marker{display:none}#kc-reasoning summary:focus-visible{outline:3px solid var(--kc-accent);outline-offset:4px}
+#kc-reasoning .kc-label{font-weight:600}#kc-reasoning .kc-label::before{content:'▸ ';color:var(--kc-muted)}#kc-reasoning details[open] .kc-label::before{content:'▾ '}#kc-reasoning .kc-value{font-variant-numeric:tabular-nums;white-space:nowrap}
+#kc-reasoning .kc-tag{font-size:.72em;letter-spacing:.02em;font-weight:500;display:inline-block;color:var(--kc-muted);margin-left:6px}#kc-reasoning .kc-available .kc-tag{color:var(--kc-accent);font-weight:700}
+#kc-reasoning .kc-track{height:17px;background:var(--kc-track);grid-column:1/-1}#kc-reasoning .kc-fill{height:100%;background:var(--kc-ref)}#kc-reasoning .kc-available .kc-fill{background:var(--kc-accent)}
+#kc-reasoning .kc-detail{font-size:.875em;color:var(--kc-muted);padding:8px 0}#kc-reasoning .kc-notes{font-size:.8em;color:var(--kc-muted);border-top:1px solid var(--kc-track);padding-top:12px}#kc-reasoning .kc-notes li{margin-bottom:7px}#kc-reasoning .kc-source{margin:12px 0 0}#kc-reasoning [hidden]{display:none!important}
+@media(max-width:540px){#kc-reasoning{padding:12px;font-size:14px}#kc-reasoning summary{grid-template-columns:1fr;gap:3px}#kc-reasoning .kc-value{justify-self:end}#kc-reasoning .kc-tag{margin-left:0}#kc-reasoning .kc-scale{font-size:.75em}}
+@media print{#kc-reasoning{--kc-ink:#182d3c;--kc-muted:#4f6370;--kc-accent:#007e87;--kc-ref:#8c9ba8;--kc-track:#e8eef1;--kc-bg:#fff;print-color-adjust:exact}#kc-reasoning .kc-toolbar label{display:none}#kc-reasoning .kc-row[hidden]{display:block!important}}
+</style>
+<h2 id="kc-title">KI:Chat im Vergleich zur Modellspitze</h2>
+<p class="kc-sub">Reasoning-Proxy: Artificial Analysis Intelligence Index v4.3.2<sup><a href="#kc-note-1" aria-label="Fußnote 1">1</a></sup> · Datenstand: 20.10.2026</p>
+<div class="kc-toolbar"><label><input id="kc-filter" type="checkbox"> Nur KI:Chat anzeigen</label><a href="https://artificialanalysis.ai/models" target="_blank" rel="noopener">Zum aktuellen Leaderboard ↗</a></div>
+<p class="kc-sub" style="font-size:.875em">Modell anklicken: Einstellung und Quelle. Türkis: KI:Chat · Grau: Spitzenvergleich.</p>
+<div class="kc-scale"><span>0 · gemeinsame Skala</span><span>58 · Spitzenwert<sup><a href="#kc-note-2">2</a></sup></span></div>
+<div class="kc-bars">
+<details class="kc-row kc-reference" data-available="false">
+<summary><span class="kc-label">Claude Opus 5.5 <span class="kc-tag">Spitzenvergleich</span></span><span class="kc-value">58 (von 58)</span><div class="kc-track" aria-hidden="true"><div class="kc-fill" style="width:100.000000%"></div></div></summary>
+<div class="kc-detail">Getestete Einstellung: Max, Default Fallback. <a href="https://artificialanalysis.ai/models" target="_blank" rel="noopener">Quelle öffnen ↗</a></div>
+</details>
+<details class="kc-row kc-reference" data-available="false">
+<summary><span class="kc-label">Claude Sonnet 5.5 <span class="kc-tag">Spitzenvergleich</span></span><span class="kc-value">56 (von 58)</span><div class="kc-track" aria-hidden="true"><div class="kc-fill" style="width:96.551724%"></div></div></summary>
+<div class="kc-detail">Getestete Einstellung: Max, Default Fallback. <a href="https://artificialanalysis.ai/models" target="_blank" rel="noopener">Quelle öffnen ↗</a></div>
+</details>
+<details class="kc-row kc-reference" data-available="false">
+<summary><span class="kc-label">Muse Wonder Full <span class="kc-tag">Spitzenvergleich</span></span><span class="kc-value">56 (von 58)</span><div class="kc-track" aria-hidden="true"><div class="kc-fill" style="width:96.551724%"></div></div></summary>
+<div class="kc-detail">Getestete Einstellung: Max. <a href="https://artificialanalysis.ai/models" target="_blank" rel="noopener">Quelle öffnen ↗</a></div>
+</details>
+<details class="kc-row kc-available" data-available="true">
+<summary><span class="kc-label">GPT-5.5 <span class="kc-tag">KI:Chat</span></span><span class="kc-value">38 (von 58)</span><div class="kc-track" aria-hidden="true"><div class="kc-fill" style="width:65.517241%"></div></div></summary>
+<div class="kc-detail">Getestete Einstellung: Xhigh. <a href="https://artificialanalysis.ai/models/comparisons/gpt-5-5-vs-gpt-5-4-mini" target="_blank" rel="noopener">Quelle öffnen ↗</a></div>
+</details>
+<details class="kc-row kc-available" data-available="true">
+<summary><span class="kc-label">GPT-5.4 mini <span class="kc-tag">KI:Chat</span></span><span class="kc-value">24 (von 58)</span><div class="kc-track" aria-hidden="true"><div class="kc-fill" style="width:41.379310%"></div></div></summary>
+<div class="kc-detail">Getestete Einstellung: Xhigh. <a href="https://artificialanalysis.ai/models/comparisons/gpt-5-5-vs-gpt-5-4-mini" target="_blank" rel="noopener">Quelle öffnen ↗</a></div>
+</details>
+<details class="kc-row kc-available" data-available="true">
+<summary><span class="kc-label">GLM-4.7 <span class="kc-tag">KI:Chat</span></span><span class="kc-value">22 (von 58)*</span><div class="kc-track" aria-hidden="true"><div class="kc-fill" style="width:37.931034%"></div></div></summary>
+<div class="kc-detail">Getestete Einstellung: Reasoning; Indexwert geschätzt. <a href="https://artificialanalysis.ai/models/comparisons/glm-4-7-vs-gpt-oss-120b" target="_blank" rel="noopener">Quelle öffnen ↗</a></div>
+</details>
+<details class="kc-row kc-available" data-available="true">
+<summary><span class="kc-label">Qwen3.5-397B-A17B <span class="kc-tag">KI:Chat</span></span><span class="kc-value">18 (von 58)</span><div class="kc-track" aria-hidden="true"><div class="kc-fill" style="width:31.034483%"></div></div></summary>
+<div class="kc-detail">Getestete Einstellung: Reasoning. <a href="https://artificialanalysis.ai/models/qwen3-5-397b-a17b" target="_blank" rel="noopener">Quelle öffnen ↗</a></div>
+</details>
+<details class="kc-row kc-available" data-available="true">
+<summary><span class="kc-label">GPT-OSS-120B <span class="kc-tag">KI:Chat</span></span><span class="kc-value">12 (von 58)</span><div class="kc-track" aria-hidden="true"><div class="kc-fill" style="width:20.689655%"></div></div></summary>
+<div class="kc-detail">Getestete Einstellung: High. <a href="https://artificialanalysis.ai/models/gpt-oss-120b" target="_blank" rel="noopener">Quelle öffnen ↗</a></div>
+</details>
+<details class="kc-row kc-available" data-available="true">
+<summary><span class="kc-label">Mistral Small 4 119B <span class="kc-tag">KI:Chat</span></span><span class="kc-value">11 (von 58)</span><div class="kc-track" aria-hidden="true"><div class="kc-fill" style="width:18.965517%"></div></div></summary>
+<div class="kc-detail">Getestete Einstellung: Reasoning. <a href="https://artificialanalysis.ai/models/mistral-small-4" target="_blank" rel="noopener">Quelle öffnen ↗</a></div>
+</details>
+<details class="kc-row kc-available" data-available="true">
+<summary><span class="kc-label">Qwen3-Omni-30B-A3B-Instruct <span class="kc-tag">KI:Chat</span></span><span class="kc-value">Kein vergleichbarer Wert</span></summary>
+<div class="kc-detail">Getestete Einstellung: Instruct; kein vergleichbarer Indexwert gefunden. <a href="https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct" target="_blank" rel="noopener">Quelle öffnen ↗</a> Fehlende Daten sind kein Nullwert.</div>
+</details>
+</div>
+<div class="kc-notes" role="doc-endnotes"><ol>
+<li id="kc-note-1">Der Intelligence Index bündelt zehn Tests, unter anderem Wissen, Schlussfolgern, Programmieren und Arbeitsaufgaben. Er dient hier als Proxy für Reasoning, ist aber kein reiner Reasoning-Test (Artificial Analysis, 2026).</li>
+<li id="kc-note-2">„38 (von 58)“ vergleicht den Indexwert mit dem Spitzenwert dieser Momentaufnahme. 58 ist keine theoretische Maximalpunktzahl; 38/58 ist kein Prozentsatz menschlicher Intelligenz oder korrekt gelöster Aufgaben. Die Skala bleibt auch beim Filtern unverändert.</li>
+<li id="kc-note-3">* GLM-4.7: Artificial Analysis kennzeichnet 22 (von 58) als Schätzung. Unterschiedliche Herleitungsbudgets werden verglichen: Claude Max mit Default Fallback; Muse Max; GPT-5.5 und GPT-5.4 mini Xhigh; GPT-OSS High; GLM, Qwen3.5 und Mistral Reasoning. Details sind pro Modell aufklappbar.</li>
+<li id="kc-note-4">„KI:Chat“ bezeichnet die in der bereitgestellten Modellübersicht aktivierten Modelle. Die Benchmarkwerte stammen nicht aus einem Test dieser Hochschulinstallation. Qwen3-Omni hat keinen vergleichbaren Wert und wird nicht als null dargestellt.</li>
+<li id="kc-note-5">Statische Momentaufnahme, keine automatische Aktualisierung. Vergleiche nur Werte derselben Indexversion. Spitzenvergleich: ausgewählte führende Modelle, keine vollständige Rangliste.</li>
+</ol><p class="kc-source">Quelle: Artificial Analysis. (2026). <a href="https://artificialanalysis.ai/models" target="_blank" rel="noopener"><em>Comparison of Models: Intelligence, Performance &amp; Price Analysis</em></a>. Abgerufen am 20. Oktober 2026. Einzelnachweise: jeweilige Modellzeile.</p></div>
+<script>
+(() => {
+const root = document.getElementById('kc-reasoning');
+const filter = root.querySelector('#kc-filter');
+filter.addEventListener('change', () => {
+root.querySelectorAll('.kc-row').forEach(row => {row.hidden = filter.checked && row.dataset.available !== 'true';});
+});
+})();
+</script>
+</section>
+```

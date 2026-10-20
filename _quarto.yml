@@ -27,6 +27,7 @@ book:
     logo: images/th-koeln-logo.png
   chapters:
     - index.qmd
+    - parts/00-thki-chat.qmd
     - part: "Mi, 21.10. — Organisieren"
       chapters:
         - parts/01-organisieren.qmd
