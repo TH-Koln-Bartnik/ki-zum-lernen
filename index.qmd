@@ -25,7 +25,7 @@ Die Workshops bauen lose aufeinander auf, jeder funktioniert aber auch allein.
 
 ## Wer Sie begleitet
 
-Die Inputs kommen abwechselnd von **Prof. Dr. Roman Bartnik** (Supply Management und Projektmanagement) und **Prof. Uwe van Heesch** (Schwerpunkt Informatik). **Ben Moser** begleitet die Übungen als Tutor und hilft, wenn ein Prompt oder ein Import hakt.
+Die Inputs kommen abwechselnd von **Prof. Dr. Roman Bartnik** (Supply Management und Projektmanagement) und **Prof. Dr. Uwe van Heesch** (Schwerpunkt Informatik). **Ben Moser** begleitet die Übungen als Tutor und hilft, wenn ein Prompt oder ein Import hakt.
 
 ## Was Sie brauchen
 
