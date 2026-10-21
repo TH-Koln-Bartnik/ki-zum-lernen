@@ -16,6 +16,24 @@ subtitle: "Mittwoch, 21.10.2026 · 12:30–13:00 Uhr · Hörsaal 0402 · Input: 
 - einen zweistufigen **Master-Prompt zur Semester- und Lernorganisation** aufbauen und für eigene Module nutzen.
 :::
 
+## Vorab — drei Empfehlungen zum Umgang mit GenAI {#sec-empfehlungen}
+
+::: empfehlungen
+- ![](../images/empfehlung-1-kein-taschenrechner.jpg){fig-alt="Folie mit dem Titel Kein Taschenrechner! Keine Suchmaschine!: durchgestrichene Symbole für Taschenrechner und Lupe neben zwei Figuren, die mit einer leuchtenden Kugel und einem Bildschirm arbeiten" .lightbox group="empfehlungen"}
+
+  **Kein Taschenrechner, keine Suchmaschine:** Eine KI liefert plausible Antworten, keine garantiert richtigen, also prüfen Sie Zahlen und Fakten selbst.
+
+- ![](../images/empfehlung-2-junger-kollege.jpg){fig-alt="Folie mit dem Titel Behandeln Sie die KI wie einen jungen Kollegen: drei Fotos einer Frau mit einem Roboter, beschriftet mit Anleiten, Schrittweise integrieren sowie Stärken und Schwächen kennenlernen" .lightbox group="empfehlungen"}
+
+  **Wie einen jungen Kollegen behandeln:** Leiten Sie die KI an, binden Sie sie Schritt für Schritt ein und lernen Sie dabei ihre Stärken und Schwächen kennen.
+
+- ![](../images/empfehlung-3-zehn-stunden.jpg){fig-alt="Folie mit dem Titel Verwenden Sie GenAI mindestens 10 Stunden lang mit einem leistungsstarken Sprachmodell in Ihrem eigenen Fachgebiet: großer Schriftzug 10 Stunden über zehn Uhren" .lightbox group="empfehlungen"}
+
+  **Zehn Stunden im eigenen Fach:** Arbeiten Sie mindestens zehn Stunden mit einem leistungsstarken Modell in einem Gebiet, in dem Sie die Qualität der Ergebnisse beurteilen können.
+:::
+
+Quelle: Empfehlungen nach @mollick2024cointelligence.
+
 ::: {.content-visible when-profile="dozent"}
 ::: callout-important
 ## Dozentenhinweis — Block 0, Tool-Vorstellung

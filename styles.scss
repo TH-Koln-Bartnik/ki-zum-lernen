@@ -483,3 +483,26 @@ pre, pre code, div.sourceCode pre, div.sourceCode code {
   color: var(--th-red);
   margin-bottom: 0.25rem;
 }
+
+/* Workshop 1, Einstieg: drei Empfehlungen als Bild-Liste (.empfehlungen) */
+.empfehlungen ul {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 1rem 0 0.75rem;
+}
+.empfehlungen li {
+  border-top: 4px solid var(--th-magenta);
+  padding-top: 0.6rem;
+}
+.empfehlungen li figure,
+.empfehlungen li .quarto-figure { margin: 0 0 0.5rem; }
+.empfehlungen li img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.empfehlungen li p { margin-bottom: 0; font-size: 0.95rem; }
+.empfehlungen li p + p { margin-top: 0.5rem; }
