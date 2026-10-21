@@ -32,13 +32,13 @@ book:
     - part: "Mi, 21.10. — Organisieren"
       chapters:
         - parts/01-organisieren.qmd
-    - part: "Mi, 28.10. — Informatik 1"
+    - part: "Mi, 28.10. — Programmieren lernen"
       chapters:
         - parts/02-informatik-1.qmd
     - part: "Mi, 04.11. — Kommunizieren"
       chapters:
         - parts/03-kommunizieren.qmd
-    - part: "Mi, 11.11. — Informatik 2"
+    - part: "Mi, 11.11. — Berichte schreiben"
       chapters:
         - parts/04-informatik-2.qmd
     - part: "Anhang"

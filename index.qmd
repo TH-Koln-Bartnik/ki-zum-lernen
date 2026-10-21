@@ -25,9 +25,9 @@ Alle Termine finden mittwochs von {{< var zeit >}} in {{< var raum >}} statt. Oh
 | Datum | Workshop | Input |
 |---|---|---|
 | 21.10.2026 | [Organisieren mit KI](parts/01-organisieren.qmd) | Prof. Dr. Roman Bartnik |
-| 28.10.2026 | [KI für Informatik-Studierende 1](parts/02-informatik-1.qmd) | Prof. Dr. Uwe van Heesch |
+| 28.10.2026 | [Programmieren lernen mit Coding Agents](parts/02-informatik-1.qmd) | Prof. Dr. Uwe van Heesch |
 | 04.11.2026 | [Kommunizieren mit KI](parts/03-kommunizieren.qmd) | Prof. Dr. Roman Bartnik |
-| 11.11.2026 | [KI für Informatik-Studierende 2](parts/04-informatik-2.qmd) | Prof. Dr. Uwe van Heesch |
+| 11.11.2026 | [(Wissenschaftliche) Berichte verantwortungsvoll schreiben mit KI-Unterstützung](parts/04-informatik-2.qmd) | Prof. Dr. Uwe van Heesch |
 
 Je nach Interesse bieten wir im Anschluss weitere Workshops an.
 

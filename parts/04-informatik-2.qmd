@@ -1,5 +1,5 @@
 ---
-title: "Workshop 4 — KI für Informatik-Studierende 2"
+title: "Workshop 4 — (Wissenschaftliche) Berichte verantwortungsvoll schreiben mit KI-Unterstützung"
 subtitle: "Mittwoch, 11.11.2026 · 12:30–13:00 Uhr · Hörsaal 0402 · Input: Prof. Dr. Uwe van Heesch"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Workshop 2 — KI für Informatik-Studierende 1"
+title: "Workshop 2 — Programmieren lernen mit Coding Agents"
 subtitle: "Mittwoch, 28.10.2026 · 12:30–13:00 Uhr · Hörsaal 0402 · Input: Prof. Dr. Uwe van Heesch"
 ---
 
